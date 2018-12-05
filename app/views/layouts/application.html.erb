@@ -3,7 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>TODO</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+
+    <!-- Google result text-->
+    <title>Trybes | Best app to find new experiences!</title>
+    <!-- Google result description-->
+    <meta name="description" content="Trybes app offer the complete solution for anyone looking for a new experince. It also matches your perfect group!">
+
+    <!-- Facebook result text-->
+    <meta property="og:title" content="Trybes - Best app to find a new experience!">
+    <meta property="og:image" content="facebook-card.jpg">
+    <meta property="og:description" content="When was the last time you did something for the first time? Find your experiences and match your groups with Trybes app!">
+    <meta property="og:site_name" content="Trybes"/>
+    <!-- Trybes app offer the complete solution for anyone looking for a new experince. It also matches your perfect group! -->
+
+    <!-- Twitterresult text-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@trybes">
+    <meta name="twitter:title" content="Trybes - Best app to find a new experience!">
+    <meta name="twitter:description" content="When was the last time you did something for the first time? Find your experiences and match your groups with Trybes app!">
+    <meta name="twitter:creator" content="@trybes">
+    <meta name="twitter:image:src" content="http://twitter-card.jpg">
+
+    <title>Trybes</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
@@ -13,7 +35,9 @@
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%= yield %>
+    <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
 </html>
+
