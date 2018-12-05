@@ -1,2 +1,33 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<% content_for(:navbar_class, "navbar-transparent") %>
+
+<div class="banner-home">
+  <div class="video-container hidden-xs">
+    <div class="overlay"></div>
+    <%= video_tag("trybes_movie.webm", class:"filtered", width: '100%', autoplay: true, loop: true, poster: asset_url('home_banner.jpg'), preload: :auto, muted: :muted) %>
+  </div>
+  <div class="banner-content text-center">
+    <h1>When was the last time you did something for the first time?</h1>
+    <p>Find your experiences! Match your groups!</p>
+    <%= render 'shared/search' %>
+  </div>
+</div>
+
+
+<div class="intro-home">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <!-- <img src="image/viralata.jpg"> -->
+        <a href="/" >
+          <%= image_tag ('ballet_home.jpg') %>
+        </a>
+      </div>
+      <div class="col-sm-6 text-center">
+        <h2>What are your tribes?</h2>
+        <p class="lead">We all need tribes to recognize ourselves as individuals, to belong to something, to feel embraced, to scape our realitites and daily routines, to feel that our life has a purpose, to enjoy our life. So what do you need to live amazing experiences? What are you waiting for? </p>
+
+        <p>For each tribe you can find not only an amazing new experience but also a bond with people linked by the same desire, the same affinity. And there are hundresds of tribes waiting for you. You do not need to stick to ony one. You can like to cook, to travel, hike, and take photos, you can be a runner, a scuba diver...there are endless experiences close to you waiting for your first step! And be happy is a matter of choice! </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,265 @@
 // Specific CSS for your home-page
+.video-container {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // height: 100vh;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  video {
+    // min-width: 100vw;
+    // min-height: 100vh;
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay {
+  // background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%);
+  // background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    background: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 50%);
+  }
+}
+
+.banner-home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+  .banner-content {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 4;
+
+    .form-control {
+      opacity: 0.7;
+      padding: 10px 16px;
+      font-size: 20px;
+      line-height: 1.3;
+      border-radius: 2px;
+    }
+    .btn {
+      font-size: 14px;
+    }
+  }
+
+// Lato:300,300i,400,700,900
+// Oswald:200,300,400,500,600,700
+
+  h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 35px;
+    // letter-spacing: 0px;
+    // line-height: 0.2;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  p {
+    color: #fff1cc;
+    opacity: 0.8;
+    font-size: 25px;
+    line-height: 0.2;
+    font-weight: 300;
+    margin-bottom: 25px;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.5);
+  }
+
+}
+
+.intro-home {
+  padding: 80px 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.banner-supplier {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient (rgba(0,0,0,0.3), rgba(0,0,0,0.3)), image-url('home_banner.jpg');
+  background-size: cover;
+
+  h1 {
+    color: white;
+    font-weight: lighter;
+    font-size: 35px;
+  }
+
+  p {
+    color: white;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    padding: 15px 50px;
+  }
+}
+
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .banner-home {
+    background-position: center;
+
+    .banner-content {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+  }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 551px) and (max-width: 767px) {
+
+  .banner-home {
+    background-image: linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%), image-url('home_banner.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .banner-content {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+  }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 550px) {
+
+  .banner-home {
+    background-image: linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%), image-url('home_banner.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .banner-content {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+// history
+
+
+// .video-container {
+//   // position: absolute;
+//   // top: 0;
+//   // left: 0;
+//   // right: 0;
+//   // height: 100vh;
+//   // z-index: -1;
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+
+//   video {
+//     min-width: 100%;
+//     min-height: 100%;
+//     position: relative;
+//     z-index: 1;
+//   }
+
+//   .overlay {
+//   // background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%);
+//   // background-size: cover;
+//     height: 100%;
+//     width: 100%;
+//     position: absolute;
+//     top: 0px;
+//     left: 0px;
+//     z-index: 2;
+//     background: linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 50%);
+//     opacity: 0.5;
+//   }
+// }
+
+
+
+// // Specific CSS for your home-page
+
+// .video-container {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   height: 100vh;
+//   z-index: -1;
+
+//   video {
+//     z-index: 1;
+//   }
+
+//   .overlay {
+//     background: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 50%);
+//     background-size: cover;
+//     width: 100vw;
+//     height: 100vh;
+//     z-index: 2;
+
+//   }
+// }
+
