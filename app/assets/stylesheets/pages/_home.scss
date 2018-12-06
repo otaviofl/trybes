@@ -119,20 +119,20 @@
     height: auto;
   }
 
-  .flex {
-    height:100%;
-    display:flex;
-    .image-intro {
-      flex: 1 0;
-      background-size: cover;
-      background-position: right;
-    }
+  // .flex {
+  //   height:100%;
+  //   display:flex;
+  //   .image-intro {
+  //     flex: 1 0;
+  //     background-size: cover;
+  //     background-position: right;
+  //   }
 
-    .text-center {
-      flex: 1 0;
-      padding: 2rem;
-    }
-  }
+  //   .text-center {
+  //     flex: 1 0;
+  //     padding: 2rem;
+  //   }
+  // }
 }
 
 .why {
@@ -163,6 +163,26 @@
   filter: blur(0px);
   -webkit-filter: blur(0px);
 }
+
+.banner-supplier:hover .banner-content .box-content{
+  border: 0px solid;
+  // padding: 35px 50px;
+  // margin-top:5vh;
+  -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+  box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+  background: linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%);
+  color: white;
+  padding: 30px;
+  margin: 0 auto;
+  width: 100%;
+
+  h1, h2, p{
+    color: white;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.5);
+  }
+}
+
 .supplier-wrapper {
   background: transparent;
   margin: 0;
@@ -173,6 +193,7 @@
     text-align: center;
     justify-content: space-around;
     align-items: center;
+    display: flex;
     .banner-content {
       height: 100vh;
       display: flex;
@@ -184,27 +205,27 @@
       transition: all 1000ms;
       display: block;
       text-align: center;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      max-width: 600px;
+      // padding-top: 30px;
+      // padding-bottom: 30px;
       margin: 0 auto;
+      padding: 100px;
 
       h1 {
-        color: black;
+        color: #666666;
         font-weight: lighter;
         font-size: 30px;
         text-shadow: 0px 1px rgba(0, 0, 0, 0.5);
       }
 
       h2 {
-        color: black;
+        color: #666666;
         font-weight: bold;
         font-size: 25px;
         text-shadow: 0px 1px rgba(0, 0, 0, 0.5);
       }
 
       p {
-        color: black;
+        color: #666666;
         opacity: 0.8;
         font-size: 18px;
         font-weight: lighter;
@@ -213,10 +234,10 @@
       }
 
       #btn-supplier {
-        border: solid #666666 3px;
+        border: solid white 3px;
         border-radius: 9px;
         font-family: 'Oswald', sans-serif;
-        color: #666666;
+        color: white;
         font-size: 135%;
         padding: 10px 20px;
         text-transform: uppercase;
@@ -362,6 +383,19 @@
       font-size: 16px;
     }
 
+  }
+
+
+  .supplier-wrapper .banner-supplier .banner-content {
+    h1 {
+      font-size: 25px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 18px;
+    }
   }
 
 }
