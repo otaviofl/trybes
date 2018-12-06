@@ -34,8 +34,10 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-    <%= yield %>
-    <%= render 'shared/footer' %>
+    <div class="<%= action_name == 'home' ? 'pattern-home' : '' %> ">
+      <%= yield %>
+      <%= render "shared/footer" %>   <!-- inject layouts/_footer.html.erb -->
+    </div>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
