@@ -28,23 +28,6 @@
     }
 }
 
-// .container-experiences {
-//   color: #ffd966;
-//   text-align: center;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   padding-top: 0px;
-//   padding-left: 40px;
-//   padding-right: 40px;
-//   margin: 0 auto;
-//   position: relative;
-//   bottom: 0px;
-//   left: 0px;
-//   top: 0;
-//   z-index: 0;
-// }
-
 
 .banner-form {
   display: flex;
@@ -64,4 +47,47 @@
   border-radius: 2px;
 
 }
+
+.container-experiences {
+  display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding-top: 0px;
+//   padding-left: 40px;
+//   padding-right: 40px;
+//   margin: 0 auto;
+//   position: relative;
+//   bottom: 0px;
+//   left: 0px;
+//   top: 0;
+//   z-index: 0;
+//   color: #ffd966;
+//   text-align: center;
+}
+
+.cards-container {
+  // flex: 1 0 auto;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+
+@media(max-width: 992px) {
+  .card {
+    flex: 0 0 50%;
+  }
+}
+
+@media(max-width: 768px) {
+  .card {
+    flex: 0 0 100%;
+  }
+}
+
+
+
+
 

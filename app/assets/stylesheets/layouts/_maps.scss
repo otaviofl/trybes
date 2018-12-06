@@ -1,0 +1,7 @@
+#map {
+  height: 100vh;
+  flex: 0 0 300px;
+  position: sticky !important;
+    // important to override Gmaps inline css
+  top: 0 !important;
+}
