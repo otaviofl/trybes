@@ -3,8 +3,18 @@ class ExperiencesController < ApplicationController
 
   # GET /experiences
   # GET /experiences.json
+  # def index
+  #   @experiences = Experience.all
+  # end
+
   def index
-    @experiences = Experience.all
+    if experience_params[:category].present? || experience_params[:location].present?
+      # category = Category.where("name = ?", experience_params[:category]).first
+      # @experiences = Experience.where("category = ? AND location = ? AND start = ? AND finish = ?", experience_params[:category], experience_params[:location], experience_params[:start], experience_params[:finish])
+      @experiences = Experience.all
+    else
+      @experiences = Experience.all
+    end
   end
 
   # GET /experiences/1
