@@ -1,52 +1,99 @@
-<div class="card-group ">
-  <div class="card">
-    <div class="upper">
-      <%= image_tag ('renato_avatar.jpeg'), class: "avatar-card"%>
-    </div>
-    <h2>Renato Peixoto</h2>
-    <h3><i class="fas fa-dollar-sign" aria-hidden="true"></i> R$100 </h3>
-    <div class="details">
-      &nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>Adress<br>
-      <i class="fas fa-paw" aria-hidden="true"></i> Experience <br>
-      <i class="fas fa-clock" aria-hidden="true"> </i>Time
-    </div>
-  </div>
-</div>
 
-<!--
-<div class="flip3D">
-  <div class="back">Box 1 - Back</div>
-  <div class="front">Box 1 - Front</div>
-
-</div> -->
-
-<!--
-<div class="flip3D">
-    <div class="card-group front">
+<!-- <div class="col-sm-10 col-sm-offset-1"> -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card-container">
       <div class="card">
-        <div class="upper">
-          <%= image_tag ('renato_avatar.jpeg'), class: "avatar-card"%>
-        </div>
-        <h2>Renato Peixoto</h2>
-        <h3><i class="fas fa-dollar-sign" aria-hidden="true"></i> R$100 </h3>
-        <div class="details">
-          &nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>Adress<br>
-          <i class="fas fa-paw" aria-hidden="true"></i> Experience <br>
-          <i class="fas fa-clock" aria-hidden="true"> </i>Time
-        </div>
-      </div>
-    </div>
-    <div class="card-group back">
-      <div class="upper">
-        <%= image_tag ('rotating_card_profile3.jpg'), class: "avatar-card"%>
-      </div>
-      <h2>Renato Peixoto</h2>
-      <h3><i class="fas fa-dollar-sign" aria-hidden="true"></i> R$100 </h3>
-      <div class="details">
-        &nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>Adress<br>
-        <i class="fas fa-paw" aria-hidden="true"></i> Experience <br>
-        <i class="fas fa-clock" aria-hidden="true"> </i>Time
-      </div>
-    </div>
-</div> -->
+          <div class="back">
+              <div class="user">
+                  <%= image_tag ('mergulho_avatar_xdivers.png'), class: "img-circle"%>
+              </div>
+              <div class="content">
+                  <div class="main">
+                      <h3 class="name">Xdivers Scuba School </h3>
+                      <p class="profession">Scuba Diving Center in Rio de Janeiro</p>
+                      <p class="text-center">"Courses, trips and equipment sales. Everything for those who are passionate about the sea!"</p>
+                      <a class="btn" id="btn-experience" href="#">I want this experience!</a>
+                  </div>
+                  <div class="footer-card-line">
+                      <i class="fa fa-mail-forward"></i> Contacts
+                      <div class="social-links text-center">
+                        <a href="#" class="phone"><i class="fas fa-phone"> call</i></a>
+                        <a href="#" class="phone"><i class="fab fa-whatsapp"> whatsapp</i></a>
+                        <a href="#" class="e-mail"><i class="fas fa-envelope"> email</i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"> facebook</i></a>
+                      </div>
+                  </div>
+              </div>
+          </div> <!-- end front panel -->
+          <div class="front">
+              <div class="cover">
+                  <%= image_tag ('mergulho_banner_xdivers.jpg') %>
+              </div>
+              <div class="header">
+                  <h4 class="text-center">Four dives in Angra dos Reis!</h4>
+                  <p class="motto">"December has arrived! Come and dive with us. Let's get the chat and skills up to date. We will be staying at Recanto do Bem-te-vi, and going out with the best scuba operator of Costa Verde, Sotto Mare - Diving Center. We still have some vacancies, who is in"</p>
+              </div>
+              <div class="content">
+                  <div class="main">
+                      <h4 class="text-center heads-up">Heads Up!</h4>
+                      <p class="heads-up-description">Limited vacancies. Cost for two dives per day. Experience for all levels of certification.</p>
+
+                      <div class="stats-container">
+                          <div class="stats">
+                              <h4>R$350</h4>
+                              <p>
+                                  value
+                              </p>
+                          </div>
+                          <div class="stats">
+                              <h4>33</h4>
+                              <p>
+                                  vacancy
+                              </p>
+                          </div>
+                          <div class="stats">
+                              <h4>15dez</h4>
+                              <p>
+                                  from
+                              </p>
+                          </div>
+                          <div class="stats">
+                              <h4>16dez</h4>
+                              <p>
+                                  util
+                              </p>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="footer-card">
+                 Book <i class="fas fa-share"></i>
+              </div>
+          </div> <!-- end back panel -->
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+  </div>  <!-- end col sm 3 -->
+<!-- </div> -->
+
+
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+
+    });
+
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+</script>
 
