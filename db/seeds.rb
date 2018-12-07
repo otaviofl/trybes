@@ -49,12 +49,12 @@ yoga_supplier = Supplier.first
 yoga_category = Category.first
 
 experiences = {
-  yoga_class: {supplier: yoga_supplier, category: yoga_category, description: "Yoga Class", start: "12/12/2018", end: "14/12/2018", address: "ladeira da gloria, 26, rio de janeiro" },
+  yoga_class: {supplier: yoga_supplier, category: yoga_category, description: "Yoga Class", start: "12/12/2018", finish: "14/12/2018", address: "ladeira da gloria, 26, rio de janeiro" },
 }
 
 experiences.each do |experience, value|
      Experience.create!(description: value[:description], address: value[:address], start: value[:start],
-      end: value[:end], supplier: value[:supplier], category: value[:category])
+      finish: value[:finish], supplier: value[:supplier], category: value[:category])
   end
 
     # t.bigint "category_id"
