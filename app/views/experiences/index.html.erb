@@ -1,50 +1,40 @@
 <% content_for(:navbar_class, "navbar-transparent") %>
 
-<div class="experiences-page">
+<div class="filter-experiences">
   <br>
   <br>
   <br>
-  <div class="banner-form">
+  <div class="banner-form input-xs ">
     <%= render 'shared/search' %>
   </div>
 
-  <div class="container-experiences">
-
+  <div class="flex-index">
     <div class='cards-container'>
       <div class="row">
         <% @experiences.each do |experience| %>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-
+          <div class="col-xs-12 col-sm-6 col-md-4">
+           <!--  <div style="height: 600px, width: 400px"></div> -->
+            <%= render "/shared/card" %>
           </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+           <!--  <div style="height: 600px, width: 400px"></div> -->
+            <%= render "/shared/card" %>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+           <!--  <div style="height: 600px, width: 400px"></div> -->
+            <%= render "/shared/card" %>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+           <!--  <div style="height: 600px, width: 400px"></div> -->
+            <%= render "/shared/card" %>
+          </div>
+
         <% end %>
       </div>
     </div>
     <div id="map"></div>
-
-    <!-- Gmaps js: building a map -->
-    <script>
-      function iniMap() {
-        // create a map object and specify the DOm element for display
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 52.5206, lng: 13.4098},
-          scrollwheel: false,
-          zoom: 8
-        });
-      }
-    </script>
   </div>
-</div>
+ </div>
 
-<tbody>
-  <% @experiences.each do |experience| %>
-    <tr>
-      <td><%= experience.description %></td>
-      <td><%= experience.address %></td>
-      <td><%= link_to 'Show', experience %></td>
-      <td><%= link_to 'Edit', edit_experience_path(experience) %></td>
-      <td><%= link_to 'Destroy', experience, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-</tbody>
-<br>
-<%= link_to 'New Experience', new_experience_path %>
+
+
