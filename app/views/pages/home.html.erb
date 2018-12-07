@@ -4,7 +4,7 @@
 <div class="banner-home">
   <div class="video-container hidden-xs">
     <div class="overlay"></div>
-    <%= video_tag("trybes_movie.webm", class:"filtered", width: '100%', autoplay: true, loop: true, poster: asset_url('home_banner.jpg'), preload: :auto, muted: :muted) %>
+    <%= cl_video_tag("trybes_movie", class:"filtered", width: '100%', autoplay: true, loop: true, poster: asset_url('home_banner.jpg'), preload: :auto, muted: :muted) %>
   </div>
   <div class="banner-content text-center">
     <h1>When was the last time you did something for the first time?</h1>
