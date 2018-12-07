@@ -12,7 +12,10 @@
                       <h3 class="name">Xdivers Scuba School </h3>
                       <p class="profession">Scuba Diving Center in Rio de Janeiro</p>
                       <p class="text-center">"Courses, trips and equipment sales. Everything for those who are passionate about the sea!"</p>
-                      <a class="btn" id="btn-experience" href="#">I want this experience!</a>
+                      <!-- <a  href="#">I want this experience!</a> -->
+
+                       <%= link_to "I want this experience!", experience_path(1), class: 'btn', id: 'btn-experience' %>
+
                   </div>
                   <div class="footer-card-line">
                       <i class="fa fa-mail-forward"></i> Contacts
