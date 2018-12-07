@@ -1,6 +1,30 @@
-<p id="notice"><%= notice %></p>
+<% content_for(:navbar_class, "navbar-transparent") %>
 
-<%= @experience.address %>
-<%= link_to 'Edit', edit_experience_path(@experience) %> |
-<%= link_to 'Back', experiences_path %>
+
+<div class="background-match">
+  <div class="row box-shadow">
+      <div class="match-container">
+        <h2 class="match-title">It's a Match!</h2>
+        <div class="main-match-container">
+            <h3 class="heading">You are not alone in this experience!</h3>
+            <p class="tribe">These are your Trybe members so far:</p>
+            <div class="user">
+                <%= image_tag ('renato_avatar.jpeg'), class: "img-circle"%>
+                <%= image_tag ('rotating_card_profile3.jpg'), class: "img-circle"%>
+                <%= image_tag ('rotating_card_profile2.jpg'), class: "img-circle"%>
+
+            </div>
+            <p class="text-center">"We are connecting you with the experience supplier. Stay tuned for more details about the experience."</p>
+            <a  class="btn btn-primary btn-sm" href="#">Confirm Experience!</a>
+            <br>
+            <br>
+            <div class="footer-line">
+              <i class="fa fa-mail-forward"></i> Leave this Trybe:
+              <a  href="#">Keep Searching!</a>
+            </div>
+        </div>
+      </div>
+
+  </div>
+</div>
 
