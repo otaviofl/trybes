@@ -1,0 +1,186 @@
+// .card-page {
+//   // font-size: 25px;
+//   // color: white;
+//   // font-weight: bolder;
+//   // text-align: center;
+//   // text-shadow: 0 0 10px rgba(0,0,0,0.7);
+//   // background-size: cover;
+//   // background-position: center;
+//   // padding: 50px 0px;
+//   // box-shadow: 0 0 10px rgba(0,0,0,0.2);
+//   // margin: 10px 0px;
+//   // flex: 0 0 30%;
+// }
+
+.card-group {
+  .card {
+    background-color: white;
+    opacity: 0.3px;
+    // height: 420px;
+    // width: 300px;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 1px #262626;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    // text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    // background-size: cover !important;
+    // background-position: center;
+    // color: white;
+    position:relative;
+
+    h2 {
+    color:#404040;
+    text-align: center;
+    position: relative;
+    top:35px;
+    font-size: 30px;
+    }
+
+    h3 {
+      text-align: center;
+      position: relative;
+      top:10px;
+      color: gray;
+      font-size: 15px;
+      font-family: lato;
+    }
+
+  }
+
+  .upper {
+    height: 180px;
+    // width:300px;
+    background-color: #4158d0;
+    background-image: url('megulho.jpg');
+    background-size: cover !important;
+    border-radius: 4px 4px 0px 0px;
+    text-align: center;
+  }
+
+  img.avatar-card {
+    border-radius: 50%;
+    position: relative;
+    top:150px;
+    border: 7px solid white;
+    outline:none;
+    height: 100px;
+    width: 100px;
+    }
+
+  .details {
+    position: relative;
+    top:8px;
+    font-size:14px;
+    color:gray;
+    max-width: 250px;
+    padding: 0 16px;
+    margin: 0 auto;
+
+    i {
+      color:#404040;
+      margin-right: 15px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .price {
+    position: relative;
+    top: -175px;
+    font-size: 26px;
+    color: gray;
+    max-width: 235px;
+    padding: 0px 16px;
+    margin: 0 auto;
+
+    i {
+      color: black;
+      margin-right: 15px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .btn-book {
+    font-size: 25px;
+    position:relative;
+    top: 30px;
+    left:65px;
+
+    i {
+      margin-left: 22px;
+      color: #af51c3;
+    }
+  }
+
+  .card-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  .card-description h2 {
+    font-size: 24px;
+  }
+  .card-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    background: black;
+    opacity: 0;
+  }
+  .card-link:hover {
+    opacity: 0.1;
+  }
+}
+
+// CSS Flip 3D Animation For Boxes and Cards HTML5
+// o - opera browser, ms - Microsoft, Webkit - Chrome
+// .flip3D { width:240px; height:200px; margin:10px; float:left; }
+
+// .flip3D > .front{
+//   position: absolute;
+//   -webkit-transform: perspective( 600px ) rotateY( 0deg );
+//   -o-transform: perspective( 600px ) rotateY( 0deg );
+//   -ms-transform: perspective( 600px ) rotateY( 0deg );
+//   transform: perspective( 600px ) rotateY( 0deg );
+//   // background:#FC0; width:240px; height:200px; border-radius: 7px;
+//   -webkit-backface-visibility: hidden;
+//   -o-backface-visibility: hidden;
+//   -ms-backface-visibility: hidden;
+//   backface-visibility: hidden;
+//   transition: -webkit-transform .5s linear 0s;
+//   transition: -o-transform .5s linear 0s;
+//   transition: -ms-transform .5s linear 0s;
+//   transition: transform .5s linear 0s;
+// }
+// .flip3D > .back{
+//   position:relative;
+//   -webkit-transform: perspective( 600px ) rotateY( 180deg );
+//   -o-transform: perspective( 600px ) rotateY( 180deg );
+//   -ms-transform: perspective( 600px ) rotateY( 180deg );
+//   transform: perspective( 600px ) rotateY( 180deg );
+//   background: #80BFFF;
+//   -webkit-backface-visibility: hidden;
+//   -o-backface-visibility: hidden;
+//   -ms-backface-visibility: hidden;
+//   backface-visibility: hidden;
+//   transition: -webkit-transform .5s linear 0s;
+//   transition: -o-transform .5s linear 0s;
+//   transition: -ms-transform .5s linear 0s;
+//   transition: transform .5s linear 0s;
+// }
+// .flip3D:hover > .front{
+//   -webkit-transform: perspective( 600px ) rotateY( -180deg );
+//   -o-transform: perspective( 600px ) rotateY( -180deg );
+//   -ms-transform: perspective( 600px ) rotateY( -180deg );
+//   transform: perspective( 600px ) rotateY( -180deg );
+// }
+// .flip3D:hover > .back{
+//   -webkit-transform: perspective( 600px ) rotateY( 0deg );
+//   -o-transform: perspective( 600px ) rotateY( 0deg );
+//   -ms-transform: perspective( 600px ) rotateY( 0deg );
+//   transform: perspective( 600px ) rotateY( 0deg );
+// }
+
