@@ -1,12 +1,12 @@
 <!-- <form action="#" class="form-inline">
   <select name="" id="" class="form-control input-lg">
-    <option value="0">Experiences...</option>
-    <option value="1">Cooking</option>
-    <option value="2">Motorcycling</option>
-    <option value="3">Parachuting</option>
-    <option value="4">Pilates</option>
-    <option value="5">SCUBA Diving</option>
-    <option value="6">Skate</option>
+    <option value="0">Experiences...</option>c
+    <option value="1">Cooking</option>c
+    <option value="2">Motorcycling</option>c
+    <option value="3">Parachuting</option>c
+    <option value="4">Pilates</option>c
+    <option value="5">SCUBA Diving</option>c
+    <option value="6">Skate</option>cc
     <option value="7">Hiking</option>
     <option value="8">Yoga</option>
   </select>
@@ -16,4 +16,13 @@
   <input type="submit" class="btn btn-primary btn-lg" value="Search">
  </form> -->
 
+<%= simple_form_for :experience, url: experiences_path, method: 'get', html: { class: 'form-inline' } do |f| %>
+  <%= f.input :category, class:"form-control input-lg", collection: [ "Experiences...", "Skydiving", "Motorcycling", "Cooking", "Scuba Diving", "Skate", "Pilates", "Yoga", "Hiking"], prompt: "Category?", selected: params.dig(:experience, :category), label: false  %>
+  <%= f.input :address, class:"form-control input-lg", label:false, collection: [ "RJ", "SP", "MG"], prompt: "Location?", selected: params.dig(:experience, :address) %>
+  <%=  f.input :start, as: :date, html5: true, class:"form-control input-lg", label: false, input_html: { value: params.dig(:experience, :start) } %>
+  <%=  f.input :finish, as: :date, html5: true, class:"form-control input-lg", label: false, input_html: { value: params.dig(:experience, :finish) } %>
+
+  <%#= f.submit :submit, class:"btn btn-primary btn-lg", value: "Search" %>
+  <%= link_to "Search", experiences_path, class:"btn btn-primary btn-lg" %>
+<% end %>
 
