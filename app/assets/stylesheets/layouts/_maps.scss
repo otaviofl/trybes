@@ -1,0 +1,10 @@
+#map {
+  height: 100vh;
+  flex: 0 0 350px;
+  position: sticky !important;
+    // important to override Gmaps inline css
+  top: 0 !important;
+  background-size: cover !important;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), image-url("mapa.png");
+  border-radius: 4px 4px 0px 0px;
+}
