@@ -145,20 +145,25 @@
     height: auto;
   }
 
-  // .flex {
-  //   height:100%;
-  //   display:flex;
-  //   .image-intro {
-  //     flex: 1 0;
-  //     background-size: cover;
-  //     background-position: right;
-  //   }
+  .image-display {
+    z-index:1;
+  }
+  .video-display {
+    display: none;
+    z-index:0;
 
-  //   .text-center {
-  //     flex: 1 0;
-  //     padding: 2rem;
-  //   }
-  // }
+  }
+
+  p {
+      font-size: 20px;
+      opacity: 0.7;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      margin-right: 20px;
+      margin-left: 20px;
+
+      text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .why {
@@ -284,7 +289,9 @@
 
 
 #fixed-transition-top {
-  background: url('transition_start_1280.jpg') no-repeat center center fixed;
+  background: no-repeat center center;
+  // background-image: cloudinary-url('ballet_home_1280.jpg');
+  background-attachment: fixed;
   display: flex;
   height: 60%;
   position: relative;
@@ -293,7 +300,9 @@
 }
 
 #fixed-transition-middle {
-  background: url('transition_mid_1280.jpg') no-repeat center center fixed;
+  background: no-repeat center center;
+  // background: url('transition_mid_1280.jpg');
+  background-attachment: fixed;
   display: flex;
   height: 60%;
   position: relative;
@@ -302,7 +311,9 @@
 }
 
 #fixed-transition-end {
-  background: url('transition_end_1280.jpg') no-repeat center center fixed;
+  background: no-repeat center center;
+  // background: url('transition_end_1280.jpg');
+  background-attachment: fixed;
   display: flex;
   height: 70%;
   position: relative;
@@ -345,6 +356,7 @@
   .banner-home {
     background-image: linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%), image-url('home_banner_1920.jpg');
     background-size: cover;
+    background-attachment: scroll;
     background-position: center;
 
     .banner-content {
@@ -356,6 +368,18 @@
       display: none;
     }
 
+  }
+
+  .intro-home {
+    .image-display {
+      z-index:1;
+      display: none;
+    }
+
+    .video-display {
+      display: inline;
+      z-index:0;
+    }
   }
 }
 
@@ -369,6 +393,7 @@
   .banner-home {
     background-image: linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%), image-url('home_banner_1920.jpg');
     background-size: cover;
+    background-attachment: scroll;
     background-position: center;
 
     .banner-content {
@@ -384,6 +409,26 @@
       font-size: 18px;
     }
 
+  }
+
+  .intro-home {
+    .image-display {
+      z-index:1;
+      display: none;
+    }
+
+    .video-display {
+      display: inline;
+      z-index:0;
+
+    }
+  }
+
+  #fixed-transition-top, #fixed-transition-middle, #fixed-transition-end {
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;background-size: cover;
+    background-attachment: scroll;
   }
 
   .banner-supplier:hover .banner-content .box-content{
@@ -402,6 +447,7 @@
   .banner-home {
     background-image: linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%), image-url('home_banner_1920.jpg');
     background-size: cover;
+    background-attachment: scroll;
     background-position: center;
 
     .banner-content {
@@ -417,8 +463,27 @@
       }
     }
 
+    #fixed-transition-top, #fixed-transition-middle, #fixed-transition-end {
+      background-size: cover;
+      background-attachment: scroll;
+      background-position: center;background-size: cover;
+      background-attachment: scroll;
+    }
+
   }
 
+  .intro-home {
+    .image-display {
+      z-index:1;
+      display: none;
+    }
+
+    .video-display {
+      display: inline;
+      z-index:0;
+
+    }
+  }
 
   .supplier-wrapper .banner-supplier .banner-content {
     h1 {
@@ -435,6 +500,13 @@
 
   .banner-supplier:hover .banner-content .box-content{
     padding: 30px;
+  }
+
+  #fixed-transition-top, #fixed-transition-middle, #fixed-transition-end {
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;background-size: cover;
+    background-attachment: scroll;
   }
 }
 

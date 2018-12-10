@@ -25,9 +25,12 @@
         <p class="lead">We know how our daily routines can impact our life. However this shouldn't be a blocker for us to live amazing experiences. We need to tap into the child that still resides in all of us. Always testing limits. Always discovering new experiences on our path. Always rediscovering oneself. Living and feeling life on the fullest.</p>
       </div>
        <div class="col-sm-6 text-center">
-        <a href="/" style="background-image: asset-url()" >
+        <a class="image-display" href="/" style="background-image: asset-url()" >
           <%= cl_image_tag ("cavalgada_1280") %>
         </a>
+        <div class="video-display">
+          <%= cl_video_tag("trybes_movie", class:"filtered", width: '100%', autoplay: true, loop: true, preload: :auto, muted: :muted) %>
+        </div>
         <h2>how to take the first step?</h2>
         <p class="lead">At Trybes you can find amazing new experiences close to you and inline with your personal interests. With Trybes you can easliy find a way out of your routine. You can find yourself in a new group and bond with people linked by the same desires. We can only show you the door. You are the one that has to walk through it.</p>
       </div>
@@ -35,7 +38,7 @@
   </div>
 </div>
 
-<div class="container text-center padded" id="fixed-transition-top">
+<div class="container text-center padded" id="fixed-transition-top", style="background-image: url(<%= cl_image_path('transition_start_1280.jpg') %>)">
 
 </div>
 
@@ -65,7 +68,7 @@
   </div>
 </div>
 
-<div class="container text-center padded" id="fixed-transition-middle">
+<div class="container text-center padded" id="fixed-transition-middle", style="background-image: url(<%= cl_image_path('transition_mid_1280.jpg') %>)">
 
 </div>
 
@@ -82,7 +85,7 @@
   </div>
 </div>
 
-<div id="fixed-transition-end">
+<div id="fixed-transition-end", style="background-image: url(<%= cl_image_path('transition_end_1280.jpg') %>)">
   <div class="container text-center padded">
     <h1></h1>
     <br>
