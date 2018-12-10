@@ -6,7 +6,7 @@ class CreateExperiences < ActiveRecord::Migration[5.2]
       t.integer :status
       t.string :description
       t.datetime :start
-      t.datetime :end
+      t.datetime :finish
 
       t.timestamps
     end
