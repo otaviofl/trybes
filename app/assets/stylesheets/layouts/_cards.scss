@@ -159,7 +159,7 @@ body {
     font-weight: 400;
     line-height: 20px;
 }
-.card .profession{
+.card .short-title{
     color: #999999;
     text-align: center;
     margin-bottom: 20px;
@@ -200,7 +200,7 @@ body {
     }
 }
 
-// $max-height - max-height property value. required
+// $font-size - max-height property value. required
 // parameter to limit text in non-webkit browser.
 // Be careful with overriding properties.
 // Strongly recommended to include this mixin after all properties
@@ -213,11 +213,13 @@ body {
 // Example of usage:
 // @include ellipsis(2em, 2);
 
-@mixin ellipsis ($max-height, $lines) {
+@mixin ellipsis ($font-size, $line-count) {
+  $line-height: 1.3;
   overflow: hidden;
-  max-height: $max-height * 1.4 * 1.3;
+  line-height: $line-height;
+  max-height: $font-size * $line-count * $line-height;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: $line-count;
   text-overflow: -o-ellipsis-lastline;
 }
 
@@ -229,10 +231,26 @@ body {
     font-weight: 300;
   }
 
-  .multiline-ellipses {
-    box-orient: vertical;
-    @include ellipsis(4rem, 4);
+  .experience-paragraph-ellipsis {
+    @include ellipsis(14px, 4);
   }
+
+  .title-ellipsis {
+    @include ellipsis(22px, 1);
+  }
+
+  .short-title-ellipsis {
+    @include ellipsis(14px, 1);
+  }
+
+  .short-description-ellipsis {
+     @include ellipsis(14px, 3);
+  }
+
+  .heads-up-ellipsis {
+    @include ellipsis(14px, 2);
+  }
+
 }
 
 
