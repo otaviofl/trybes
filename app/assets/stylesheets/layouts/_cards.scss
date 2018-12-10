@@ -212,40 +212,29 @@ body {
 // }
 // Example of usage:
 // @include ellipsis(2em, 2);
-// @mixin ellipsis ($max-height, $lines: 4) {
-//   // Fallback for non-webkit browsers.
-//   // Fallback does not render ellipsis.
-//   overflow: hidden;
-//   max-height: $max-height;
 
-//   // Webkit solution for multiline ellipsis
-//   display: -webkit-box;
-//   -webkit-box-orient: vertical;
-//   -webkit-line-clamp: $lines;
+@mixin ellipsis ($max-height, $lines) {
+  overflow: hidden;
+  max-height: $max-height * 1.4 * 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  text-overflow: -o-ellipsis-lastline;
+}
 
-//   // Solution for Opera
-//   text-overflow: -o-ellipsis-lastline;
-// }
-// .multiline-ellipses {
-//       // width: 30%;
-//       @include ellipsis(9rem, 9);
-//     }
-
-.card .short-description{
+.card {
+  .short-description{
     border-bottom: 1px solid #EEEEEE;
     color: #999999;
     font-size: 14px;
     font-weight: 300;
-    padding-bottom: 10px;
-    text-align: left;
-    font-weight: lighter;
-    // width: 100%;
-    // white-space: nowrap;
-    // overflow: hidden;
-    // display: inline-block;
-    // text-overflow: ellipsis;
+  }
 
+  .multiline-ellipses {
+    box-orient: vertical;
+    @include ellipsis(4rem, 4);
+  }
 }
+
 
 
 .card .stats-container{
