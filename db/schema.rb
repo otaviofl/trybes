@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2018_12_11_155843) do
     t.integer "status"
     t.string "description"
     t.datetime "start"
-    t.datetime "end"
+    t.datetime "finish"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "price_cents", default: 0, null: false

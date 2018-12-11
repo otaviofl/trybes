@@ -1,5 +1,77 @@
 <% content_for(:navbar_class, "navbar-transparent") %>
 
+<div class="match-page">
+
+  <div class="banner-match", style="background-image: url(<%= cl_image_path('Match_banner.jpg') %>)">
+    <<!-- div class="image-background">
+      <a href="/" style="background-image: asset-url()" >
+        <%= cl_image_tag ("Match_banner") %>
+      </a>
+    </div> -->
+    <div class="banner-content text-center">
+      <h2 class="match-title">This is your trybe!</h2>
+      <h3 class="heading">You are not alone in this experience!</h3>
+    </div>
+    <div class="user">
+      <p class="tribe">Your experience choice matches with others choice. Here are your trybe members:</p>
+      <div class="row">
+        <div class="row__inner">
+
+          <div class="tile">
+            <div class="tile__media">
+              <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
+            </div>
+          </div>
+
+          <div class="tile">
+            <div class="tile__media">
+              <%= image_tag ('rotating_card_profile3.jpg'), class: "tile__img img-circle"%>
+            </div>
+          </div>
+
+          <div class="tile">
+            <div class="tile__media">
+              <%= image_tag ('rotating_card_profile2.jpg'), class: "tile__img img-circle"%>
+            </div>
+          </div>
+
+          <div class="tile">
+            <div class="tile__media">
+              <%= image_tag ('avatargirl.png'), class: "tile__img img-circle"%>
+            </div>
+          </div>
+
+          <div class="tile">
+            <div class="tile__media">
+              <%= image_tag ('avataroldman.png'), class: "tile__img img-circle"%>
+            </div>
+          </div>
+
+          <div class="tile">
+            <div class="tile__media">
+              <%= image_tag ('avatarwoman.png'), class: "tile__img img-circle"%>
+            </div>
+          </div>
+
+          <div class="tile">
+            <div class="tile__media">
+              <%= image_tag ('avatarboy.png'), class: "tile__img img-circle"%>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container text-center padded" id="fixed-transition-top", style="background-image: url(<%= cl_image_path('mergulho_banner_xdivers.jpg') %>)">
+
+  </div>
+
+</div>
+
+
 
 <div class="background-match">
   <div class="row box-shadow">
