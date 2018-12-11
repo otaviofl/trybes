@@ -12,14 +12,14 @@
                   <h4 class="text-center title-ellipsis" style="-webkit-box-orient: vertical;"><%= experience.title %></h4>
                   <%# TODO: User different ellipsis method. Not a good implementation for ellipsts %>
                   <p class="short-description experience-paragraph-ellipsis" style="-webkit-box-orient: vertical;<%= experience.description %></p>
-                 <!--  <p class="short-description multiline-ellipses"><%= experience.description.truncate(220) %></p> -->
+                      <p class="short-description multiline-ellipses"><%= experience.description.truncate(220) %></p>
                  <div class="line-header"></div>
               </div>
               <div class="content">
                   <div class="main">
                       <div class="stats-container">
                           <div class="stats">
-                              <h4><%= experience.price %></h4>
+                              <h4>R$ <%= experience.price.to_i %></h4>
                               <p>
                                   value
                               </p>
@@ -31,13 +31,13 @@
                               </p>
                           </div>
                           <div class="stats">
-                              <h4><%= experience.start %></h4>
+                              <h4><%= experience.start.strftime("%m-%d") %></h4>
                               <p>
                                   from
                               </p>
                           </div>
                           <div class="stats">
-                              <h4><%= experience.finish %></h4>
+                              <h4><%= experience.finish.strftime("%m-%d") %></h4>
                               <p>
                                   util
                               </p>
@@ -71,10 +71,10 @@
                   <div class="footer-card-line">
                       <i class="fa fa-mail-forward"></i> Contacts
                       <div class="social-links text-center">
-                        <a href="#" class="phone"><i class="fas fa-phone"> <%= experience.supplier.phone %></i></a>
-                        <a href="#" class="e-mail"><i class="fas fa-envelope"> <%= experience.supplier.email %></i></a>
-                        <a href="#" class="facebook"><i class="fab fa-facebook-f"> <%= experience.supplier.facebook %></i></a>
-                        <a href="#" class="website"><i class="fas fa-globe"> <%= experience.supplier.web_address %></i></a>
+                        <a href="tel:<%= experience.supplier.phone %>" class="phone"><i class="fas fa-phone"></i></a>
+                        <a href="mail_to:<%= experience.supplier.email %>" class="e-mail"><i class="fas fa-envelope"> </i></a>
+                        <a href="<%= experience.supplier.facebook %>" class="facebook"><i class="fab fa-facebook-f"> </i></a>
+                        <a href="<%= experience.supplier.web_address %>" class="website"><i class="fas fa-globe"> </i></a>
                       </div>
                       <!-- <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
                           <i class="fa fa-reply"></i> Back
