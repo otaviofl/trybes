@@ -9,10 +9,11 @@ class ExperiencesController < ApplicationController
   # end
 
   def index
-    if experience_params[:category].present? || experience_params[:location].present?
-      # category = Category.where("name = ?", experience_params[:category]).first
-      # @experiences = Experience.where("category = ? AND location = ? AND start = ? AND finish = ?", experience_params[:category], experience_params[:location], experience_params[:start], experience_params[:finish])
-      @experiences = Experience.all
+
+    if experience_params[:category].present? || experience_params[:address].present?
+      category = Category.where("name = ?", experience_params[:category]).first
+      location = experience_params[:address]
+      @experiences = Experience.where("category_id = ? AND location = ?", category.id, location)
     else
       @experiences = Experience.all
     end
@@ -79,7 +80,9 @@ class ExperiencesController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
+
     def experience_params
-      params.fetch(:experience, {})
+      params.require(:experience).permit(:category, :address, :start, :finish)
     end
+
 end
