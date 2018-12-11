@@ -4,7 +4,7 @@
 <div class="banner-home">
   <div class="video-container hidden-xs">
     <div class="overlay"></div>
-    <%= cl_video_tag("trybes_movie", class:"filtered", width: '100%', autoplay: true, loop: true, poster: asset_url('home_banner.jpg'), preload: :auto, muted: :muted) %>
+    <%= cl_video_tag("trybes_movie", class:"filtered", width: '100%', autoplay: true, loop: true, poster: asset_url('home_banner_1920.jpg'), preload: :auto, muted: :muted) %>
   </div>
   <div class="banner-content text-center">
     <h1>When was the last time you did something for the first time?</h1>
@@ -17,22 +17,28 @@
 <div class="intro-home">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-        <a href="/" style="background-image: asset-url()" >
-          <%= cl_image_tag ("ballet_home") %>
-        </a>
-      </div>
       <div class="col-sm-6 text-center">
+        <a href="/" style="background-image: asset-url()" >
+          <%= cl_image_tag ("ballet_home_1280") %>
+        </a>
         <h2>What do you need to try something new?</h2>
         <p class="lead">We know how our daily routines can impact our life. However this shouldn't be a blocker for us to live amazing experiences. We need to tap into the child that still resides in all of us. Always testing limits. Always discovering new experiences on our path. Always rediscovering oneself. Living and feeling life on the fullest.</p>
-
-        <p>At Trybes you can find amazing new experiences close to you and inline with your personal interests. With Trybes you can easliy find a way out of your routine. You can find yourself in a new group and bond with people linked by the same desires. We can only show you the door. You are the one that has to walk through it.</p>
+      </div>
+       <div class="col-sm-6 text-center">
+        <a class="image-display" href="/" style="background-image: asset-url()" >
+          <%= cl_image_tag ("cavalgada_1280") %>
+        </a>
+        <div class="video-display">
+          <%= cl_video_tag("trybes_movie", class:"filtered", width: '100%', autoplay: true, loop: true, preload: :auto, muted: :muted) %>
+        </div>
+        <h2>how to take the first step?</h2>
+        <p class="lead">At Trybes you can find amazing new experiences close to you and inline with your personal interests. With Trybes you can easliy find a way out of your routine. You can find yourself in a new group and bond with people linked by the same desires. We can only show you the door. You are the one that has to walk through it.</p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container text-center padded" id="fixed-transition-top">
+<div class="container text-center padded" id="fixed-transition-top", style="background-image: url(<%= cl_image_path('transition_start_1280.jpg') %>)">
 
 </div>
 
@@ -41,28 +47,28 @@
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h2>An answer.</h2>
-        <p>People can not find in one single place, full-pack experiences related to their social groups. </p>
+        <p>With Trybes people can now find in one single place, full-pack experiences related to their social groups. </p>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <a href="/" class="image-responsive">
-          <%= cl_image_tag ("chez_why") %>
+          <%= cl_image_tag ("chez_why_1280") %>
         </a>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h2>A connection.</h2>
-        <p>Niche businesses struggle to get to the customers looking for new experiences.   </p>
+        <p>With Trybes niche businesses will quickly get to the customers looking for new experiences.   </p>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
        <!--  <img src="image/doghouse.png" class="image-responsive"> -->
         <a href="/" class="image-responsive">
-          <%= cl_image_tag ("skate_why") %>
+          <%= cl_image_tag ("skate_why_1280") %>
         </a>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container text-center padded" id="fixed-transition-middle">
+<div class="container text-center padded" id="fixed-transition-middle", style="background-image: url(<%= cl_image_path('transition_mid_1280.jpg') %>)">
 
 </div>
 
@@ -79,7 +85,7 @@
   </div>
 </div>
 
-<div id="fixed-transition-end">
+<div id="fixed-transition-end", style="background-image: url(<%= cl_image_path('transition_end_1280.jpg') %>)">
   <div class="container text-center padded">
     <h1></h1>
     <br>

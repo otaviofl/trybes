@@ -89,11 +89,11 @@ body {
 }
 .card-container, .front, .back {
   width: 100%;
-  height: 420px;
+  height: 440px;
   border-radius: 4px;
 }
 .card .cover{
-    height: 120px;
+    // height: 120px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
 }
@@ -144,7 +144,7 @@ body {
     }
 }
 .card .back .content .main {
-    height: 200px;
+    height: 250px;
 
 }
 .card .name {
@@ -159,7 +159,7 @@ body {
     font-weight: 400;
     line-height: 20px;
 }
-.card .profession{
+.card .short-title{
     color: #999999;
     text-align: center;
     margin-bottom: 20px;
@@ -170,7 +170,7 @@ body {
     padding: 10px 0 0;
     text-align: center;
 }
-.card .footer-card {
+.card .footer-card-line {
     color: #999999;
     margin: 0px 0 0;
     padding: 10px 0 0;
@@ -179,13 +179,15 @@ body {
      border-top: 1px solid #EEEEEE;
     }
 }
-.card .footer-card .social-links{
+.card .footer-card-line .social-links{
     font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-.card .footer-card .social-links a{
-    margin: 0 14px;
+.card .footer-card-line .social-links a{
+    margin: 0 3px;
 }
-.card .footer-card .btn-simple{
+.card .footer-card-line .btn-simple{
     margin-top: -6px;
 }
 .card .header {
@@ -197,15 +199,61 @@ body {
       font-size: 22px;
     }
 }
-.card .motto{
+
+// $font-size - max-height property value. required
+// parameter to limit text in non-webkit browser.
+// Be careful with overriding properties.
+// Strongly recommended to include this mixin after all properties
+// to prevent overriding of display property:
+// .my block {
+//   display: block;
+//   ...
+//   @include ellipsis(2em, 2);
+// }
+// Example of usage:
+// @include ellipsis(2em, 2);
+
+@mixin ellipsis ($font-size, $line-count) {
+  $line-height: 1.3;
+  overflow: hidden;
+  line-height: $line-height;
+  max-height: $font-size * $line-count * $line-height;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-count;
+  text-overflow: -o-ellipsis-lastline;
+}
+
+.card {
+  .short-description{
     border-bottom: 1px solid #EEEEEE;
     color: #999999;
     font-size: 14px;
     font-weight: 300;
-    padding-bottom: 10px;
-    text-align: left;
-    font-weight: lighter;
+  }
+
+  .experience-paragraph-ellipsis {
+    @include ellipsis(14px, 4);
+  }
+
+  .title-ellipsis {
+    @include ellipsis(22px, 1);
+  }
+
+  .short-title-ellipsis {
+    @include ellipsis(14px, 1);
+  }
+
+  .short-description-ellipsis {
+     @include ellipsis(14px, 3);
+  }
+
+  .heads-up-ellipsis {
+    @include ellipsis(14px, 2);
+  }
+
 }
+
+
 
 .card .stats-container{
   width: 100%;
@@ -360,22 +408,22 @@ body {
 
 /*       Fix bug for IE      */
 
-// @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-//     .front, .back{
-//         -ms-backface-visibility: visible;
-//         backface-visibility: visible;
-//     }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .front, .back{
+        -ms-backface-visibility: visible;
+        backface-visibility: visible;
+    }
 
-//     .back {
-//         visibility: hidden;
-//         -ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);
-//     }
-//     .front{
-//         z-index: 4;
-//     }
-//     .card-container:not(.manual-flip):hover .back,
-//     .card-container.manual-flip.hover .back{
-//         z-index: 5;
-//         visibility: visible;
-//     }
-// }
+    .back {
+        visibility: hidden;
+        -ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);
+    }
+    .front{
+        z-index: 4;
+    }
+    .card-container:not(.manual-flip):hover .back,
+    .card-container.manual-flip.hover .back{
+        z-index: 5;
+        visibility: visible;
+    }
+}
