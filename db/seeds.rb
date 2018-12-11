@@ -94,28 +94,21 @@ categories.each do |category, value|
 
 
 yoga_supplier1 = Supplier.first
-yoga_category = Category.first
 yoga_supplier2 = Supplier.second
-yoga_category = Category.first
 yoga_supplier3 = Supplier.third
-yoga_category = Category.first
 yoga_supplier4 = Supplier.fourth
-yoga_category = Category.first
 yoga_supplier5 = Supplier.fifth
 yoga_category = Category.first
-diving_supplier1 = Supplier.first
+
+diving_supplier1 = Supplier.find(6)
+diving_supplier2 = Supplier.find(7)
+diving_supplier3 = Supplier.find(8)
+diving_supplier4 = Supplier.find(9)
+diving_supplier5 = Supplier.find(10)
 diving_category = Category.second
-diving_supplier2 = Supplier.second
-diving_category = Category.second
-diving_supplier3 = Supplier.third
-diving_category = Category.second
-diving_supplier4 = Supplier.fourth
-diving_category = Category.second
-diving_supplier5 = Supplier.fifth
-diving_category = Category.second
-pilates_supplier1 = Supplier.first
-pilates_category = Category.third
-pilates_supplier2 = Supplier.second
+
+pilates_supplier1 = Supplier.find(11)
+pilates_supplier2 = Supplier.find(12)
 pilates_category = Category.third
 
 experiences = {
