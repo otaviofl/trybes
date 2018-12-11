@@ -54,7 +54,7 @@
           </div> <!-- end front panel -->
           <div class="back">
               <div class="user">
-                  <%= image_tag (experience.supplier.picture_avatar), class: "img-circle"%>
+                  <%= cl_image_tag (experience.supplier.picture_avatar), class: "img-circle"%>
                   <%#= image_tag experience.photo.url(:card_banner), class: "img-circle"%>
               </div>
               <div class="content">
