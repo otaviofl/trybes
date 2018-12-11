@@ -1,6 +1,6 @@
 
 <!-- <div class="col-sm-10 col-sm-offset-1"> -->
-  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tablet">
     <div class="card-container">
       <div class="card">
           <div class="front">
@@ -12,6 +12,7 @@
                   <%# TODO: User different ellipsis method. Not a good implementation for ellipsts %>
                   <p class="short-description experience-paragraph-ellipsis" style="-webkit-box-orient: vertical;"> December has arrived! Come and dive with us. Let's get the chat and skills up to date. We will be staying at Recanto do Bem-te-vi, and going out with the best scuba operator of Costa Verde, Sotto Mare - Diving Center. We still have some vacancies, who is in? December has arrived! Come and dive with us. Let's get the chat and skills up to date. We will be staying at Recanto do Bem-te-vi, and going out with the best scuba operator of Costa Verde, Sotto Mare - Diving Center. We still have some vacancies, who is in?</p>
                  <!--  <p class="short-description multiline-ellipses"><%= "December has arrived! Come and dive with us. Let's get the chat and skills up to date. We will be staying at Recanto do Bem-te-vi, and going out with the best scuba operator of Costa Verde, Sotto Mare - Diving Center. We still have some vacancies, who is in".truncate(220) %></p> -->
+                 <div class="line-header"></div>
               </div>
               <div class="content">
                   <div class="main">
@@ -44,9 +45,11 @@
 
                   </div>
               </div>
-             <!--  <div class="footer-card">
-                 more <i class="fas fa-share"></i>
-              </div> -->
+              <div class="footer-card">
+                <button class="btn btn-simple" onclick="rotateCard(this)">
+                   flip <i class="fas fa-share"></i>
+                </button>
+              </div>
           </div> <!-- end front panel -->
           <div class="back">
               <div class="user">
@@ -72,6 +75,9 @@
                         <a href="#" class="facebook"><i class="fab fa-facebook-f"> facebook</i></a>
                         <a href="#" class="website"><i class="fas fa-globe"> website</i></a>
                       </div>
+                      <!-- <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                          <i class="fa fa-reply"></i> Back
+                      </button> -->
                   </div>
               </div>
           </div> <!-- end back panel -->
@@ -89,6 +95,7 @@
 
     });
 
+
     function rotateCard(btn){
         var $card = $(btn).closest('.card-container');
         console.log($card);
@@ -97,6 +104,13 @@
         } else {
             $card.addClass('hover');
         }
+    }
+
+    if ($(window).width() <= 991.98) {
+      $('.card-container').addClass('manual-flip');
+    }
+    else {
+      $('.card-container').removeClass('manual-flip');
     }
 </script>
 
