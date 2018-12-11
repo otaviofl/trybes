@@ -384,7 +384,56 @@ $moveRight: $tileWidth * ($growFactor - 1);
 
 
 
-// Media Queries
+// >>> Responsivity to multiples devises
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1110px) and (orientation: landscape) {
+
+  #fixed-transition-top, #fixed-transition-middle, #fixed-transition-end {
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;background-size: cover;
+  }
+
+}
+
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 551px) and (max-width: 767px) {
+
+  #fixed-transition-top, #fixed-transition-middle, #fixed-transition-end {
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+  }
+
+}
+
+
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 550px) {
+
+  #fixed-transition-top, #fixed-transition-middle, #fixed-transition-end {
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+  }
+
+}
+
 
 @media (min-width: 320px) and (max-width: 745px) {
   .box-shadow {
