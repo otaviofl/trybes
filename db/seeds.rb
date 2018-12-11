@@ -92,6 +92,8 @@ categories.each do |category, value|
      Category.create!(name: value[:name])
   end
 
+vacancy = 0
+
 yoga_supplier1 = Supplier.first
 yoga_supplier2 = Supplier.second
 yoga_supplier3 = Supplier.third
