@@ -26,58 +26,58 @@ users.each do |user, value|
 
 
 suppliers = {
-  yoga1: {name:"Bikram Yoga Rio", email: "contato@bikramyogario.com", picture_avatar: "yoga_avatar_bikran", picture_banner: "yoga_banner_bikran",
+  yoga1: {name:"Bikram Yoga Rio", email: "contato@bikramyogario.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_bikran.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462599/Suppliers/Yoga/yoga_banner_bikran.jpg",
           rating: "4,9", location: "Rio", phone: "021-3186-1625", facebook: "https://www.facebook.com/BikramYogaRio/ ",
           web_address: "www.bikramyogario.com" },
 
-  yoga2: {name:"Yoga Barra da Tijuca", email: "contato@riservazen.com", picture_avatar: "yoga_avatar_yoga_barra", picture_banner: "yoga_banner_yoga_barra",
+  yoga2: {name:"Yoga Barra da Tijuca", email: "contato@riservazen.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_yoga_barra.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462601/Suppliers/Yoga/yoga_banner_yoga_barra.jpg",
           rating: "5,0", location: "Rio", phone: "021-99307-1327", facebook: "https://www.facebook.com/yogabarradatijuca/",
           web_address: "www.riservazen.com" },
 
-  yoga3: {name:"The Museum of Yoga", email: "themuseumofyoga@gmail.com", picture_avatar: "yoga_avatar_the_museum_of_yoga", picture_banner: "yoga_banner_the_museum_of_yoga",
+  yoga3: {name:"The Museum of Yoga", email: "themuseumofyoga@gmail.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_the_museum_of_yoga.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462601/Suppliers/Yoga/yoga_banner_the_museum_of_yoga.jpg",
           rating: "4,9", location: "Rio", phone: "021-98291-0211", facebook: "https://www.facebook.com/themuseumofyogaipanema/",
           web_address: "www.themuseumofyoga.com" },
 
-  yoga4: {name:"Centro Iyengar Yoga", email: "contato@centroiyengaryogario.com.br", picture_avatar: "yoga_avatar_centro_iyengar", picture_banner: "yoga_banner_centro_iyengar",
+  yoga4: {name:"Centro Iyengar Yoga", email: "contato@centroiyengaryogario.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_centro_iyengar.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462599/Suppliers/Yoga/yoga_banner_centro_iyengar.jpg",
           rating: "4", location: "Rio", phone: "021-2246-4028", facebook: "https://www.facebook.com/CIYRJ/",
           web_address: "www.centroiyengaryogario.com.br" },
 
-  yoga5: {name:"Prama", email: "luanafreitas@gmail.com", picture_avatar: "yoga_avatar_prama", picture_banner: "yoga_banner_prama",
+  yoga5: {name:"Prama", email: "luanafreitas@gmail.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_prama.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_banner_prama.jpg",
           rating: "4", location: "Rio", phone: "021-99454-8803", facebook: "https://www.facebook.com/pramariodejaneiro/",
           web_address: "" },
 
-  diving1: {name:"Coral de Fogo Diving Experience SSI", email: "contato@coraldefogo.com", picture_avatar: "mergulho_avatar_coral_de_fogo", picture_banner: "mergulho_banner_coral_de_fogo",
+  diving1: {name:"Coral de Fogo Diving Experience SSI", email: "contato@coraldefogo.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462619/Suppliers/Diving/mergulho_avatar_coral_de_fogo.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462621/Suppliers/Diving/mergulho_banner_coral_de_fogo.png",
             rating: "4,7", location: "Rio", phone: "021-3075-2549", facebook: "https://www.facebook.com/coraldefogo/",
             web_address: "www.coraldefogo.com" },
 
-  diving2: {name:"Océan Centro de Mergulho", email: "info@ocean.com.br", picture_avatar: "mergulho_avatar_ocean", picture_banner: "mergulho_banner_ocean",
+  diving2: {name:"Océan Centro de Mergulho", email: "info@ocean.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462619/Suppliers/Diving/mergulho_avatar_ocean.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462622/Suppliers/Diving/mergulho_banner_ocean.jpg",
             rating: "4,7", location: "Rio", phone: "024-3366-6419", facebook: "https://www.facebook.com/coraldefogo/",
             web_address: "www.ocean.com.br" },
 
-  diving3: {name:"Mar do Rio", email: "contato@mardorio.com.br", picture_avatar: "mergulho_avatar_mar_do_rio", picture_banner: "mergulho_banner_mar_do_rio",
+  diving3: {name:"Mar do Rio", email: "contato@mardorio.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462619/Suppliers/Diving/mergulho_avatar_mar_do_rio.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462621/Suppliers/Diving/mergulho_banner_mar_do_rio.png",
             rating: "5", location: "Rio", phone: "021-2225-7508", facebook: "https://www.facebook.com/mardoriomergulho/",
             web_address: "www.mardorio.com.br" },
 
-  diving4: {name:"Mainicke Divers", email: "escolademergulho@meinickedivers.com.br", picture_avatar: "mergulho_avatar_meinicke", picture_banner: "mergulho_banner_meinicke",
+  diving4: {name:"Mainicke Divers", email: "escolademergulho@meinickedivers.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462619/Suppliers/Diving/mergulho_avatar_meinicke.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462622/Suppliers/Diving/mergulho_banner_meinicke.png",
             rating: "4,6", location: "Rio", phone: "021-99634-8225", facebook: "https://www.facebook.com/MeinickeDiversEscoladeMergulho/",
             web_address: "www.meinickedivers.com.br" },
 
-  diving5: {name:"Acqua World - Escola e Operadora de Mergulho", email: "acquaworld@acquaworld.com.br", picture_avatar: "mergulho_avatar_acquaworld", picture_banner: "mergulho_banner_acquaworld",
+  diving5: {name:"Acqua World - Escola e Operadora de Mergulho", email: "acquaworld@acquaworld.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462618/Suppliers/Diving/mergulho_avatar_acquaworld.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462620/Suppliers/Diving/mergulho_banner_acquaworld.jpg",
             rating: "4,8", location: "Rio", phone: "022-2622-2217", facebook: "https://www.facebook.com/acquaworld.escolademergulho/",
             web_address: " www.acquaworld.com.br" },
 
-  pilates1: {name:"Pilates Place1", email: "", picture_avatar: "urla", picture_banner: "urlb",
-            rating: "3", location: "Rio", phone: "021-4466-6644", facebook: "",
+  pilates1: {name:"Pilates Place1", email: "", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_studio_mariana_lobato.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462734/Suppliers/Pilates/pilates_banner_studio_mariana_lobato.jpg",
+            rating: "3", location: "Rio", phone: "021-4466-6644", facebook: "facebook.pilates1.link",
             web_address: "www.pilates_link1.com" },
 
-  pilates2: {name:"Pilates Place2", email: "pl@pl.com", picture_avatar: "urla", picture_banner: "urlb",
+  pilates2: {name:"Pilates Place2", email: "pl@pl.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_studio_pilates_contrologia.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462734/Suppliers/Pilates/pilates_banner_studio_pilates_contrologia.jpg",
             rating: "3", location: "Rio", phone: "021-4566-6644", facebook: "facebook.pilates2.link",
             web_address: "www.pilates_link2.com" }
 }
 
 suppliers.each do |supplier, value|
-     Supplier.create!(name: value[:name], email: value[:email],  picture_avatar: value[:picture_avatar],
-                      picture_banner: value[:picture_banner], rating: value[:rating], location: value[:location],
+     Supplier.create!(name: value[:name], email: value[:email],  remote_picture_avatar_url: value[:remote_picture_avatar_url],
+                      remote_picture_banner_url: value[:remote_picture_banner_url], rating: value[:rating], location: value[:location],
                       phone: value[:phone], facebook: value[:facebook], web_address: value[:web_address])
   end
 
