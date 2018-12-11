@@ -2,12 +2,6 @@ class ExperiencesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :set_experience, only: [:show, :edit, :update, :destroy]
 
-  # GET /experiences
-  # GET /experiences.json
-  # def index
-  #   @experiences = Experience.all
-  # end
-
   def index
 
     if experience_params[:category].present? || experience_params[:address].present?
@@ -19,22 +13,16 @@ class ExperiencesController < ApplicationController
     end
   end
 
-  # GET /experiences/1
-  # GET /experiences/1.json
   def show
   end
 
-  # GET /experiences/new
   def new
     @experience = Experience.new
   end
 
-  # GET /experiences/1/edit
   def edit
   end
 
-  # POST /experiences
-  # POST /experiences.json
   def create
     @experience = Experience.new(experience_params)
 
@@ -49,8 +37,6 @@ class ExperiencesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /experiences/1
-  # PATCH/PUT /experiences/1.json
   def update
     respond_to do |format|
       if @experience.update(experience_params)
@@ -63,8 +49,6 @@ class ExperiencesController < ApplicationController
     end
   end
 
-  # DELETE /experiences/1
-  # DELETE /experiences/1.json
   def destroy
     @experience.destroy
     respond_to do |format|

@@ -1,42 +1,43 @@
 
 <!-- <div class="col-sm-10 col-sm-offset-1"> -->
+<% @experiences.each do |experience| %>
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tablet">
     <div class="card-container">
       <div class="card">
           <div class="front">
               <div class="cover">
-                  <%= image_tag ('mergulho_banner_xdivers.jpg') %>
+                  <%= cl_image_tag (experience.supplier.picture_banner) %>
               </div>
               <div class="header">
-                  <h4 class="text-center title-ellipsis" style="-webkit-box-orient: vertical;">Four dives in Andra dos Reis! ### Four dives in Andra dos Reis! ### </h4>
+                  <h4 class="text-center title-ellipsis" style="-webkit-box-orient: vertical;"><%= experience.title %></h4>
                   <%# TODO: User different ellipsis method. Not a good implementation for ellipsts %>
-                  <p class="short-description experience-paragraph-ellipsis" style="-webkit-box-orient: vertical;"> December has arrived! Come and dive with us. Let's get the chat and skills up to date. We will be staying at Recanto do Bem-te-vi, and going out with the best scuba operator of Costa Verde, Sotto Mare - Diving Center. We still have some vacancies, who is in? December has arrived! Come and dive with us. Let's get the chat and skills up to date. We will be staying at Recanto do Bem-te-vi, and going out with the best scuba operator of Costa Verde, Sotto Mare - Diving Center. We still have some vacancies, who is in?</p>
-                 <!--  <p class="short-description multiline-ellipses"><%= "December has arrived! Come and dive with us. Let's get the chat and skills up to date. We will be staying at Recanto do Bem-te-vi, and going out with the best scuba operator of Costa Verde, Sotto Mare - Diving Center. We still have some vacancies, who is in".truncate(220) %></p> -->
+                  <p class="short-description experience-paragraph-ellipsis" style="-webkit-box-orient: vertical;<%= experience.description %></p>
+                 <!--  <p class="short-description multiline-ellipses"><%= experience.description.truncate(220) %></p> -->
                  <div class="line-header"></div>
               </div>
               <div class="content">
                   <div class="main">
                       <div class="stats-container">
                           <div class="stats">
-                              <h4>R$350</h4>
+                              <h4><%= experience.price %></h4>
                               <p>
                                   value
                               </p>
                           </div>
                           <div class="stats">
-                              <h4>33</h4>
+                              <h4>7</h4>
                               <p>
                                   vacancy
                               </p>
                           </div>
                           <div class="stats">
-                              <h4>15dez</h4>
+                              <h4><%= experience.start %></h4>
                               <p>
                                   from
                               </p>
                           </div>
                           <div class="stats">
-                              <h4>16dez</h4>
+                              <h4><%= experience.finish %></h4>
                               <p>
                                   util
                               </p>
@@ -53,27 +54,27 @@
           </div> <!-- end front panel -->
           <div class="back">
               <div class="user">
-                  <%= image_tag ('mergulho_avatar_xdivers.png'), class: "img-circle"%>
+                  <%= image_tag (experience.supplier.picture_avatar), class: "img-circle"%>
                   <%#= image_tag experience.photo.url(:card_banner), class: "img-circle"%>
               </div>
               <div class="content">
                   <div class="main">
-                      <h3 class="name">Xdivers Scuba School </h3>
-                      <p class="short-title short-title-ellipsis" style="-webkit-box-orient: vertical;">Rua Visconde de Piraja, 550, sl111, Rio de Janeiro</p>
-                      <p class="text-center short-description-ellipsis" style="-webkit-box-orient: vertical;">"Courses, trips and equipment sales. Everything for those who are passionate about the sea! ### Courses, trips and equipment sales. Everything for those who are passionate about the sea! ### Courses, trips and equipment sales. Everything for those who are passionate about the sea!"</p>
+                      <h3 class="name"><%= experience.supplier.name %> </h3>
+                      <p class="short-title short-title-ellipsis" style="-webkit-box-orient: vertical;"><%= experience.address %> </p>
+                      <p class="text-center short-description-ellipsis" style="-webkit-box-orient: vertical;"><%= experience.short_description %></p>
                       <!-- <a  href="#">I want this experience!</a> -->
 
-                       <%= link_to "I want this experience!", experience_path(1), class: 'btn', id: 'btn-experience' %>
+                       <%= link_to "I want this experience!", experience_path(experience), class: 'btn', id: 'btn-experience' %>
                       <h4 class="text-center heads-up">Heads Up!</h4>
-                      <p class="heads-up-description heads-up-ellipsis" style="-webkit-box-orient: vertical;">Limited vacancies. Cost for two dives per day. Experience for all levels of certification. #### Limited vacancies. Cost for two dives per day. Experience for all levels of certification. #### Limited vacancies. Cost for two dives per day. Experience for all levels of certification.</p>
+                      <p class="heads-up-description heads-up-ellipsis" style="-webkit-box-orient: vertical;"><%= experience.short_title %></p>
                   </div>
                   <div class="footer-card-line">
                       <i class="fa fa-mail-forward"></i> Contacts
                       <div class="social-links text-center">
-                        <a href="#" class="phone"><i class="fas fa-phone"> call</i></a>
-                        <a href="#" class="e-mail"><i class="fas fa-envelope"> email</i></a>
-                        <a href="#" class="facebook"><i class="fab fa-facebook-f"> facebook</i></a>
-                        <a href="#" class="website"><i class="fas fa-globe"> website</i></a>
+                        <a href="#" class="phone"><i class="fas fa-phone"> <%= experience.supplier.phone %></i></a>
+                        <a href="#" class="e-mail"><i class="fas fa-envelope"> <%= experience.supplier.email %></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"> <%= experience.supplier.facebook %></i></a>
+                        <a href="#" class="website"><i class="fas fa-globe"> <%= experience.supplier.web_address %></i></a>
                       </div>
                       <!-- <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
                           <i class="fa fa-reply"></i> Back
@@ -85,6 +86,7 @@
     </div> <!-- end card-container -->
   </div>  <!-- end col sm 3 -->
 <!-- </div> -->
+<% end %>
 
 <script src="js/bootstrap.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
