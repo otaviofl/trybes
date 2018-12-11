@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "initializing seed"
 
-# User.destroy_all
-# Supplier.destroy_all
-# Category.destroy_all
-# Experience.destroy_all
+User.destroy_all
+Supplier.destroy_all
+Category.destroy_all
+Experience.destroy_all
 
 
 users = {
