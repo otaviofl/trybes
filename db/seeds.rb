@@ -92,8 +92,6 @@ categories.each do |category, value|
      Category.create!(name: value[:name])
   end
 
-vacancy = (5..25).to_a.sample
-
 yoga_supplier1 = Supplier.first
 yoga_supplier2 = Supplier.second
 yoga_supplier3 = Supplier.third
@@ -178,7 +176,7 @@ experiences = {
 experiences.each do |experience, value|
      Experience.create!(description: value[:description], address: value[:address], start: value[:start],
       finish: value[:finish], supplier: value[:supplier], category: value[:category], price: value[:price],
-      title: value[:title], short_title: value[:short_title], vacancy: value[:vacancy],
+      title: value[:title], short_title: value[:short_title], vacancy: (5..25).to_a.sample,
       short_description: value[:short_description], location: value[:location])
   end
 
