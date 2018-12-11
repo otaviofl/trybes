@@ -26,58 +26,58 @@ users.each do |user, value|
 
 
 suppliers = {
-  yoga1: {name:"Bikram Yoga Rio", email: "contato@bikramyogario.com", picture_avatar: "yoga_avatar_bikran", picture_banner: "yoga_banner_bikran",
+  yoga1: {name:"Bikram Yoga Rio", email: "contato@bikramyogario.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_bikran.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462599/Suppliers/Yoga/yoga_banner_bikran.jpg",
           rating: "4,9", location: "Rio", phone: "021-3186-1625", facebook: "https://www.facebook.com/BikramYogaRio/ ",
           web_address: "www.bikramyogario.com" },
 
-  yoga2: {name:"Yoga Barra da Tijuca", email: "contato@riservazen.com", picture_avatar: "yoga_avatar_yoga_barra", picture_banner: "yoga_banner_yoga_barra",
+  yoga2: {name:"Yoga Barra da Tijuca", email: "contato@riservazen.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_yoga_barra.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462601/Suppliers/Yoga/yoga_banner_yoga_barra.jpg",
           rating: "5,0", location: "Rio", phone: "021-99307-1327", facebook: "https://www.facebook.com/yogabarradatijuca/",
           web_address: "www.riservazen.com" },
 
-  yoga3: {name:"The Museum of Yoga", email: "themuseumofyoga@gmail.com", picture_avatar: "yoga_avatar_the_museum_of_yoga", picture_banner: "yoga_banner_the_museum_of_yoga",
+  yoga3: {name:"The Museum of Yoga", email: "themuseumofyoga@gmail.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_the_museum_of_yoga.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462601/Suppliers/Yoga/yoga_banner_the_museum_of_yoga.jpg",
           rating: "4,9", location: "Rio", phone: "021-98291-0211", facebook: "https://www.facebook.com/themuseumofyogaipanema/",
           web_address: "www.themuseumofyoga.com" },
 
-  yoga4: {name:"Centro Iyengar Yoga", email: "contato@centroiyengaryogario.com.br", picture_avatar: "yoga_avatar_centro_iyengar", picture_banner: "yoga_banner_centro_iyengar",
+  yoga4: {name:"Centro Iyengar Yoga", email: "contato@centroiyengaryogario.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_centro_iyengar.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462599/Suppliers/Yoga/yoga_banner_centro_iyengar.jpg",
           rating: "4", location: "Rio", phone: "021-2246-4028", facebook: "https://www.facebook.com/CIYRJ/",
           web_address: "www.centroiyengaryogario.com.br" },
 
-  yoga5: {name:"Prama", email: "luanafreitas@gmail.com", picture_avatar: "yoga_avatar_prama", picture_banner: "yoga_banner_prama",
+  yoga5: {name:"Prama", email: "luanafreitas@gmail.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_prama.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_banner_prama.jpg",
           rating: "4", location: "Rio", phone: "021-99454-8803", facebook: "https://www.facebook.com/pramariodejaneiro/",
           web_address: "" },
 
-  diving1: {name:"Coral de Fogo Diving Experience SSI", email: "contato@coraldefogo.com", picture_avatar: "mergulho_avatar_coral_de_fogo", picture_banner: "mergulho_banner_coral_de_fogo",
+  diving1: {name:"Coral de Fogo Diving Experience SSI", email: "contato@coraldefogo.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462619/Suppliers/Diving/mergulho_avatar_coral_de_fogo.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462621/Suppliers/Diving/mergulho_banner_coral_de_fogo.png",
             rating: "4,7", location: "Rio", phone: "021-3075-2549", facebook: "https://www.facebook.com/coraldefogo/",
             web_address: "www.coraldefogo.com" },
 
-  diving2: {name:"Océan Centro de Mergulho", email: "info@ocean.com.br", picture_avatar: "mergulho_avatar_ocean", picture_banner: "mergulho_banner_ocean",
+  diving2: {name:"Océan Centro de Mergulho", email: "info@ocean.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462619/Suppliers/Diving/mergulho_avatar_ocean.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462622/Suppliers/Diving/mergulho_banner_ocean.jpg",
             rating: "4,7", location: "Rio", phone: "024-3366-6419", facebook: "https://www.facebook.com/coraldefogo/",
             web_address: "www.ocean.com.br" },
 
-  diving3: {name:"Mar do Rio", email: "contato@mardorio.com.br", picture_avatar: "mergulho_avatar_mar_do_rio", picture_banner: "mergulho_banner_mar_do_rio",
+  diving3: {name:"Mar do Rio", email: "contato@mardorio.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462619/Suppliers/Diving/mergulho_avatar_mar_do_rio.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462621/Suppliers/Diving/mergulho_banner_mar_do_rio.png",
             rating: "5", location: "Rio", phone: "021-2225-7508", facebook: "https://www.facebook.com/mardoriomergulho/",
             web_address: "www.mardorio.com.br" },
 
-  diving4: {name:"Mainicke Divers", email: "escolademergulho@meinickedivers.com.br", picture_avatar: "mergulho_avatar_meinicke", picture_banner: "mergulho_banner_meinicke",
+  diving4: {name:"Mainicke Divers", email: "escolademergulho@meinickedivers.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462619/Suppliers/Diving/mergulho_avatar_meinicke.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462622/Suppliers/Diving/mergulho_banner_meinicke.png",
             rating: "4,6", location: "Rio", phone: "021-99634-8225", facebook: "https://www.facebook.com/MeinickeDiversEscoladeMergulho/",
             web_address: "www.meinickedivers.com.br" },
 
-  diving5: {name:"Acqua World - Escola e Operadora de Mergulho", email: "acquaworld@acquaworld.com.br", picture_avatar: "mergulho_avatar_acquaworld", picture_banner: "mergulho_banner_acquaworld",
+  diving5: {name:"Acqua World - Escola e Operadora de Mergulho", email: "acquaworld@acquaworld.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462618/Suppliers/Diving/mergulho_avatar_acquaworld.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462620/Suppliers/Diving/mergulho_banner_acquaworld.jpg",
             rating: "4,8", location: "Rio", phone: "022-2622-2217", facebook: "https://www.facebook.com/acquaworld.escolademergulho/",
             web_address: " www.acquaworld.com.br" },
 
-  pilates1: {name:"Pilates Place1", email: "", picture_avatar: "urla", picture_banner: "urlb",
-            rating: "3", location: "Rio", phone: "021-4466-6644", facebook: "",
+  pilates1: {name:"Pilates Place1", email: "", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_studio_mariana_lobato.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462734/Suppliers/Pilates/pilates_banner_studio_mariana_lobato.jpg",
+            rating: "3", location: "Rio", phone: "021-4466-6644", facebook: "facebook.pilates1.link",
             web_address: "www.pilates_link1.com" },
 
-  pilates2: {name:"Pilates Place2", email: "pl@pl.com", picture_avatar: "urla", picture_banner: "urlb",
+  pilates2: {name:"Pilates Place2", email: "pl@pl.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_studio_pilates_contrologia.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462734/Suppliers/Pilates/pilates_banner_studio_pilates_contrologia.jpg",
             rating: "3", location: "Rio", phone: "021-4566-6644", facebook: "facebook.pilates2.link",
             web_address: "www.pilates_link2.com" }
 }
 
 suppliers.each do |supplier, value|
-     Supplier.create!(name: value[:name], email: value[:email],  picture_avatar: value[:picture_avatar],
-                      picture_banner: value[:picture_banner], rating: value[:rating], location: value[:location],
+     Supplier.create!(name: value[:name], email: value[:email],  remote_picture_avatar_url: value[:remote_picture_avatar_url],
+                      remote_picture_banner_url: value[:remote_picture_banner_url], rating: value[:rating], location: value[:location],
                       phone: value[:phone], facebook: value[:facebook], web_address: value[:web_address])
   end
 
@@ -92,82 +92,94 @@ categories.each do |category, value|
      Category.create!(name: value[:name])
   end
 
+vacancy = 0
 
-yoga_supplier = Supplier.all.sample
+yoga_supplier1 = Supplier.first
+yoga_supplier2 = Supplier.second
+yoga_supplier3 = Supplier.third
+yoga_supplier4 = Supplier.fourth
+yoga_supplier5 = Supplier.fifth
 yoga_category = Category.first
-diving_supplier = Supplier.all.sample
+
+diving_supplier1 = Supplier.find(6)
+diving_supplier2 = Supplier.find(7)
+diving_supplier3 = Supplier.find(8)
+diving_supplier4 = Supplier.find(9)
+diving_supplier5 = Supplier.find(10)
 diving_category = Category.second
-pilates_supplier = Supplier.all.sample
+
+pilates_supplier1 = Supplier.find(11)
+pilates_supplier2 = Supplier.find(12)
 pilates_category = Category.third
 
 experiences = {
-  yoga_class_1: {supplier: yoga_supplier, category: yoga_category, description: "A Bikram Yoga foi desenvolvida para melhorar a sua flexibilidade, força física, mental, e o equilíbrio. A sequência possui dois exercícios de respiração e 26 posturas de Hatha Yoga, praticados em uma sala aquecida. Nossos professores vão incentivar, motivar e inspirar você a fazer o seu melhor. Através da prática regular, você vai logo perceber que aquilo que se aprende na sala de yoga podem ser integrados em seu estilo de vida e no seu dia-a-dia.",
+  yoga_class_1: {location: "Rio", supplier: yoga_supplier1, category: yoga_category, description: "A Bikram Yoga foi desenvolvida para melhorar a sua flexibilidade, força física, mental, e o equilíbrio. A sequência possui dois exercícios de respiração e 26 posturas de Hatha Yoga, praticados em uma sala aquecida. Nossos professores vão incentivar, motivar e inspirar você a fazer o seu melhor. Através da prática regular, você vai logo perceber que aquilo que se aprende na sala de yoga podem ser integrados em seu estilo de vida e no seu dia-a-dia.",
                 start: "15/12/2018", finish: "16/12/2018", address: "Rua Barata Ribeiro, 655, Loja E, Copacabana, Rio de Janeiro",
                 price: 429, title: "Bikram Yoga - Copacabana", short_title: "Heads UP! Na Bikram o iniciante paga apenas R$199,00 no primeiro mês de experiência.",
-                vacancy: "number_integer_y1", short_description: "Bikram Yoga a legítima Hot Yoga é um treino intenso e divertido de 90 minutos de aula para todos os níveis de alunos."},
+                vacancy: vacancy, short_description: "Bikram Yoga a legítima Hot Yoga é um treino intenso e divertido de 90 minutos de aula para todos os níveis de alunos."},
 
-  yoga_class_2: {supplier: yoga_supplier, category: yoga_category, description: "Riserva Zen Yoga Class é um espaço de encontros, práticas de Aulas de Yoga, Meditação e Cursos.  Localizado na Barra da Tijuca, nosso programa propõe cultivar o equilíbrio diário através do mergulho profundo dentro do nosso próprio ser.",
+  yoga_class_2: {location: "Rio", supplier: yoga_supplier2, category: yoga_category, description: "Riserva Zen Yoga Class é um espaço de encontros, práticas de Aulas de Yoga, Meditação e Cursos.  Localizado na Barra da Tijuca, nosso programa propõe cultivar o equilíbrio diário através do mergulho profundo dentro do nosso próprio ser.",
                 start: "11/12/2018", finish: "11/12/2018", address: "Av. Gastão Sengés 395, Barra da Tijuca, Rio de janeiro",
                 price: 260, title: "Riserva Zen Yoga Life", short_title: "Heads UP! Venha descobrir os benefícios da Yoga com duas semanas de aulas promocionais por R$99,00.",
-                vacancy: "number_integer_y2", short_description: "Pratique Yoga, fique bem, vem pro Riserva Zen. Temos como propósito amplificar a felicidade, o autoconhecimento e o bem estar pessoal diário, através da prática e da filosofia do Yoga."},
+                vacancy: vacancy, short_description: "Pratique Yoga, fique bem, vem pro Riserva Zen. Temos como propósito amplificar a felicidade, o autoconhecimento e o bem estar pessoal diário, através da prática e da filosofia do Yoga."},
 
-  yoga_class_3: {supplier: yoga_supplier, category: yoga_category, description: "The Museum of Yoga nasceu de uma experiência linda de 10 anos chamada BLYSS Yoga onde milhares de alunos nos deram o presente da sua energia nos tornando o mais querido Centro de Yoga do Rio! Continuamos com as aulas, Curso de Formação em Yoga , eventos mais agora tambem expandiremos a nossa missão para outras áreas.",
+  yoga_class_3: {location: "Rio", supplier: yoga_supplier3, category: yoga_category, description: "The Museum of Yoga nasceu de uma experiência linda de 10 anos chamada BLYSS Yoga onde milhares de alunos nos deram o presente da sua energia nos tornando o mais querido Centro de Yoga do Rio! Continuamos com as aulas, Curso de Formação em Yoga , eventos mais agora tambem expandiremos a nossa missão para outras áreas.",
                   start: "16/12/2018", finish: "17/12/2018", address: "Rua Joana Angelica 116, Cobertura, Ipanema, Rio de Janeiro",
                   price: 270, title: "The Museum of Yoga", short_title: "Heads UP! Black Friday Yoga! 1 mês de Yoga por R$50.",
-                  vacancy: "number_integer_d1", short_description: "Vamos levar a sabedoria milenar da prática de Yoga parao mundo de hoje usando tudo o que estiver ao nosso alcance."},
+                  vacancy: vacancy, short_description: "Vamos levar a sabedoria milenar da prática de Yoga parao mundo de hoje usando tudo o que estiver ao nosso alcance."},
 
-  yoga_class_4: {supplier: yoga_supplier, category: yoga_category, description: "O método Iyengar é sistemático e se desenvolve gradualmente, permitindo ao aluno progredir com confiança, sem se machucar. A partir das primeiras semanas o aluno já poderá perceber o aumento da sua capacidade física, da auto-percepção e da concentração. Com mais tempo o aluno atingirá um estado meditativo durante a prática. Segundo o Mestre: Yoga é meditação em ação.",
+  yoga_class_4: {location: "Rio", supplier: yoga_supplier4, category: yoga_category, description: "O método Iyengar é sistemático e se desenvolve gradualmente, permitindo ao aluno progredir com confiança, sem se machucar. A partir das primeiras semanas o aluno já poderá perceber o aumento da sua capacidade física, da auto-percepção e da concentração. Com mais tempo o aluno atingirá um estado meditativo durante a prática. Segundo o Mestre: Yoga é meditação em ação.",
                   start: "16/12/2018", finish: "17/12/2018", address: "Rua Maria Eugênia, 217 Humaitá, Rio de Janeiro",
                   price: 430, title: "CENTRO IYENGAR YOGA RIO DE JANEIRO - KATIA DACOSTA", short_title: "Heads UP! O CIYRJ também dispõe de vestiários masculino e feminino equipados com armários e chuveiros.",
-                  vacancy: "number_integer_d1", short_description: "As aulas oferecidas no CIYRJ servem para aprender e aperfeiçoar as técnicas do método Iyengar. A variedade de níveis oferecidos obedece a uma graduação pedagógica que respeita a progressão do método Iyengar. A duração das aulas é de 1h30 ou 2h dependendo do nível."},
+                  vacancy: vacancy, short_description: "As aulas oferecidas no CIYRJ servem para aprender e aperfeiçoar as técnicas do método Iyengar. A variedade de níveis oferecidos obedece a uma graduação pedagógica que respeita a progressão do método Iyengar. A duração das aulas é de 1h30 ou 2h dependendo do nível."},
 
-  yoga_class_5: {supplier: yoga_supplier, category: yoga_category, description: "O conhecimento yoguico tem uma sabedoria ancestral! Os benefícios psico físicos são de entrega, paciência, alívio, esperança, força, características de uma tartaruga em sua liberdade. Namastê.",
+  yoga_class_5: {location: "Rio", supplier: yoga_supplier5, category: yoga_category, description: "O conhecimento yoguico tem uma sabedoria ancestral! Os benefícios psico físicos são de entrega, paciência, alívio, esperança, força, características de uma tartaruga em sua liberdade. Namastê.",
                   start: "16/12/2018", finish: "17/12/2018", address: "Rua Senador Dantas, n.117 sala 1621, Botafogo, Rio de Janeiro",
                   price: 320, title: "Prama - Espaço de Yoga", short_title: "Heads UP! Horários novos com Isabela Oliveira, segundas e quartas 18hs e 19hs.",
-                  vacancy: "number_integer_d1", short_description: "Somos um espaço de Yoga voltado para a resolução das amarras que limitam nosso crescimento."},
+                  vacancy: vacancy, short_description: "Somos um espaço de Yoga voltado para a resolução das amarras que limitam nosso crescimento."},
 
-  diving_class_1: {supplier: diving_supplier, category: diving_category, description: "A 10 km da costa do México, Cozumel é considerada uma das melhores ilhas do mundo para o mergulho. Quer passar 5 dias mergulhando no paraíso? Vem com a gente.",
+  diving_class_1: {location: "Angra", supplier: diving_supplier1, category: diving_category, description: "A 150 km da costa do Rio, Angra é considerada uma das melhores locais do mundo para o mergulho. Quer passar 5 dias mergulhando no paraíso? Vem com a gente.",
                   start: "18/12/2018", finish: "23/12/2018", address: "Avenida Repórter Nestor Moreira, 1, Botafogo, Rio de Janeiro",
-                  price: 5000, title: "Viagem Cozumel 2018", short_title: "Heads UP! A SSI é um nome de confiança no mundo do mergulho e atribuímos o nosso sucesso aos nossos padrões de ensino íntegros e metodologia focada.",
-                  vacancy: "number_integer_d1", short_description: "Por mais de 45 anos, a SSI forneceu formação, certificação de mergulho e recursos educativos a mergulhadores, instrutores de mergulho, centros de mergulho e resorts em todo o mundo."},
+                  price: 2000, title: "Viagem Angra 2018", short_title: "Heads UP! A SSI é um nome de confiança no mundo do mergulho e atribuímos o nosso sucesso aos nossos padrões de ensino íntegros e metodologia focada.",
+                  vacancy: vacancy, short_description: "Por mais de 45 anos, a SSI forneceu formação, certificação de mergulho e recursos educativos a mergulhadores, instrutores de mergulho, centros de mergulho e resorts em todo o mundo."},
 
-  diving_class_2: {supplier: diving_supplier, category: diving_category, description: "Este é um programa de experiência, onde você estará acompanhado por um profissional durante todo o mergulho. Durante a sua aventura você realizará algumas habilidades que poderão ser creditadas para o seu curso PADI Open Water Diver. Desta forma você estará a caminho de obter uma certificação reconhecida internacionalmente.",
+  diving_class_2: {location: "Angra", supplier: diving_supplier2, category: diving_category, description: "Este é um programa de experiência, onde você estará acompanhado por um profissional durante todo o mergulho. Durante a sua aventura você realizará algumas habilidades que poderão ser creditadas para o seu curso PADI Open Water Diver. Desta forma você estará a caminho de obter uma certificação reconhecida internacionalmente.",
                   start: "12/12/2018", finish: "12/12/2018", address: "Avenida Antônio Bertholdo da Silva Jordão, 7.346, Angra dos Reis, Rio de Janeiro",
                   price: 800, title: "Discover Scuba Diving", short_title: "Heads Up! Idade mínima 10 anos. Inclui máscara, snorkel e nadadeira, colete equilibrador, roupa de neoprene, válvulas reguladoras e cilindro. ",
-                  vacancy: "number_integer_d2", short_description: "Para aqueles que querem descobrir as maravilhas do mundo submarino de uma maneira simples, rápida e divertida."},
+                  vacancy: vacancy, short_description: "Para aqueles que querem descobrir as maravilhas do mundo submarino de uma maneira simples, rápida e divertida."},
 
-  diving_class_3: {supplier: diving_supplier, category: diving_category, description: "O programa PADI Rescue Diver (Mergulhador de Resgate) expandirá o seu conhecimento e experiência além do nível puramente recreativo, pois você deixará de se preocupar apenas com si próprio e aprenderá a considerar a segurança e o bem-estar de outros mergulhadores. Apesar da seriedade do curso, é uma maneira divertida de aumentar a sua confiança.",
+  diving_class_3: {location: "Rio", supplier: diving_supplier3, category: diving_category, description: "O programa PADI Rescue Diver (Mergulhador de Resgate) expandirá o seu conhecimento e experiência além do nível puramente recreativo, pois você deixará de se preocupar apenas com si próprio e aprenderá a considerar a segurança e o bem-estar de outros mergulhadores. Apesar da seriedade do curso, é uma maneira divertida de aumentar a sua confiança.",
                   start: "12/12/2018", finish: "12/12/2018", address: "Avenida Infante Dom Henrique, snº , Marina da Glória, Rio de Janeiro ",
                   price: 1650, title: "Mergulhador de Resgate", short_title: "Heads Up! Inclui aula teórica, mergulho em piscina e 2 mergulhos no mar e Certificação PADI de mergulhador Rescue Diver",
-                  vacancy: "number_integer_d2", short_description: "O treinamento como mergulhador de resgate o preparará para evitar problemas e, se necessário, controlar emergências de mergulho."},
+                  vacancy: vacancy, short_description: "O treinamento como mergulhador de resgate o preparará para evitar problemas e, se necessário, controlar emergências de mergulho."},
 
-  diving_class_4: {supplier: diving_supplier, category: diving_category, description: "Este é um programa de Revisão e Atualização de Habilidades, bem amplo e variado, adaptando-se às necessidades de cada mergulhador. Para os mergulhadores que há muito tempo não praticam a atividade. Para dar maior segurança e confiança aos que ainda não se sentem à vontade embaixo d'água.",
+  diving_class_4: {location: "Rio", supplier: diving_supplier4, category: diving_category, description: "Este é um programa de Revisão e Atualização de Habilidades, bem amplo e variado, adaptando-se às necessidades de cada mergulhador. Para os mergulhadores que há muito tempo não praticam a atividade. Para dar maior segurança e confiança aos que ainda não se sentem à vontade embaixo d'água.",
                   start: "12/12/2018", finish: "12/12/2018", address: "R. Antônio Basílio, 103, Tijuca, Rio de Janeiro",
                   price: 650, title: "Revisão Scuba", short_title: "Heads Up! Vendemos as melhores marcas de equipamentos do mercado, prestamos consultoria e agendamos a sua viagem.",
-                  vacancy: "number_integer_d2", short_description: "Venha romper o limite ar-água e conhecer um novo mundo, selvagem, inexplorado e surpreendente!"},
+                  vacancy: vacancy, short_description: "Venha romper o limite ar-água e conhecer um novo mundo, selvagem, inexplorado e surpreendente!"},
 
-  diving_class_5: {supplier: diving_supplier, category: diving_category, description: "O Curso de Mergulho Open Water Diver é um convite ao primeiro contato livre com o mundo subaquático. O Curso é voltado para toda pessoa que tenha interesse em conhecer o fundo do mar, aumentando seu contato com a natureza e beleza de mais da metade do planeta. O curso é ministrado por instrutor experiente e atualizado nos recentes parâmetros e protocolos de segurança internacionais de mergulho. Garantindo ao aluno e futuro mergulhador, aprendizado das técnicas mais recentes e eficientes do Mundo do Mergulho Recreacional.",
+  diving_class_5: {location: "Arraial do Cabo", supplier: diving_supplier5, category: diving_category, description: "O Curso de Mergulho Open Water Diver é um convite ao primeiro contato livre com o mundo subaquático. O Curso é voltado para toda pessoa que tenha interesse em conhecer o fundo do mar, aumentando seu contato com a natureza e beleza de mais da metade do planeta. O curso é ministrado por instrutor experiente e atualizado nos recentes parâmetros e protocolos de segurança internacionais de mergulho. Garantindo ao aluno e futuro mergulhador, aprendizado das técnicas mais recentes e eficientes do Mundo do Mergulho Recreacional.",
                   start: "12/12/2018", finish: "12/12/2018", address: "Praça da Bandeira, 23, Praia dos Anjos, Arraial do Cabo",
                   price: 1200, title: "Open Water Diver", short_title: "Heads Up! O curso Open Water é para mergulhadores já iniciados. Traga seu equipamento ou alugue conosco.",
-                  vacancy: "number_integer_d2", short_description: "A ACQUA WORLD Escola e Operadora de Mergulho, atua há mais de 12 anos em Arraial do Cabo e Cabo Frio, Rio de Janeiro – Brasil. Especializada em CURSOS e TURISMO, a operadora conta com profissionais treinados e habilitados pelas principais certificadoras internacionais, estando filiada à PADI, SSI, SDI e CMAS desde sua fundação."},
+                  vacancy: vacancy, short_description: "A ACQUA WORLD Escola e Operadora de Mergulho, atua há mais de 12 anos em Arraial do Cabo e Cabo Frio, Rio de Janeiro – Brasil. Especializada em CURSOS e TURISMO, a operadora conta com profissionais treinados e habilitados pelas principais certificadoras internacionais, estando filiada à PADI, SSI, SDI e CMAS desde sua fundação."},
 
 
-  pilates_class_1: {supplier: pilates_supplier, category: pilates_category, description: "<Long description>",
+  pilates_class_1: {location: "São Paulo", supplier: pilates_supplier1, category: pilates_category, description: "<Long description>",
                     start: "17/12/2018", finish: "18/12/2018", address: "ladeira da gloria, 28, rio de janeiro",
                     price: 202, title: "Title pilates1", short_title: "Heads Up! ",
-                    vacancy: "number_integer_p1", short_description: "short pilates1 description"},
+                    vacancy: vacancy, short_description: "short pilates1 description"},
 
-  pilates_class_2: {supplier: pilates_supplier, category: pilates_category, description: "<Long description>",
+  pilates_class_2: {location: "São Paulo", supplier: pilates_supplier2, category: pilates_category, description: "<Long description>",
                     start: "17/12/2018", finish: "18/12/2018", address: "ladeira da gloria, 228, rio de janeiro",
                     price: 303, title: "Title pilates2", short_title: "short pilates2 description to title",
-                    vacancy: "number_integer_p2", short_description: "short pilates2 description"}
+                    vacancy: vacancy, short_description: "short pilates2 description"}
 }
 
 experiences.each do |experience, value|
      Experience.create!(description: value[:description], address: value[:address], start: value[:start],
       finish: value[:finish], supplier: value[:supplier], category: value[:category], price: value[:price],
-      title: value[:title], short_title: value[:short_title], vacancy: value[:vacancy],
-      short_description: value[:short_description])
+      title: value[:title], short_title: value[:short_title], vacancy: (5..25).to_a.sample,
+      short_description: value[:short_description], location: value[:location])
   end
 
 
