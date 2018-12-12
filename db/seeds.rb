@@ -66,13 +66,13 @@ suppliers = {
             rating: "4,8", location: "Rio", phone: "022-2622-2217", facebook: "https://www.facebook.com/acquaworld.escolademergulho/",
             web_address: " www.acquaworld.com.br" },
 
-  pilates1: {name:"Pilates Place1", email: "", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_studio_mariana_lobato.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462734/Suppliers/Pilates/pilates_banner_studio_mariana_lobato.jpg",
-            rating: "3", location: "Rio", phone: "021-4466-6644", facebook: "facebook.pilates1.link",
-            web_address: "www.pilates_link1.com" },
+  pilates1: {name:"Studio Mariana Lobato", email: "contato@studiomarianalobato.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_studio_mariana_lobato.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462734/Suppliers/Pilates/pilates_banner_studio_mariana_lobato.jpg",
+            rating: "5", location: "Rio", phone: "021-2249-2843", facebook: "https://www.facebook.com/studiomarianalobatorj/",
+            web_address: "www.studiomarianalobato.com.br" },
 
-  pilates2: {name:"Pilates Place2", email: "pl@pl.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_studio_pilates_contrologia.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462734/Suppliers/Pilates/pilates_banner_studio_pilates_contrologia.jpg",
-            rating: "3", location: "Rio", phone: "021-4566-6644", facebook: "facebook.pilates2.link",
-            web_address: "www.pilates_link2.com" }
+  pilates2: {name:"Gaeta Studio Pilates", email: "contato@gaetapilates.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_gaeta_studio_de_pilates.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462733/Suppliers/Pilates/pilates_banner_gaeta_studio_de_pilates.png",
+            rating: "3", location: "Rio", phone: "021-2242-5663", facebook: "https://www.facebook.com/GaetaStudioPilates/",
+            web_address: "http://gaetapilates.com.br/" }
 }
 
 suppliers.each do |supplier, value|
@@ -114,28 +114,28 @@ pilates_category = Category.third
 
 experiences = {
   yoga_class_1: {location: "Rio", supplier: yoga_supplier1, category: yoga_category, description: "A Bikram Yoga foi desenvolvida para melhorar a sua flexibilidade, força física, mental, e o equilíbrio. A sequência possui dois exercícios de respiração e 26 posturas de Hatha Yoga, praticados em uma sala aquecida. Nossos professores vão incentivar, motivar e inspirar você a fazer o seu melhor. Através da prática regular, você vai logo perceber que aquilo que se aprende na sala de yoga podem ser integrados em seu estilo de vida e no seu dia-a-dia.",
-                start: "15/12/2018", finish: "16/12/2018", address: "Rua Barata Ribeiro, 655, Loja E, Copacabana, Rio de Janeiro",
-                price: 429, title: "Bikram Yoga - Copacabana", short_title: "Heads UP! Na Bikram o iniciante paga apenas R$199,00 no primeiro mês de experiência.",
+                start: "15/12/2018", finish: "16/01/2019", address: "Rua Barata Ribeiro, 655, Loja E, Copacabana, Rio de Janeiro",
+                price: 429, title: "1 Mês de aula TOP!", short_title: "Heads UP! Na Bikram o iniciante paga apenas R$199,00 no primeiro mês de experiência.",
                 vacancy: vacancy, short_description: "Bikram Yoga a legítima Hot Yoga é um treino intenso e divertido de 90 minutos de aula para todos os níveis de alunos."},
 
   yoga_class_2: {location: "Rio", supplier: yoga_supplier2, category: yoga_category, description: "Riserva Zen Yoga Class é um espaço de encontros, práticas de Aulas de Yoga, Meditação e Cursos.  Localizado na Barra da Tijuca, nosso programa propõe cultivar o equilíbrio diário através do mergulho profundo dentro do nosso próprio ser.",
-                start: "11/12/2018", finish: "11/12/2018", address: "Av. Gastão Sengés 395, Barra da Tijuca, Rio de janeiro",
+                start: "18/12/2018", finish: "18/01/2019", address: "Av. Gastão Sengés 395, Barra da Tijuca, Rio de janeiro",
                 price: 260, title: "Riserva Zen Yoga Life", short_title: "Heads UP! Venha descobrir os benefícios da Yoga com duas semanas de aulas promocionais por R$99,00.",
                 vacancy: vacancy, short_description: "Pratique Yoga, fique bem, vem pro Riserva Zen. Temos como propósito amplificar a felicidade, o autoconhecimento e o bem estar pessoal diário, através da prática e da filosofia do Yoga."},
 
   yoga_class_3: {location: "Rio", supplier: yoga_supplier3, category: yoga_category, description: "The Museum of Yoga nasceu de uma experiência linda de 10 anos chamada BLYSS Yoga onde milhares de alunos nos deram o presente da sua energia nos tornando o mais querido Centro de Yoga do Rio! Continuamos com as aulas, Curso de Formação em Yoga , eventos mais agora tambem expandiremos a nossa missão para outras áreas.",
-                  start: "16/12/2018", finish: "17/12/2018", address: "Rua Joana Angelica 116, Cobertura, Ipanema, Rio de Janeiro",
-                  price: 270, title: "The Museum of Yoga", short_title: "Heads UP! Black Friday Yoga! 1 mês de Yoga por R$50.",
+                  start: "17/12/2018", finish: "17/01/2019", address: "Rua Joana Angelica 116, Ipanema, Rio de Janeiro",
+                  price: 270, title: "Promoção Black Friday Yoga - 1 mês por R$50", short_title: "Heads UP! Black Friday Yoga! 1 mês de Yoga por R$50.",
                   vacancy: vacancy, short_description: "Vamos levar a sabedoria milenar da prática de Yoga parao mundo de hoje usando tudo o que estiver ao nosso alcance."},
 
   yoga_class_4: {location: "Rio", supplier: yoga_supplier4, category: yoga_category, description: "O método Iyengar é sistemático e se desenvolve gradualmente, permitindo ao aluno progredir com confiança, sem se machucar. A partir das primeiras semanas o aluno já poderá perceber o aumento da sua capacidade física, da auto-percepção e da concentração. Com mais tempo o aluno atingirá um estado meditativo durante a prática. Segundo o Mestre: Yoga é meditação em ação.",
-                  start: "16/12/2018", finish: "17/12/2018", address: "Rua Maria Eugênia, 217 Humaitá, Rio de Janeiro",
-                  price: 430, title: "CENTRO IYENGAR YOGA RIO DE JANEIRO - KATIA DACOSTA", short_title: "Heads UP! O CIYRJ também dispõe de vestiários masculino e feminino equipados com armários e chuveiros.",
+                  start: "20/12/2018", finish: "20/01/2019", address: "Rua Maria Eugênia, 217 Humaitá, Rio de Janeiro",
+                  price: 430, title: "Venha experimentar a Yoga Iyengar com Katia DaCosta - 1 mês de aulas", short_title: "Heads UP! O CIYRJ também dispõe de vestiários masculino e feminino equipados com armários e chuveiros.",
                   vacancy: vacancy, short_description: "As aulas oferecidas no CIYRJ servem para aprender e aperfeiçoar as técnicas do método Iyengar. A variedade de níveis oferecidos obedece a uma graduação pedagógica que respeita a progressão do método Iyengar. A duração das aulas é de 1h30 ou 2h dependendo do nível."},
 
   yoga_class_5: {location: "Rio", supplier: yoga_supplier5, category: yoga_category, description: "O conhecimento yoguico tem uma sabedoria ancestral! Os benefícios psico físicos são de entrega, paciência, alívio, esperança, força, características de uma tartaruga em sua liberdade. Namastê.",
-                  start: "16/12/2018", finish: "17/12/2018", address: "Rua Senador Dantas, n.117 sala 1621, Botafogo, Rio de Janeiro",
-                  price: 320, title: "Prama - Espaço de Yoga", short_title: "Heads UP! Horários novos com Isabela Oliveira, segundas e quartas 18hs e 19hs.",
+                  start: "16/12/2018", finish: "17/01/2019", address: "Rua Senador Dantas, 117 Centro, Rio de Janeiro",
+                  price: 320, title: "Ao invés de 1 mês de aula, oferecemos um kit com 20 aulas.", short_title: "Heads UP! Horários novos com Isabela Oliveira, segundas e quartas 18hs e 19hs.",
                   vacancy: vacancy, short_description: "Somos um espaço de Yoga voltado para a resolução das amarras que limitam nosso crescimento."},
 
   diving_class_1: {location: "Angra", supplier: diving_supplier1, category: diving_category, description: "A 150 km da costa do Rio, Angra é considerada uma das melhores locais do mundo para o mergulho. Quer passar 5 dias mergulhando no paraíso? Vem com a gente.",
@@ -144,35 +144,35 @@ experiences = {
                   vacancy: vacancy, short_description: "Por mais de 45 anos, a SSI forneceu formação, certificação de mergulho e recursos educativos a mergulhadores, instrutores de mergulho, centros de mergulho e resorts em todo o mundo."},
 
   diving_class_2: {location: "Angra", supplier: diving_supplier2, category: diving_category, description: "Este é um programa de experiência, onde você estará acompanhado por um profissional durante todo o mergulho. Durante a sua aventura você realizará algumas habilidades que poderão ser creditadas para o seu curso PADI Open Water Diver. Desta forma você estará a caminho de obter uma certificação reconhecida internacionalmente.",
-                  start: "12/12/2018", finish: "12/12/2018", address: "Avenida Antônio Bertholdo da Silva Jordão, 7.346, Angra dos Reis, Rio de Janeiro",
+                  start: "18/12/2018", finish: "20/12/2018", address: "Iate Clube Aquidabã, Angra dos Reis",
                   price: 800, title: "Discover Scuba Diving", short_title: "Heads Up! Idade mínima 10 anos. Inclui máscara, snorkel e nadadeira, colete equilibrador, roupa de neoprene, válvulas reguladoras e cilindro. ",
                   vacancy: vacancy, short_description: "Para aqueles que querem descobrir as maravilhas do mundo submarino de uma maneira simples, rápida e divertida."},
 
   diving_class_3: {location: "Rio", supplier: diving_supplier3, category: diving_category, description: "O programa PADI Rescue Diver (Mergulhador de Resgate) expandirá o seu conhecimento e experiência além do nível puramente recreativo, pois você deixará de se preocupar apenas com si próprio e aprenderá a considerar a segurança e o bem-estar de outros mergulhadores. Apesar da seriedade do curso, é uma maneira divertida de aumentar a sua confiança.",
-                  start: "12/12/2018", finish: "12/12/2018", address: "Avenida Infante Dom Henrique, snº , Marina da Glória, Rio de Janeiro ",
+                  start: "19/12/2018", finish: "21/12/2018", address: "Marina da Glória, Rio de Janeiro ",
                   price: 1650, title: "Mergulhador de Resgate", short_title: "Heads Up! Inclui aula teórica, mergulho em piscina e 2 mergulhos no mar e Certificação PADI de mergulhador Rescue Diver",
                   vacancy: vacancy, short_description: "O treinamento como mergulhador de resgate o preparará para evitar problemas e, se necessário, controlar emergências de mergulho."},
 
   diving_class_4: {location: "Rio", supplier: diving_supplier4, category: diving_category, description: "Este é um programa de Revisão e Atualização de Habilidades, bem amplo e variado, adaptando-se às necessidades de cada mergulhador. Para os mergulhadores que há muito tempo não praticam a atividade. Para dar maior segurança e confiança aos que ainda não se sentem à vontade embaixo d'água.",
-                  start: "12/12/2018", finish: "12/12/2018", address: "R. Antônio Basílio, 103, Tijuca, Rio de Janeiro",
+                  start: "18/12/2018", finish: "20/12/2018", address: "Rua Antônio Basílio, 103 Tijuca, Rio de Janeiro",
                   price: 650, title: "Revisão Scuba", short_title: "Heads Up! Vendemos as melhores marcas de equipamentos do mercado, prestamos consultoria e agendamos a sua viagem.",
                   vacancy: vacancy, short_description: "Venha romper o limite ar-água e conhecer um novo mundo, selvagem, inexplorado e surpreendente!"},
 
   diving_class_5: {location: "Arraial do Cabo", supplier: diving_supplier5, category: diving_category, description: "O Curso de Mergulho Open Water Diver é um convite ao primeiro contato livre com o mundo subaquático. O Curso é voltado para toda pessoa que tenha interesse em conhecer o fundo do mar, aumentando seu contato com a natureza e beleza de mais da metade do planeta. O curso é ministrado por instrutor experiente e atualizado nos recentes parâmetros e protocolos de segurança internacionais de mergulho. Garantindo ao aluno e futuro mergulhador, aprendizado das técnicas mais recentes e eficientes do Mundo do Mergulho Recreacional.",
-                  start: "12/12/2018", finish: "12/12/2018", address: "Praça da Bandeira, 23, Praia dos Anjos, Arraial do Cabo",
+                  start: "19/12/2018", finish: "23/12/2018", address: "Praça da Bandeira, 23, Arraial do Cabo",
                   price: 1200, title: "Open Water Diver", short_title: "Heads Up! O curso Open Water é para mergulhadores já iniciados. Traga seu equipamento ou alugue conosco.",
                   vacancy: vacancy, short_description: "A ACQUA WORLD Escola e Operadora de Mergulho, atua há mais de 12 anos em Arraial do Cabo e Cabo Frio, Rio de Janeiro – Brasil. Especializada em CURSOS e TURISMO, a operadora conta com profissionais treinados e habilitados pelas principais certificadoras internacionais, estando filiada à PADI, SSI, SDI e CMAS desde sua fundação."},
 
 
-  pilates_class_1: {location: "São Paulo", supplier: pilates_supplier1, category: pilates_category, description: "<Long description>",
-                    start: "17/12/2018", finish: "18/12/2018", address: "ladeira da gloria, 28, rio de janeiro",
-                    price: 202, title: "Title pilates1", short_title: "Heads Up! ",
-                    vacancy: vacancy, short_description: "short pilates1 description"},
+  pilates_class_1: {location: "Rio", supplier: pilates_supplier1, category: pilates_category, description: "Método desenvolvido pelo professor, bailarino e coreógrafo Ron Fletcher (EUA), discípulo de Joseph Pilates e bailarino da Cia Martha Graham nas décadas de 1950 e 1960. Fletcher acompanhou os estudos do mestre J. Pilates até a morte e depois continuou as pesquisas ao lado de Clara Pilates. Ao longo de mais de 50 anos de trabalho, Fletcher desenvolveu um método próprio que amplia os estudos da “Contrologia” a partir do entrelaçamento com princípios da Dança, proporcionando assim uma abordagem mais dinâmica e ritmada através de técnicas exclusivas como: Respiração Percussiva Fletcher, Fundamentos Fletcher, Towelwork Fletcher, Floorwork Fletcher e Barrework Fletcher.",
+                    start: "17/12/2018", finish: "18/01/2019", address: "Rua Jardim Botânico, 674, Rio de Janeiro",
+                    price: 340, title: "Fletcher Pilates Mensal", short_title: "Heads Up! Venha conhecer o Fletcher Pilates. Todos os nossos professores são licenciados.",
+                    vacancy: vacancy, short_description: "O Studio Mariana Lobato  é  centro educacional do Fletcher Pilates® no Rio de Janeiro. O Fletcher Pilates® é uma das melhores escolas de Pilates do mundo."},
 
-  pilates_class_2: {location: "São Paulo", supplier: pilates_supplier2, category: pilates_category, description: "<Long description>",
-                    start: "17/12/2018", finish: "18/12/2018", address: "ladeira da gloria, 228, rio de janeiro",
-                    price: 303, title: "Title pilates2", short_title: "short pilates2 description to title",
-                    vacancy: vacancy, short_description: "short pilates2 description"}
+  pilates_class_2: {location: "Rio", supplier: pilates_supplier2, category: pilates_category, description: "O Pilates é conhecido por ser um método completo, pois trabalha tanto com os aspectos físicos quanto os mentais. A drenagem linfática Renata França consiste em técnicas com movimentos rigorosos e específicos se comparados à drenagem convencional. O Power Plate são plataformas que trabalham por meio das vibrações pelo corpo inteiro e com rápidas contrações musculares.",
+                    start: "17/12/2018", finish: "18/12/2018", address: "Rua Sete de Setembro, 92 Centro, Rio de Janeiro",
+                    price: 400, title: "Pilates, Funcional, Método Renata França...", short_title: "Heads Up! Localizado no Centro do Rio, podemos recebê-lo com mais comodidade próximo ao seu trabalho.",
+                    vacancy: vacancy, short_description: "Originariamente chamado “GAETA STUDIO PILATES”, o GAETA STUDIO surgiu em 03/09/2007 a partir do sonho de sua idealizadora e proprietária, a Fisioterapeuta RAQUEL GAETA, tendo como foco principal de atuação o Pilates."}
 }
 
 experiences.each do |experience, value|
