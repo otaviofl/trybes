@@ -1,6 +1,4 @@
 /* NAVBAR */
-
-
 .navbar-match {
   background: transparent;
   transition: all 0.3s ease;
@@ -41,7 +39,7 @@
   background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
   background-position: top;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,6 +127,8 @@
 /* EXPERIENCE DASHBOARD */
 
 //grid layout
+.match-page {
+}
 
 .match-experience-dashboard {
   display: grid;
@@ -297,7 +297,7 @@ $moveRight: $tileWidth * ($growFactor - 1);
   }
 
   .row {
-    overflow: scroll;
+    overflow: auto;
     width: 100%;
     padding: 21px;
   }
