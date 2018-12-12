@@ -34,7 +34,7 @@ suppliers = {
           rating: "5,0", location: "Rio", phone: "021-99307-1327", facebook: "https://www.facebook.com/yogabarradatijuca/",
           web_address: "www.riservazen.com" },
 
-  yoga3: {name:"The Museum of Yoga", email: "themuseumofyoga@gmail.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_the_museum_of_yoga.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462601/Suppliers/Yoga/yoga_banner_the_museum_of_yoga.jpg",
+  yoga3: {name:"The Museum of Yoga", email: "themuseumofyoga@gmail.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_the_museum_of_yoga.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544630240/Suppliers/Yoga/the_museum_of_yoga2.png",
           rating: "4,9", location: "Rio", phone: "021-98291-0211", facebook: "https://www.facebook.com/themuseumofyogaipanema/",
           web_address: "www.themuseumofyoga.com" },
 
