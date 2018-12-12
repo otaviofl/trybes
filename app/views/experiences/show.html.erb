@@ -170,7 +170,8 @@
     <h4>R$<%= @experience.price.to_i %></h4>
   </div>
   <div class="footer-links">
-    <a  class="btn btn-primary btn-match" href="#">Book your Experience!!!</a>
+    <!-- <a  class="btn btn-primary btn-match" href="#">Book your Experience!!!</a> -->
+    <%= link_to "Book your Experience!!!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match" %>
   </div>
 </div>
 
