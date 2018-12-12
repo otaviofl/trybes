@@ -30,6 +30,8 @@
   background-size: cover !important;
   background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), image-url("index_background.jpg");
   background-position: bottom;
+  min-height: calc(100vh - 80px);
+
 }
 
 .banner-form {

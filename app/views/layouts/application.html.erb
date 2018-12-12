@@ -31,14 +31,20 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
-  <body>
-    <%= render 'shared/navbar' unless experiences_show?%>
+  <body class="sticky-footer-body">
+
+    <!-- Use this method when removing navbar from a page
+   <%# render 'shared/navbar' unless experiences_show?%> -->
+
+    <%= render 'shared/navbar'%>
     <%= render 'shared/flashes' %>
-    <div class="<%= action_name == 'home' ? 'pattern-home' : '' %> ">
 
       <%= yield %>
-      <%= render "shared/footer" unless experiences_show? %>
-    </div>
+
+    <!-- Use this method when removing navbar from a page -->
+    <%= render "shared/footer" unless experiences_show?%>
+
+
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
