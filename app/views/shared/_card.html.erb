@@ -10,8 +10,8 @@
               <div class="header">
                   <h4 class="text-center title-ellipsis" style="-webkit-box-orient: vertical;"><%= experience.title %></h4>
                   <%# TODO: User different ellipsis method. Not a good implementation for ellipsts %>
-                  <p class="short-description experience-paragraph-ellipsis" style="-webkit-box-orient: vertical;<%= experience.description %></p>
-                      <p class="short-description multiline-ellipses"><%= experience.description.truncate(220) %></p>
+                  <p class="short-description experience-paragraph-ellipsis" style="-webkit-box-orient: vertical";<%= experience.description %></p>
+                      <!-- <p class="short-description multiline-ellipses"><%= experience.description.truncate(220) %></p> -->
                  <div class="line-header"></div>
               </div>
               <div class="content">
@@ -59,6 +59,7 @@
               <div class="content">
                   <div class="main">
                       <h3 class="name"><%= experience.supplier.name %> </h3>
+                      <!-- <i class="fa fa-map-marker" aria-hidden="true"></i> -->
                       <p class="short-title short-title-ellipsis" style="-webkit-box-orient: vertical;"><%= experience.address %> </p>
                       <p class="text-center short-description-ellipsis" style="-webkit-box-orient: vertical;"><%= experience.short_description %></p>
                       <!-- <a  href="#">I want this experience!</a> -->
@@ -70,10 +71,10 @@
                   <div class="footer-card-line">
                       <i class="fa fa-mail-forward"></i> Contacts
                       <div class="social-links text-center">
-                        <a href="tel:<%= experience.supplier.phone %>" class="phone"><i class="fas fa-phone"></i></a>
-                        <a href="mail_to:<%= experience.supplier.email %>" class="e-mail"><i class="fas fa-envelope"> </i></a>
-                        <a href="<%= experience.supplier.facebook %>" class="facebook"><i class="fab fa-facebook-f"> </i></a>
-                        <a href="<%= experience.supplier.web_address %>" class="website"><i class="fas fa-globe"> </i></a>
+                        <a href="tel:<%= experience.supplier.phone %>" class="phone"><i class="fas fa-phone"> call</i></a>
+                        <a href="mail_to:<%= experience.supplier.email %>" class="e-mail"><i class="fas fa-envelope">  e-mail</i></a>
+                        <a href="<%= experience.supplier.facebook %>" class="facebook"><i class="fab fa-facebook-f"> facebook</i></a>
+                        <a href="<%= experience.supplier.web_address %>" class="website"><i class="fas fa-globe"> website</i></a>
                       </div>
                       <!-- <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
                           <i class="fa fa-reply"></i> Back
