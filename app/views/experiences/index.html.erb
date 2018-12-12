@@ -15,10 +15,15 @@
   <div class="flex-index">
     <div class='cards-container'>
       <div class="row">
-
-            <%= render "/shared/card" %>
-
+            <div class="banner-form">
+              <%= render 'shared/search', category: @category.name, address: @location, start: @start, finish: @finish %>
+              <%#= raise %>
+            </div>
+              <%= render "/shared/card" %>
       </div>
     </div>
   </div>
 </div>
+
+
+

@@ -1,7 +1,7 @@
 
 <%= simple_form_for :experience, url: experiences_path, method: 'get', html: { class: 'form-inline' } do |f| %>
-  <%= f.input :category, class:"form-control input-lg", collection: @categories, prompt: "Category?", selected: params.dig(:experience, :category), label: false  %>
-  <%= f.input :address, class:"form-control input-lg", label:false, collection: @locations, prompt: "Location?", selected: params.dig(:experience, :address) %>
+  <%= f.input :category, class:"form-control input-lg", collection: @categories, prompt: "Category?", label: false, input_html: { value: params.dig(:experience, :category)} %>
+  <%= f.input :address, class:"form-control input-lg", label:false, collection: @locations, prompt: "Location?", input_html: { value: params.dig(:experience, :address)} %>
   <%=  f.input :start, as: :date, html5: true, class:"form-control input-lg", label: false, input_html: { value: params.dig(:experience, :start) } %>
   <%=  f.input :finish, as: :date, html5: true, class:"form-control input-lg", label: false, input_html: { value: params.dig(:experience, :finish) } %>
 

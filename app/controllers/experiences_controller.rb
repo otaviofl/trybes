@@ -5,9 +5,11 @@ class ExperiencesController < ApplicationController
   def index
 
     if experience_params[:category].present? || experience_params[:address].present?
-      category = Category.where("name = ?", experience_params[:category]).first
-      location = experience_params[:address]
-      @experiences = Experience.where("category_id = ? AND location = ?", category.id, location)
+      @category = Category.where("name = ?", experience_params[:category]).first
+      @location = experience_params[:address]
+      @experiences = Experience.where("category_id = ? AND location = ?", @category.id, @location)
+      @start = experience_params[:start]
+      @finish = experience_params[:finish]
     else
       @experiences = Experience.all
     end
