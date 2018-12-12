@@ -38,7 +38,7 @@ suppliers = {
           rating: "4,9", location: "Rio", phone: "021-98291-0211", facebook: "https://www.facebook.com/themuseumofyogaipanema/",
           web_address: "www.themuseumofyoga.com" },
 
-  yoga4: {name:"Centro Iyengar Yoga", email: "contato@centroiyengaryogario.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_centro_iyengar.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544640699/Suppliers/Pilates/yoga_banner_centro_iyengar3.png",
+  yoga4: {name:"Centro Iyengar Yoga", email: "contato@centroiyengaryogario.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_centro_iyengar.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544645760/Suppliers/Pilates/yoga_banner_centro_iyengar.png",
           rating: "4", location: "Rio", phone: "021-2246-4028", facebook: "https://www.facebook.com/CIYRJ/",
           web_address: "www.centroiyengaryogario.com.br" },
 
