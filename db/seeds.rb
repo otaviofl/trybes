@@ -26,11 +26,11 @@ users.each do |user, value|
 
 
 suppliers = {
-  yoga1: {name:"Bikram Yoga Rio", email: "contato@bikramyogario.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_bikran.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462599/Suppliers/Yoga/yoga_banner_bikran.jpg",
+  yoga1: {name:"Bikram Yoga Rio", email: "contato@bikramyogario.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_bikran.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544639579/Suppliers/Pilates/yoga_banner_bikran2.jpg",
           rating: "4,9", location: "Rio", phone: "021-3186-1625", facebook: "https://www.facebook.com/BikramYogaRio/ ",
           web_address: "www.bikramyogario.com" },
 
-  yoga2: {name:"Yoga Barra da Tijuca", email: "contato@riservazen.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_yoga_barra.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462601/Suppliers/Yoga/yoga_banner_yoga_barra.jpg",
+  yoga2: {name:"Yoga Barra da Tijuca", email: "contato@riservazen.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_yoga_barra.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544643302/Suppliers/Pilates/yoga_banner_yoga_barra4.png",
           rating: "5,0", location: "Rio", phone: "021-99307-1327", facebook: "https://www.facebook.com/yogabarradatijuca/",
           web_address: "www.riservazen.com" },
 
@@ -38,11 +38,11 @@ suppliers = {
           rating: "4,9", location: "Rio", phone: "021-98291-0211", facebook: "https://www.facebook.com/themuseumofyogaipanema/",
           web_address: "www.themuseumofyoga.com" },
 
-  yoga4: {name:"Centro Iyengar Yoga", email: "contato@centroiyengaryogario.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_centro_iyengar.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462599/Suppliers/Yoga/yoga_banner_centro_iyengar.jpg",
+  yoga4: {name:"Centro Iyengar Yoga", email: "contato@centroiyengaryogario.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_centro_iyengar.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544640699/Suppliers/Pilates/yoga_banner_centro_iyengar3.png",
           rating: "4", location: "Rio", phone: "021-2246-4028", facebook: "https://www.facebook.com/CIYRJ/",
           web_address: "www.centroiyengaryogario.com.br" },
 
-  yoga5: {name:"Prama", email: "luanafreitas@gmail.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_prama.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_banner_prama.jpg",
+  yoga5: {name:"Prama", email: "luanafreitas@gmail.com", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462598/Suppliers/Yoga/yoga_avatar_prama.jpg", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544639580/Suppliers/Pilates/yoga_banner_prama2.jpg",
           rating: "4", location: "Rio", phone: "021-99454-8803", facebook: "https://www.facebook.com/pramariodejaneiro/",
           web_address: "" },
 
@@ -66,11 +66,11 @@ suppliers = {
             rating: "4,8", location: "Rio", phone: "022-2622-2217", facebook: "https://www.facebook.com/acquaworld.escolademergulho/",
             web_address: " www.acquaworld.com.br" },
 
-  pilates1: {name:"Studio Mariana Lobato", email: "contato@studiomarianalobato.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_studio_mariana_lobato.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462734/Suppliers/Pilates/pilates_banner_studio_mariana_lobato.jpg",
+  pilates1: {name:"Studio Mariana Lobato", email: "contato@studiomarianalobato.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_studio_mariana_lobato.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544627964/Suppliers/Pilates/picture_banner_mariana_lobato2.jpg",
             rating: "5", location: "Rio", phone: "021-2249-2843", facebook: "https://www.facebook.com/studiomarianalobatorj/",
             web_address: "www.studiomarianalobato.com.br" },
 
-  pilates2: {name:"Gaeta Studio Pilates", email: "contato@gaetapilates.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_gaeta_studio_de_pilates.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544627964/Suppliers/Pilates/picture_banner_mariana_lobato2.jpg",
+  pilates2: {name:"Gaeta Studio Pilates", email: "contato@gaetapilates.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_gaeta_studio_de_pilates.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462733/Suppliers/Pilates/pilates_banner_gaeta_studio_de_pilates.png",
             rating: "3", location: "Rio", phone: "021-2242-5663", facebook: "https://www.facebook.com/GaetaStudioPilates/",
             web_address: "http://gaetapilates.com.br/" }
 }
