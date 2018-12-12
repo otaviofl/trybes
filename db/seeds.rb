@@ -70,7 +70,7 @@ suppliers = {
             rating: "5", location: "Rio", phone: "021-2249-2843", facebook: "https://www.facebook.com/studiomarianalobatorj/",
             web_address: "www.studiomarianalobato.com.br" },
 
-  pilates2: {name:"Gaeta Studio Pilates", email: "contato@gaetapilates.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_gaeta_studio_de_pilates.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462733/Suppliers/Pilates/pilates_banner_gaeta_studio_de_pilates.png",
+  pilates2: {name:"Gaeta Studio Pilates", email: "contato@gaetapilates.com.br", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544462730/Suppliers/Pilates/pilates_avatar_gaeta_studio_de_pilates.png", remote_picture_banner_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544627964/Suppliers/Pilates/picture_banner_mariana_lobato2.jpg",
             rating: "3", location: "Rio", phone: "021-2242-5663", facebook: "https://www.facebook.com/GaetaStudioPilates/",
             web_address: "http://gaetapilates.com.br/" }
 }
@@ -125,17 +125,17 @@ experiences = {
 
   yoga_class_3: {location: "Rio", supplier: yoga_supplier3, category: yoga_category, description: "The Museum of Yoga nasceu de uma experiência linda de 10 anos chamada BLYSS Yoga onde milhares de alunos nos deram o presente da sua energia nos tornando o mais querido Centro de Yoga do Rio! Continuamos com as aulas, Curso de Formação em Yoga , eventos mais agora tambem expandiremos a nossa missão para outras áreas.",
                   start: "17/12/2018", finish: "17/01/2019", address: "Rua Joana Angelica 116, Ipanema, Rio de Janeiro",
-                  price: 270, title: "Promoção Black Friday Yoga - 1 mês por R$50", short_title: "Heads UP! Black Friday Yoga! 1 mês de Yoga por R$50.",
+                  price: 50, title: "Black Friday - 1 mês", short_title: "Heads UP! Black Friday Yoga! 1 mês de Yoga por R$50.",
                   vacancy: vacancy, short_description: "Vamos levar a sabedoria milenar da prática de Yoga parao mundo de hoje usando tudo o que estiver ao nosso alcance."},
 
   yoga_class_4: {location: "Rio", supplier: yoga_supplier4, category: yoga_category, description: "O método Iyengar é sistemático e se desenvolve gradualmente, permitindo ao aluno progredir com confiança, sem se machucar. A partir das primeiras semanas o aluno já poderá perceber o aumento da sua capacidade física, da auto-percepção e da concentração. Com mais tempo o aluno atingirá um estado meditativo durante a prática. Segundo o Mestre: Yoga é meditação em ação.",
                   start: "20/12/2018", finish: "20/01/2019", address: "Rua Maria Eugênia, 217 Humaitá, Rio de Janeiro",
-                  price: 430, title: "Venha experimentar a Yoga Iyengar com Katia DaCosta - 1 mês de aulas", short_title: "Heads UP! O CIYRJ também dispõe de vestiários masculino e feminino equipados com armários e chuveiros.",
+                  price: 430, title: "Yoga Iyengar - 1 mês", short_title: "Heads UP! O CIYRJ também dispõe de vestiários masculino e feminino equipados com armários e chuveiros.",
                   vacancy: vacancy, short_description: "As aulas oferecidas no CIYRJ servem para aprender e aperfeiçoar as técnicas do método Iyengar. A variedade de níveis oferecidos obedece a uma graduação pedagógica que respeita a progressão do método Iyengar. A duração das aulas é de 1h30 ou 2h dependendo do nível."},
 
   yoga_class_5: {location: "Rio", supplier: yoga_supplier5, category: yoga_category, description: "O conhecimento yoguico tem uma sabedoria ancestral! Os benefícios psico físicos são de entrega, paciência, alívio, esperança, força, características de uma tartaruga em sua liberdade. Namastê.",
                   start: "16/12/2018", finish: "17/01/2019", address: "Rua Senador Dantas, 117 Centro, Rio de Janeiro",
-                  price: 320, title: "Ao invés de 1 mês de aula, oferecemos um kit com 20 aulas.", short_title: "Heads UP! Horários novos com Isabela Oliveira, segundas e quartas 18hs e 19hs.",
+                  price: 320, title: "Kit com 20 aulas.", short_title: "Heads UP! Horários novos com Isabela Oliveira, segundas e quartas 18hs e 19hs.",
                   vacancy: vacancy, short_description: "Somos um espaço de Yoga voltado para a resolução das amarras que limitam nosso crescimento."},
 
   diving_class_1: {location: "Angra", supplier: diving_supplier1, category: diving_category, description: "A 150 km da costa do Rio, Angra é considerada uma das melhores locais do mundo para o mergulho. Quer passar 5 dias mergulhando no paraíso? Vem com a gente.",
@@ -171,7 +171,7 @@ experiences = {
 
   pilates_class_2: {location: "Rio", supplier: pilates_supplier2, category: pilates_category, description: "O Pilates é conhecido por ser um método completo, pois trabalha tanto com os aspectos físicos quanto os mentais. A drenagem linfática Renata França consiste em técnicas com movimentos rigorosos e específicos se comparados à drenagem convencional. O Power Plate são plataformas que trabalham por meio das vibrações pelo corpo inteiro e com rápidas contrações musculares.",
                     start: "17/12/2018", finish: "18/12/2018", address: "Rua Sete de Setembro, 92 Centro, Rio de Janeiro",
-                    price: 400, title: "Pilates, Funcional, Método Renata França...", short_title: "Heads Up! Localizado no Centro do Rio, podemos recebê-lo com mais comodidade próximo ao seu trabalho.",
+                    price: 400, title: "Método Renata França", short_title: "Heads Up! Localizado no Centro do Rio, podemos recebê-lo com mais comodidade próximo ao seu trabalho.",
                     vacancy: vacancy, short_description: "Originariamente chamado “GAETA STUDIO PILATES”, o GAETA STUDIO surgiu em 03/09/2007 a partir do sonho de sua idealizadora e proprietária, a Fisioterapeuta RAQUEL GAETA, tendo como foco principal de atuação o Pilates."}
 }
 
