@@ -49,6 +49,38 @@
   z-index: 0;
 }
 
+.banner-background-container {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // height: 100vh;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+
+  .image-match {
+    // min-width: 100vw;
+    // min-height: 100vh;
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay-banner-match {
+  // background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%);
+  // background-size: cover;
+    height: 40vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    background: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 50%);
+  }
+}
+
 .match-container {
   min-height: 100vh;
   width: 100%;
@@ -105,22 +137,54 @@
       background: none repeat scroll 0 0 #FFFFFF;
       border: 4px solid #FFFFFF;
     }
+
+    .fafa {
+      padding-top: 15px;
+    }
   }
 }
 
+/* BLINKING BUTTOM */
+.book-blinking {
+  // background-color: #fff1cc;
+  -webkit-border-radius: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 5000ms infinite;
+  -moz-animation: glowing 5000ms infinite;
+  -o-animation: glowing 5000ms infinite;
+  animation: glowing 5000ms infinite;
+}
+$trybes-light-yellow: #fff1cc;
+$trybes-dark-yellow: #ffd966;
+@-webkit-keyframes glowing {
+  0% { background-color: #ffd966; -webkit-box-shadow: 0 0 3px #ffd966; }
+  50% { background-color: #fff1cc; -webkit-box-shadow: 0 0 40px #fff1cc; }
+  100% { background-color: #ffd966; -webkit-box-shadow: 0 0 3px #ffd966; }
+}
 
-// fixed transitions
+@-moz-keyframes glowing {
+  0% { background-color: #ffd966; -moz-box-shadow: 0 0 3px #ffd966; }
+  50% { background-color: #fff1cc; -moz-box-shadow: 0 0 40px #fff1cc; }
+  100% { background-color: #ffd966; -moz-box-shadow: 0 0 3px #ffd966; }
+}
 
-#fixed-transition-top {
-  background: no-repeat center center;
-  // background-image: cloudinary-url('ballet_home_1280.jpg');
-  background-attachment: fixed;
-  display: flex;
-  height: 30%;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  // background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+@-o-keyframes glowing {
+  0% { background-color: #ffd966; box-shadow: 0 0 3px #ffd966; }
+  50% { background-color: #fff1cc; box-shadow: 0 0 40px #fff1cc; }
+  100% { background-color: #ffd966; box-shadow: 0 0 3px #ffd966; }
+}
+
+@keyframes glowing {
+  0% { background-color: #ffd966; box-shadow: 0 0 3px #ffd966; }
+  50% { background-color: #fff1cc; box-shadow: 0 0 40px #fff1cc; }
+  100% { background-color: #ffd966; box-shadow: 0 0 3px #ffd966; }
 }
 
 
@@ -147,6 +211,7 @@
 .description-dashboard {
   grid-row: 2 /span 1;
   grid-column: 2 /span 3;
+  overflow: scroll;
 }
 
 //white cards design
@@ -445,7 +510,7 @@ $moveRight: $tileWidth * ($growFactor - 1);
 
 
 //Footer
-.footer-match {
+.book-bar-match {
   background: #F4F4F4;
   display: flex;
   align-items: center;
@@ -458,15 +523,20 @@ $moveRight: $tileWidth * ($growFactor - 1);
   // padding-top: 15px;
   justify-content: space-between;
   z-index: 400;
+  display: none;
 
-  .footer-info h4{
+  .book-bar-info h4{
     font-size: 14px;
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: 300;
   }
 
-  .footer-links {
+  .book-bar-match-display {
+    display: none;
+  }
+
+  .book-bar-links {
     display: flex;
     align-items: center;
 
@@ -547,7 +617,7 @@ $moveRight: $tileWidth * ($growFactor - 1);
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 1111px) {
-  .footer-match {
+  .book-bar-match {
     padding-left: 200px;
     padding-right: 200px;
   }
@@ -556,13 +626,8 @@ $moveRight: $tileWidth * ($growFactor - 1);
 
 @media (min-width: 768px) and (max-width: 1110px) and (orientation: landscape) {
 
-  #fixed-transition-top, #fixed-transition-middle, #fixed-transition-end {
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center;background-size: cover;
-  }
 
-  .footer-match {
+  .book-bar-match {
     padding-left: 200px;
     padding-right: 200px;
   }
@@ -585,11 +650,6 @@ $moveRight: $tileWidth * ($growFactor - 1);
     padding-top: 200px;
   }
 
-  #fixed-transition-top, #fixed-transition-middle, #fixed-transition-end {
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center;
-  }
 
 }
 
@@ -602,11 +662,6 @@ $moveRight: $tileWidth * ($growFactor - 1);
 
 @media (min-width: 320px) and (max-width: 550px) {
 
-  #fixed-transition-top, #fixed-transition-middle, #fixed-transition-end {
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center;
-  }
 
 }
 

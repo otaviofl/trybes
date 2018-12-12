@@ -32,13 +32,19 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body class="sticky-footer-body">
-    <%= render 'shared/navbar' unless experiences_show?%>
+
+    <!-- Use this method when removing navbar from a page
+   <%# render 'shared/navbar' unless experiences_show?%> -->
+
+    <%= render 'shared/navbar'%>
     <%= render 'shared/flashes' %>
-    <div class="sticky-footer-content <%= action_name == 'home' ? 'pattern-home' : '' %> ">
 
       <%= yield %>
-    </div>
-    <%= render "shared/footer" unless experiences_show? %>
+
+    <!-- Use this method when removing navbar from a page -->
+    <%= render "shared/footer" unless experiences_show?%>
+
+
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>

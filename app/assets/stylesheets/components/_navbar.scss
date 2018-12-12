@@ -8,20 +8,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #ffd966;
+  // color: #ffd966;
 }
 
 .navbar-trybes-opaque {
   background-color: black;
-  opacity: 0.3;
-  box-shadow: none;
-  position: absolute;
-  width: 100%;
-  z-index: 4;
-  .navbar-trybes-link {
-    color: white;
-    font-weight: bold;
-  }
+  opacity: 0.5;
+  // box-shadow: none;
+  // position: absolute;
+  // width: 100%;
+  // z-index: 4;
+  // .navbar-trybes-link {
+  //   color: white;
+  //   font-weight: bold;
+  // }
 }
 
 /* Logo */
@@ -52,7 +52,7 @@
 
 /* Navbar link */
 .navbar-trybes-link {
-  color: #616668;
+  color: white;
   font-size: 12px;
 }
 .navbar-trybes-link:hover {
