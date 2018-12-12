@@ -9,7 +9,7 @@
   </div>
 
   <div class="banner-match", style="background-image: url(<%= cl_image_path('Match_banner_1280.jpg') %>)">
-    <div class="match-container">
+    <div class="match-container match-container-content">
       <h2 class="match-title">This is your trybe!</h2>
       <div class="match-content">
           <h3 class="match-heading">You are not alone in this experience!</h3>
@@ -102,16 +102,23 @@
   </div>
 
   <div class="container text-center">
-    <div class="experience-dashboard">
-      <div class="main">
-        <div class="main-content">
-          <%= image_tag ('mergulho_avatar_xdivers.png'), class: "img-circle"%>
-          <h3 class="name"> XDivers Scuba School</h3>
-          <p class="short-title short-title-ellipsis" style="-webkit-box-orient: vertical;">Rua Visconde de Pirajá 550 Sala 1113</p>
-          <p class="text-center short-description-ellipsis" style="-webkit-box-orient: vertical;">Courses, trips and equipment sales. Everything for those who are passionate about the sea!</p>
+    <div class="match-experience-dashboard">
+      <div class="main-dashboard">
+        <div class="supplier-content">
+          <div class="banner-cover">
+               <%= cl_image_tag ('mergulho_banner_xdivers.png') %>
+          </div>
+          <div class="supplier">
+              <%= cl_image_tag ('mergulho_avatar_xdivers.png'), class: "img-circle"%>
+          </div>
+          <div class="supplier-content-wrap">
+            <h3 class="name"> XDivers Scuba School</h3>
+            <p class="short-title short-title-ellipsis" style="-webkit-box-orient: vertical;">Rua Visconde de Pirajá 550 Sala 1113</p>
+            <p class="text-center short-description-ellipsis" style="-webkit-box-orient: vertical;">Courses, trips and equipment sales. Everything for those who are passionate about the sea!</p>
+          </div>
         </div>
       </div>
-      <div class="stat">
+      <div class="stat-dashboard">
         <div class="stat-content">
           <h4>R$350</h4>
           <p>
@@ -119,7 +126,7 @@
           </p>
         </div>
       </div>
-       <div class="stat">
+       <div class="stat-dashboard">
         <div class="stat-content">
           <h4>33 participants</h4>
           <p>
@@ -127,7 +134,7 @@
           </p>
         </div>
       </div>
-       <div class="stat">
+       <div class="stat-dashboard">
         <div class="stat-content">
           <h4>15Dez</h4>
           <p>
@@ -139,7 +146,7 @@
           </p>
         </div>
       </div>
-      <div class="description">
+      <div class="description-dashboard">
         <div class="description-content">
           <h4 class="text-center title-ellipsis" style="-webkit-box-orient: vertical;">Four dives in Angra dos Reis! </h4>
           <p class="short-description experience-paragraph-ellipsis" style="-webkit-box-orient: vertical";>December has arrived! Come and dive with us. Let's get the chat and skills up to date. We will be staying at Recanto do Bem-te-vi, and going out with the best scuba operator of Costa Verde, Sotto Mare - Diving Center. We still have some vacancies, who is in?</p>
@@ -157,14 +164,6 @@
         <%#= image_tag experience.photo.url(:card_banner), class: "img-circle"%>
     </div>
   </div> -->
-
-
-<div class="ending">
-    <p class="text-center">"We are connecting you with the experience supplier. Stay tuned for more details about the experience."</p>
-
-
-
-</div>
 
 <div class="footer-match">
   <div class="footer-info">
