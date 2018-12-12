@@ -1,13 +1,19 @@
-<% content_for(:navbar_class, "navbar-transparent") %>
-
 <div class="match-page">
+  <div class="navbar-match navbar-fixed-top navbar-match-opaque">
+    <div class="navbar-match-item navbar-match-link">
+      <a href="#"><i class="fas fa-angle-left"> Pick Another Trybe</i></a>
+    </div>
+    <div class="navbar-match-item navbar-match-link">
+      <a href="#">Tell Your Friends <i class="far fa-share-square"></i></a>
+    </div>
+  </div>
 
-  <div class="banner-match", style="background-image: url(<%= cl_image_path('Match_banner.jpg') %>)">
+  <div class="banner-match", style="background-image: url(<%= cl_image_path('Match_banner_1280.jpg') %>)">
     <div class="match-container">
       <h2 class="match-title">This is your trybe!</h2>
-      <div class="main-match-container">
-          <h3 class="heading">You are not alone in this experience!</h3>
-          <p class="tribe">Your experience choice matches with others choice. Here are your trybe members:</p>
+      <div class="match-content">
+          <h3 class="match-heading">You are not alone in this experience!</h3>
+          <p class="match-tribe">Your experience choice matches with others people. <br> Here are your trybe members:</p>
           <div class="user">
             <div class="row">
               <div class="row__inner">
@@ -16,11 +22,17 @@
                   <div class="tile__media">
                     <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
                   </div>
+                  <div class="message-user-link">
+                    <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Message </i></a>
+                  </div>
                 </div>
 
                 <div class="tile">
                   <div class="tile__media">
                     <%= image_tag ('rotating_card_profile3.jpg'), class: "tile__img img-circle"%>
+                  </div>
+                  <div class="message-user-link">
+                    <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Message </i></a>
                   </div>
                 </div>
 
@@ -28,11 +40,17 @@
                   <div class="tile__media">
                     <%= image_tag ('rotating_card_profile2.jpg'), class: "tile__img img-circle"%>
                   </div>
+                  <div class="message-user-link">
+                    <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Message </i></a>
+                  </div>
                 </div>
 
                 <div class="tile">
                   <div class="tile__media">
                     <%= image_tag ('avatargirl.png'), class: "tile__img img-circle"%>
+                  </div>
+                  <div class="message-user-link">
+                    <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Message </i></a>
                   </div>
                 </div>
 
@@ -40,11 +58,17 @@
                   <div class="tile__media">
                     <%= image_tag ('avataroldman.png'), class: "tile__img img-circle"%>
                   </div>
+                  <div class="message-user-link">
+                    <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Message </i></a>
+                  </div>
                 </div>
 
                 <div class="tile">
                   <div class="tile__media">
                     <%= image_tag ('avatarwoman.png'), class: "tile__img img-circle"%>
+                  </div>
+                  <div class="message-user-link">
+                    <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Message </i></a>
                   </div>
                 </div>
 
@@ -52,10 +76,15 @@
                   <div class="tile__media">
                     <%= image_tag ('avatarboy.png'), class: "tile__img img-circle"%>
                   </div>
+                  <div class="message-user-link">
+                    <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Message </i></a>
+                  </div>
                 </div>
-
               </div>
             </div>
+          </div>
+          <div class="arrow">
+            <i class="fas fa-angle-double-down "></i>
           </div>
       </div>
     </div>
@@ -64,19 +93,70 @@
       <path class="a2" d="M0 20 L30 52 L60 20"></path>
       <path class="a3" d="M0 40 L30 72 L60 40"></path>
     </svg> -->
-  </div>
-
-
-  <div class="container text-center padded" id="fixed-transition-top", style="background-image: url(<%= cl_image_path('mergulho_banner_xdivers.jpg') %>)">
 
   </div>
 
-  <div class='experience-info'>
+  <div class="container text-center padded" id="fixed-transition-top", style="background-color:black;">
+  <!-- <div class="container text-center padded" id="fixed-transition-top", style="background-image: url(<%= cl_image_path('mergulho_banner_xdivers.jpg') %>)"> -->
+
+  </div>
+
+  <div class="container text-center">
+    <div class="experience-dashboard">
+      <div class="main">
+        <div class="main-content">
+          <%= image_tag ('mergulho_avatar_xdivers.png'), class: "img-circle"%>
+          <h3 class="name"> XDivers Scuba School</h3>
+          <p class="short-title short-title-ellipsis" style="-webkit-box-orient: vertical;">Rua Visconde de Pirajá 550 Sala 1113</p>
+          <p class="text-center short-description-ellipsis" style="-webkit-box-orient: vertical;">Courses, trips and equipment sales. Everything for those who are passionate about the sea!</p>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-content">
+          <h4>R$350</h4>
+          <p>
+              value
+          </p>
+        </div>
+      </div>
+       <div class="stat">
+        <div class="stat-content">
+          <h4>33 participants</h4>
+          <p>
+              vacancy
+          </p>
+        </div>
+      </div>
+       <div class="stat">
+        <div class="stat-content">
+          <h4>15Dez</h4>
+          <p>
+              from
+          </p>
+          <h4>16Dez</h4>
+          <p>
+              until
+          </p>
+        </div>
+      </div>
+      <div class="description">
+        <div class="description-content">
+          <h4 class="text-center title-ellipsis" style="-webkit-box-orient: vertical;">Four dives in Angra dos Reis! </h4>
+          <p class="short-description experience-paragraph-ellipsis" style="-webkit-box-orient: vertical";>December has arrived! Come and dive with us. Let's get the chat and skills up to date. We will be staying at Recanto do Bem-te-vi, and going out with the best scuba operator of Costa Verde, Sotto Mare - Diving Center. We still have some vacancies, who is in?</p>
+          <h4 class="text-center heads-up">Heads Up!</h4>
+          <p class="heads-up-description heads-up-ellipsis" style="-webkit-box-orient: vertical;"> Limited vacancies. Cost for two dives per day. Experience for all levels of certification.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class='experience-info'>
     <div class="supplier">
         <%= image_tag ('mergulho_avatar_xdivers.png'), class: "img-circle"%>
         <%#= image_tag experience.photo.url(:card_banner), class: "img-circle"%>
     </div>
-  </div>
+  </div> -->
 
 
 <div class="ending">
@@ -87,11 +167,10 @@
 </div>
 
 <div class="footer-match">
-  <div class="footer-links">
-    <a  class="btn btn-primary btn-sm" href="#">Confirm Experience!</a>
+  <div class="footer-info">
+    <h4>R$350  / Group Price</h4>
   </div>
-  <div class="footer-line">
-      <i class="fa fa-mail-forward"></i> Leave this Trybe:
-      <a  href="#">Keep Searching!</a>
-    </div>
+  <div class="footer-links">
+    <a  class="btn btn-primary btn-match" href="#">Make Reservation!</a>
+  </div>
 </div>
