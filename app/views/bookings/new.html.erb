@@ -1,0 +1,11 @@
+<h1>Booking New</h1>
+<%= @experience = Experience.find(params[:experience_id]) %>
+<br>
+<%=  current_user.name %>
+<br>
+<%=  current_user.id %>
+
+<br>
+<br>
+<br>
+<%= link_to "Please Confirm", experience_bookings_path(experience: @experience, user: @user), class:"btn-primary", method: :post %>
