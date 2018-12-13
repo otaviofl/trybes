@@ -12,13 +12,13 @@
       <!-- Links when logged in -->
       <%#= link_to "", "#", class: "navbar-trybes-item navbar-trybes-link" %>
       <%#= link_to "", "#", class: "navbar-trybes-item navbar-trybes-link" %>
-      <%= link_to "Support", "#", class: "navbar-trybes-item navbar-trybes-link" %>
+      <%#= link_to "Support", "#", class: "navbar-trybes-item navbar-trybes-link" %>
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-trybes-item">
         <div class="dropdown">
           <% if user_signed_in? %>
-            <%= image_tag ('avataroldman.png'), class: "avatar dropdown-toggle", id: "navbar-trybes-menu", "data-toggle" => "dropdown" %>
+            <%= cl_image_tag (current_user.picture_avatar), class: "avatar dropdown-toggle", id: "navbar-trybes-menu", "data-toggle" => "dropdown" %>
           <% end %>
           <ul class="dropdown-menu dropdown-menu-right navbar-trybes-dropdown-menu">
             <li>
