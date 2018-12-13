@@ -2,13 +2,14 @@
 <div class="banner-match">
   <div class="match-container match-container-content">
     <div class="match-content">
-      <h2 class="match-title">This is your trybe!</h2>
       <% if @bookings.empty? %>
-        <h3 class="match-heading">You are the first in this experience!!!</h3>
+        <h2 class="match-title">You are the first trybe member!</h2>
+        <h3 class="match-heading">But you are not alone in this experience.</h3>
         <% else %>
-          <h3 class="match-heading">You are not alone in this experience!!!</h3>
+          <h2 class="match-title">This is your trybe!</h2>
+          <h3 class="match-heading">Your experience choice matches with other people.</h3>
+          <p class="match-tribe">Check all information below!</p>
       <% end %>
-      <p class="match-tribe">Your experience choice matches with other people.</p>
 
       <div class="book-bar-links book-blinking">
         <%= link_to "Book now!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match", "data-toggle" => "modal", "data-target" => "#booking_Modal" %>
@@ -155,11 +156,11 @@
   <div class="comments-container">
     <h1>Trybe Chat <a href="http://creaticode.com"></a></h1>
 
-    <!-- <div class="wrap-type-message">
+    <div class="wrap-type-message">
       <input type="text" placeholder="type here..">
       <div class="bg"></div>
     </div>
- -->
+
     <ul id="comments-list" class="comments-list">
       <li>
         <div class="comment-main-level">
@@ -275,16 +276,6 @@
         </button>
       </div>
       <div class="modal-body">
-        <h1>Your booking confirmation:</h1>
-        <%#= @experience = Experience.find(params[:experience_id]) %>
-        <br>
-        <%#=  current_user.name %>
-        <br>
-        <%#=  current_user.id %>
-        <br>
-        <%#= link_to "Please Confirm", experience_bookings_path(experience: @experience, user: @user), class:"btn-primary", method: :post %>
-        <br>
-        <h2>We have sent an e-mail connection you with your host. But feel free to send a direct message to him! </h2>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
