@@ -3,10 +3,15 @@
   <div class="match-container match-container-content">
     <div class="match-content">
       <h2 class="match-title">This is your trybe!</h2>
-      <h3 class="match-heading">You are not alone in this experience!</h3>
+      <% if @bookings.empty? %>
+        <h3 class="match-heading">You are the first in this experience!!!</h3>
+        <% else %>
+          <h3 class="match-heading">You are not alone in this experience!!!</h3>
+      <% end %>
       <p class="match-tribe">Your experience choice matches with other people.</p>
+
       <div class="book-bar-links book-blinking">
-        <%= link_to "Book now!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match", "data-toggle" => "modal", "data-target" => "#booking_Modal" %>
+        <%= link_to "Book now!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match"%>
       </div>
     </div>
   </div>
@@ -88,6 +93,10 @@
             <p class="short-title short-title-ellipsis" style="-webkit-box-orient: vertical;"><%= @experience.address %></p>
             <p class="text-center short-description-ellipsis" style="-webkit-box-orient: vertical;"><%= @experience.short_description %></p>
           </div>
+          <!-- Modal Map -->
+          <div class="text-center">
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalCustom">Host Location</button>
+          </div>
         </div>
       </div>
       <div class="stat-dashboard">
@@ -130,31 +139,85 @@
   </div>
 </div>
 
-<!-- Comments Box -->
-<div class="comments-container">
-  <h1>Trybe Chat <a href="http://creaticode.com"></a></h1>
+<!--Google map-->
+<div class="maps-wrap">
+  <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
+    <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+      style="border:0" allowfullscreen></iframe>
+  </div>
+</div>
 
-  <ul id="comments-list" class="comments-list">
-    <li>
-      <div class="comment-main-level">
-        <!-- Avatar -->
-        <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
-        <!-- Contenedor del Comentario -->
-        <div class="comment-box">
-          <div class="comment-head">
-            <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
-            <span>hace 20 minutos</span>
-            <i class="fa fa-reply"></i>
-            <i class="fa fa-heart"></i>
-          </div>
-          <div class="comment-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+<!--Google Maps-->
+
+
+<!-- Comments Box -->
+<div class="comments-wrap">
+  <div class="comments-container">
+    <h1>Trybe Chat <a href="http://creaticode.com"></a></h1>
+
+    <!-- <div class="wrap-type-message">
+      <input type="text" placeholder="type here..">
+      <div class="bg"></div>
+    </div>
+ -->
+    <ul id="comments-list" class="comments-list">
+      <li>
+        <div class="comment-main-level">
+          <!-- Avatar -->
+          <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+          <!-- Contenedor del Comentario -->
+          <div class="comment-box">
+            <div class="comment-head">
+              <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
+              <span>hace 20 minutos</span>
+              <i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="comment-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Respuestas de los comentarios -->
-      <ul class="comments-list reply-list">
-        <li>
+        <!-- Respuestas de los comentarios -->
+        <ul class="comments-list reply-list">
+          <li>
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
+                <span>hace 10 minutos</span>
+                <i class="fa fa-reply"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
+                <span>hace 10 minutos</span>
+                <i class="fa fa-reply"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="comment-main-level">
           <!-- Avatar -->
           <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
           <!-- Contenedor del Comentario -->
@@ -169,48 +232,11 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
             </div>
           </div>
-        </li>
-
-        <li>
-          <!-- Avatar -->
-          <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
-          <!-- Contenedor del Comentario -->
-          <div class="comment-box">
-            <div class="comment-head">
-              <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
-              <span>hace 10 minutos</span>
-              <i class="fa fa-reply"></i>
-              <i class="fa fa-heart"></i>
-            </div>
-            <div class="comment-content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
-            </div>
-          </div>
-        </li>
-      </ul>
-    </li>
-
-    <li>
-      <div class="comment-main-level">
-        <!-- Avatar -->
-        <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
-        <!-- Contenedor del Comentario -->
-        <div class="comment-box">
-          <div class="comment-head">
-            <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
-            <span>hace 10 minutos</span>
-            <i class="fa fa-reply"></i>
-            <i class="fa fa-heart"></i>
-          </div>
-          <div class="comment-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
-          </div>
         </div>
-      </div>
-    </li>
-  </ul>
+      </li>
+    </ul>
+  </div>
 </div>
-
 
 <!-- <div class='experience-info'>
   <div class="supplier">
@@ -225,7 +251,7 @@
   </div>
   <div class="book-bar-links">
     <!-- <a  class="btn btn-primary btn-match" href="#">Book your Experience!!!</a> -->
-    <%= link_to "Book this Experience!!!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match", "data-toggle" => "modal", "data-target" => "#booking_Modal" %>
+    <%= link_to "Book this Experience!!!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match"%>
   </div>
 </div>
 
@@ -266,38 +292,40 @@
 </div>
 
 
+<!-- MODAL MAP -->
 
-<!-- MODAL BOOKING -->
+<!--Modal: Name-->
+<!-- <div class="modal fade" id="modalCustom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document"> -->
 
-<!-- Modal -->
-<div class="modal fade" id="booking_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Nice! You will try something new! \o/</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <!--Content-->
+ <!--    <div class="modal-content"> -->
+
+      <!--Body-->
+    <!--   <div class="modal-body mb-0 p-0"> -->
+
+        <!--Google map-->
+       <!--  <div id="map-container-google-18" class="z-depth-1-half map-container-11"  style="height: 400px">
+          <iframe src="https://maps.google.com/maps?q=los%20angeles&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+      </div> -->
+
+      <!--Footer-->
+   <!--    <div class="modal-footer justify-content-center">
+
+        <button type="button" class="btn btn-secondary btn-md">Save location <i class="fa fa-map-marker ml-1"></i></button>
+        <button type="button" class="btn btn-outline-secondary btn-md" data-dismiss="modal">Close <i class="fa fa-times ml-1"></i></button>
+
       </div>
-      <div class="modal-body">
-        <h1>Your booking confirmation:</h1>
-        <%#= @experience = Experience.find(params[:experience_id]) %>
-        <br>
-        <%#=  current_user.name %>
-        <br>
-        <%#=  current_user.id %>
-        <br>
-        <%#= link_to "Please Confirm", experience_bookings_path(experience: @experience, user: @user), class:"btn-primary", method: :post %>
-        <br>
-        <h2>We have sent an e-mail connection you with your host. But feel free to send a direct message to him! </h2>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">e-mail hoster!</button>
-      </div>
-    </div>
-  </div>
-</div>
+
+    </div> -->
+    <!--/.Content-->
+
+ <!--  </div>
+</div> -->
+<!--Modal: Name-->
 
 
 
@@ -341,3 +369,43 @@
   </div>
 </div>
  -->
+
+
+
+<!-- MODAL BOOKING -->
+ <!--  <div class="book-bar-links book-blinking">
+        <%= link_to "Book now!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match", "data-toggle" => "modal", "data-target" => "#booking_Modal" %>
+      </div> -->
+<!-- Modal -->
+<!-- <div class="modal fade" id="booking_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nice! You will try something new! \o/</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h1>Your booking confirmation:</h1>
+        <%#= @experience = Experience.find(params[:experience_id]) %>
+        <br>
+        <%#=  current_user.name %>
+        <br>
+        <%#=  current_user.id %>
+        <br>
+        <%#= link_to "Please Confirm", experience_bookings_path(experience: @experience, user: @user), class:"btn-primary", method: :post %>
+        <br>
+        <h2>We have sent an e-mail connection you with your host. But feel free to send a direct message to him! </h2>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">e-mail hoster!</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
