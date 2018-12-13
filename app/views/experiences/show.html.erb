@@ -11,7 +11,7 @@
       <p class="match-tribe">Your experience choice matches with other people.</p>
 
       <div class="book-bar-links book-blinking">
-        <%= link_to "Book now!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match"%>
+        <%= link_to "Book now!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match", "data-toggle" => "modal", "data-target" => "#booking_Modal" %>
       </div>
     </div>
   </div>
@@ -251,11 +251,54 @@
   </div>
   <div class="book-bar-links">
     <!-- <a  class="btn btn-primary btn-match" href="#">Book your Experience!!!</a> -->
-    <%= link_to "Book this Experience!!!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match"%>
+    <%= link_to "Book this Experience!!!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match", "data-toggle" => "modal", "data-target" => "#booking_Modal" %>
   </div>
 </div>
 
 <%= javascript_pack_tag "skrollr" %>
+
+
+
+
+<!-- MODAL BOOKING -->
+ <!--  <div class="book-bar-links book-blinking">
+        <%= link_to "Book now!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match", "data-toggle" => "modal", "data-target" => "#booking_Modal" %>
+      </div> -->
+<!-- Modal -->
+<div class="modal fade" id="booking_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nice! You will try something new! \o/</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h1>Your booking confirmation:</h1>
+        <%#= @experience = Experience.find(params[:experience_id]) %>
+        <br>
+        <%#=  current_user.name %>
+        <br>
+        <%#=  current_user.id %>
+        <br>
+        <%#= link_to "Please Confirm", experience_bookings_path(experience: @experience, user: @user), class:"btn-primary", method: :post %>
+        <br>
+        <h2>We have sent an e-mail connection you with your host. But feel free to send a direct message to him! </h2>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">e-mail hoster!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 
 <!-- MODAL DIRECT -->
@@ -369,43 +412,5 @@
   </div>
 </div>
  -->
-
-
-
-<!-- MODAL BOOKING -->
- <!--  <div class="book-bar-links book-blinking">
-        <%= link_to "Book now!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match", "data-toggle" => "modal", "data-target" => "#booking_Modal" %>
-      </div> -->
-<!-- Modal -->
-<!-- <div class="modal fade" id="booking_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Nice! You will try something new! \o/</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h1>Your booking confirmation:</h1>
-        <%#= @experience = Experience.find(params[:experience_id]) %>
-        <br>
-        <%#=  current_user.name %>
-        <br>
-        <%#=  current_user.id %>
-        <br>
-        <%#= link_to "Please Confirm", experience_bookings_path(experience: @experience, user: @user), class:"btn-primary", method: :post %>
-        <br>
-        <h2>We have sent an e-mail connection you with your host. But feel free to send a direct message to him! </h2>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">e-mail hoster!</button>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
 
 
