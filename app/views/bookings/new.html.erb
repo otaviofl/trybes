@@ -5,25 +5,28 @@
   <div class="wrapper-booking">
     <div class"nav-icon">
       <span class="fa fa-chevron-left" id="chevron-left" aria-hidden="true"></span>
-      <span class="fa fa-search" id="search-icon" aria-hidden="true"></span>
+      <span class="fas fa-times" id="close-icon" aria-hidden="true"></span>
       </div> <!-- end of nav icon -->
     <div class="banner">
       <h2>Booking Confirmation!</h2>
       <h1>Nice <%=  current_user.name %>!</h1>
-      <h1>You will try something new!</h1>
+      <h4>You will try something new!</h4>
       <br>
-      <h1><%= @experience.title %></h1>
-      <img src="http://cdn.ceramiassociates.com/wp-content/gallery/waterclub-at-the-borgata/Borgata_WaterClub_sunbar.jpg" width="100px" height="100px" id="logo">
+      <p>You have booked the experience:</p> <h5><%= @experience.title %></h5>
+      <div class="supplier">
+          <%= cl_image_tag (@experience.supplier.picture_avatar), class: "img-circle"%>
+      </div>
     </div> <!-- end of banner -->
     <div class="booking-area">
       <h1>Hosted by <%= @experience.supplier.name %></h1>
-      <h1>R$<%= @experience.price.to_i %></h1>
+      <!-- <h1>R$<%= @experience.price.to_i %></h1> -->
       <div class="booking-action">
         <button id="minus">-</button>
-          <span id="amount">2</span>
-        <button id="plus">+</button>
+          <span id="amount">R$<%= @experience.price.to_i %></span>
+        <button id="minus">-</button>
+       <!--  <button id="plus">+</button> -->
       </div>
-      <h3>Date & Time</h3>
+      <h4>Date & Time</h4>
       <div id="dateAndTime"><%= @experience.start.strftime("%m-%d") %></div>
     </div> <!-- end of booking area -->
     <div class="confirm">
