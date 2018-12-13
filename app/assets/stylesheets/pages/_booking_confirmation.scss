@@ -1,0 +1,119 @@
+
+.booking-confirmation-page {
+  font-family: 'Lato', sans-serif;
+  // background: url("http://wallpapercave.com/wp/5Oi2ZbZ.jpg") no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), image-url("background_booking_1280.jpg");
+  background-size: cover;
+  background-position: center;
+
+  h1, h3 {
+    font-weight: normal;
+    color: white
+  }
+
+  h1 {
+    font-size: 1.618em;
+    color: #fff1cc;
+  }
+}
+
+.wrapper-booking {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  background: transparent;
+  background-size: cover;
+  background-position: right top;
+  box-shadow: -5px 5px 20px #111;
+  color: white;
+
+  #logo {
+    border-radius: 100%;
+  }
+
+  .fa {
+    margin: 2.25em 2em 1em;
+    transform: scale(1.2);
+  }
+
+  #chevron-left {
+    margin-right: 6.5em;
+  }
+
+  #search-icon {
+    margin-left: 6.5em;
+  }
+
+  #amount {
+    font-size: 4.125em;
+    font-weight: bold;
+    color: #ffd966;
+    min-width: 30%;
+  }
+
+  .booking-action {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    background: none;
+    border: none;
+  }
+
+  #plus, #minus {
+    font-size: 2.618em;
+    color: white;
+  }
+
+  #plus:focus, #minus:focus {
+    outline: none;
+  }
+
+  #plus:hover, #minus:hover {
+    cursor: pointer;
+  }
+
+  #dateAndTime {
+    font-size: 1.618em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  #confirm-btn {
+    border: 1px solid #111;
+    background-color: #111;
+    color: #cae7f9;
+    padding: 1.5em 5em;
+    text-transform: uppercase;
+    box-shadow: 0 3px 5px #222;
+    margin: 2em;
+  }
+
+  #confirm-btn:hover {
+    cursor: pointer;
+  }
+
+  footer {
+    text-align: center;
+    background-color: rgba(7,108,174,0.5);
+    color: white;
+    position: fixed;
+    left:0px;
+    bottom: 0px;
+    width:100%;
+  }
+
+  a {
+    text-decoration: none;
+   color: white;
+  }
+
+  a:hover {
+    color: #ffd966;
+  }
+
+}
+
