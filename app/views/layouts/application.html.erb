@@ -36,7 +36,8 @@
     <!-- Use this method when removing navbar from a page
    <%# render 'shared/navbar' unless experiences_show?%> -->
 
-    <%= render 'shared/navbar'%>
+    <%= render 'shared/navbar' unless sessions_new? || registrations_new?%>
+
     <%= render 'shared/flashes' %>
 
       <%= yield %>
