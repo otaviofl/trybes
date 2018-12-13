@@ -1,86 +1,100 @@
-<!-- <div class="navbar-match navbar-fixed-top navbar-match-opaque">
-  <div class="navbar-match-item navbar-match-link">
-    <a href="#"><i class="fas fa-angle-left"> Pick Another Trybe</i></a>
-  </div>
-  <div class="navbar-match-item navbar-match-link">
-    <a href="#">Tell Your Friends <i class="far fa-share-square"></i></a>
-  </div>
-</div> -->
 
-
-<!-- Tryning to Apply Parallax effect -->
-<!-- <div class="match-page" data-0='opacity: 1; transform: translateY(0px);' data-400='opacity: 1; transform: translateY(200px);' data-800='opacity: 0; transform: translateY(400px);'> -->
-
-<div class="banner-background-container">
-  <div class="overlay-banner-match"></div>
-  <a class="image-display" href="/" style="background-image: asset-url()" >
-    <%= cl_image_tag ("Match_banner_cut.jpg") %>
-  </a>
-</div>
-<div class="match-page">
-  <div class="banner-match", style="background-image: url( <%= cl_image_path('Match_banner_1280.jpg') %> )">
-    <div class="match-container match-container-content">
+<div class="banner-match">
+  <div class="match-container match-container-content">
+    <div class="match-content">
       <h2 class="match-title">This is your trybe!</h2>
-      <div class="match-content">
-          <h3 class="match-heading">You are not alone in this experience!</h3>
-          <p class="match-tribe">Your experience choice matches with others people. <br> Here are your trybe members:</p>
-          <div class="user">
-            <div class="row">
-              <div class="row__inner">
-
-                <!-- Left Arrow -->
-                <div class="tile fafa">
-                  <i class="fas fa-caret-left"></i>
-                </div>
-
-                <!-- Input from User Database -->
-                <div class="tile">
-                  <div class="tile__media">
-                    <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
-                  </div>
-                  <div class="message-user-link">
-                    <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Message </i></a>
-                  </div>
-                </div>
-
-                <!-- Invite Friend -->
-                <div class="tile">
-                  <div class="tile__media">
-                    <%= image_tag ('users_vacancy.png'), class: "tile__img img-circle"%>
-                  </div>
-                  <div class="message-user-link">
-                    <a class="btn btn-primary btn-message" href="#"><i class="far fa-share-square"> Invite a Friend</i></a>
-                  </div>
-                </div>
-
-                <!-- Right Arrow -->
-                <div class="tile fafa">
-                  <i class="fas fa-caret-right"></i>
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="book-bar-links book-blinking">
-            <%= link_to "Try it! Book now!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match" %>
-          </div>
-
-
-          <div class="arrow">
-            <i class="fas fa-angle-double-down "></i>
-          </div>
-
+      <h3 class="match-heading">You are not alone in this experience!</h3>
+      <p class="match-tribe">Your experience choice matches with other people.</p>
+      <div class="book-bar-links book-blinking">
+        <%= link_to "Book now!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match" %>
       </div>
     </div>
-    <!-- <svg class="arrows">
-      <path class="a1" d="M0 0 L30 32 L60 0"></path>
-      <path class="a2" d="M0 20 L30 52 L60 20"></path>
-      <path class="a3" d="M0 40 L30 72 L60 40"></path>
-    </svg> -->
-
   </div>
+</div>
+
+<div class="banner-carousel">
+  <div class="carousel-container carousel-container-content">
+    <div class="carousel-content">
+        <div class="user">
+          <div class="row">
+            <div class="row__inner">
+
+              <!-- Left Arrow -->
+              <div class="tile fafa">
+                <i class="fas fa-caret-left"></i>
+              </div>
+
+              <!-- Input from User Database -->
+              <div class="tile">
+                <div class="tile__media">
+                  <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
+                </div>
+                <div class="message-user-link">
+                  <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Direct </i></a>
+                </div>
+              </div>
+              <div class="tile">
+                <div class="tile__media">
+                  <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
+                </div>
+                <div class="message-user-link">
+                  <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Direct </i></a>
+                </div>
+              </div>
+              <div class="tile">
+                <div class="tile__media">
+                  <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
+                </div>
+                <div class="message-user-link">
+                  <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Direct </i></a>
+                </div>
+              </div>
+              <div class="tile">
+                <div class="tile__media">
+                  <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
+                </div>
+                <div class="message-user-link">
+                  <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Direct </i></a>
+                </div>
+              </div>
+              <div class="tile">
+                <div class="tile__media">
+                  <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
+                </div>
+                <div class="message-user-link">
+                  <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Direct </i></a>
+                </div>
+              </div>
+
+              <!-- Invite Friend -->
+              <div class="tile">
+                <div class="tile__media">
+                  <%= image_tag ('users_vacancy.png'), class: "tile__img img-circle"%>
+                </div>
+                <div class="message-user-link">
+                  <a class="btn btn-primary btn-message" href="#"><i class="far fa-share-square fa-comment"> Invite a Friend</i></a>
+                </div>
+              </div>
+
+              <!-- Right Arrow -->
+              <div class="tile fafa">
+                <i class="fas fa-caret-right"></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+     <!--  <div class="arrow">
+        <i class="fas fa-angle-double-down "></i>
+      </div> -->
+  </div>
+  <!-- <svg class="arrows">
+    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+  </svg> -->
+
 </div>
 
 
@@ -156,8 +170,31 @@
   </div>
   <div class="book-bar-links">
     <!-- <a  class="btn btn-primary btn-match" href="#">Book your Experience!!!</a> -->
-    <%= link_to "Book your Experience!!!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match" %>
+    <%= link_to "Book this Experience!!!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match" %>
   </div>
 </div>
 
 <%= javascript_pack_tag "skrollr" %>
+
+
+<!-- History -->
+
+<!-- <div class="navbar-match navbar-fixed-top navbar-match-opaque">
+  <div class="navbar-match-item navbar-match-link">
+    <a href="#"><i class="fas fa-angle-left"> Pick Another Trybe</i></a>
+  </div>
+  <div class="navbar-match-item navbar-match-link">
+    <a href="#">Tell Your Friends <i class="far fa-share-square"></i></a>
+  </div>
+</div> -->
+
+
+<!-- Tryning to Apply Parallax effect -->
+<!-- <div class="match-page" data-0='opacity: 1; transform: translateY(0px);' data-400='opacity: 1; transform: translateY(200px);' data-800='opacity: 0; transform: translateY(400px);'> -->
+
+<!-- <svg class="arrows">
+  <path class="a1" d="M0 0 L30 32 L60 0"></path>
+  <path class="a2" d="M0 20 L30 52 L60 20"></path>
+  <path class="a3" d="M0 40 L30 72 L60 40"></path>
+</svg> -->
+
