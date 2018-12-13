@@ -25,46 +25,20 @@
               </div>
 
               <!-- Input from User Database -->
-              <div class="tile">
-                <div class="tile__media">
-                  <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
-                </div>
-                <div class="message-user-link">
-                  <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Direct </i></a>
-                </div>
-              </div>
-              <div class="tile">
-                <div class="tile__media">
-                  <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
-                </div>
-                <div class="message-user-link">
-                  <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Direct </i></a>
-                </div>
-              </div>
-              <div class="tile">
-                <div class="tile__media">
-                  <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
-                </div>
-                <div class="message-user-link">
-                  <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Direct </i></a>
-                </div>
-              </div>
-              <div class="tile">
-                <div class="tile__media">
-                  <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
-                </div>
-                <div class="message-user-link">
-                  <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Direct </i></a>
-                </div>
-              </div>
-              <div class="tile">
-                <div class="tile__media">
-                  <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
-                </div>
-                <div class="message-user-link">
-                  <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Direct </i></a>
-                </div>
-              </div>
+
+              <% @bookings.each do |booking| %>
+
+                  <div class="tile">
+                    <div class="tile__media">
+
+                      <%= cl_image_tag (booking.user.picture_avatar), class: "tile__img img-circle" %>
+                    </div>
+                    <div class="message-user-link">
+                      <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Email </i></a>
+                    </div>
+                  </div>
+              <% end %>
+
 
               <!-- Invite Friend -->
               <div class="tile">
