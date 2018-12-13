@@ -1,4 +1,6 @@
+<%#= @experience = Experience.find(params[:experience_id]) %>
 
+<%#=  current_user.id %>
 <div class="booking-confirmation-page">
   <div class="wrapper-booking">
     <div class"nav-icon">
@@ -6,27 +8,28 @@
       <span class="fa fa-search" id="search-icon" aria-hidden="true"></span>
       </div> <!-- end of nav icon -->
     <div class="banner">
-      <h1>Booking Confirmation!</h1>
-      <h2>Nice <%=  current_user.name %>!</h2>
+      <h2>Booking Confirmation!</h2>
+      <h1>Nice <%=  current_user.name %>!</h1>
       <h1>You will try something new!</h1>
       <br>
-      <h1>Experience-Name</h1>
+      <h1><%= @experience.title %></h1>
       <img src="http://cdn.ceramiassociates.com/wp-content/gallery/waterclub-at-the-borgata/Borgata_WaterClub_sunbar.jpg" width="100px" height="100px" id="logo">
     </div> <!-- end of banner -->
     <div class="booking-area">
-      <h2>Hosted by ......</h2>
-      <h3>Value</h3>
+      <h1>Hosted by <%= @experience.supplier.name %></h1>
+      <h1>R$<%= @experience.price.to_i %></h1>
       <div class="booking-action">
         <button id="minus">-</button>
           <span id="amount">2</span>
         <button id="plus">+</button>
       </div>
       <h3>Date & Time</h3>
-      <div id="dateAndTime">24 June 2017 - 19:30</div>
+      <div id="dateAndTime"><%= @experience.start.strftime("%m-%d") %></div>
     </div> <!-- end of booking area -->
     <div class="confirm">
-      <button id="confirm-btn">ADD TO CALENDAR</button>
-      <button id="confirm-btn">CONTACT HOSTER</button>
+      <%= link_to "Please Confirm", experience_bookings_path(experience: @experience, user: @user), id:"confirm-btn", method: :post %>
+      <!--<button id="confirm-btn">ADD TO CALENDAR</button>
+      <button id="confirm-btn">CONTACT HOSTER</button>-->
     </div>
   </div> <!-- end of wrapper -->
 </div>
