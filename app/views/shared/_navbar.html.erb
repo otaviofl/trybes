@@ -22,9 +22,7 @@
           <% end %>
           <ul class="dropdown-menu dropdown-menu-right navbar-trybes-dropdown-menu">
             <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
-              <% end %>
+              <%= link_to "Profile", user_bookings_path, class:"fa fa-user" %>
             </li>
             <li>
               <%= link_to "#" do %>
