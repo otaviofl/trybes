@@ -1,44 +1,10 @@
-/* NAVBAR */
-.navbar-match {
-  background: transparent;
-  transition: all 0.3s ease;
-  height: 40px;
-  padding: 0px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: stick;
-}
 
-/* Navbar opaque */
-.navbar-match-opaque {
-  background-color: black;
-  opacity: 0.3;
-}
 
-/* Basic navbar item */
-.navbar-match-item {
-  cursor: pointer;
-  padding: 0 20px;
-}
-
-/* Navbar link */
-.navbar-match-link {
-  color: white;
-  font-size: 14px;
-}
-.navbar-match-link:hover {
-  color: yellow;
-  text-decoration: none;
-}
-
-/* BANNER TOP */
+/* BANNER TOP - change content if user alone */
 
 .banner-match{
-  background-size: cover !important;
-  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
-  background-position: top;
-  min-height: 100vh;
+  background-color: black;
+  min-height: 40vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -47,99 +13,50 @@
   top: 0px;
   left: 0px;
   z-index: 0;
-}
 
-.banner-background-container {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // height: 100vh;
-  z-index: 1;
-  position: relative;
-  width: 100%;
-  height: 40vh;
-  overflow: hidden;
-
-  .image-match {
-    // min-width: 100vw;
-    // min-height: 100vh;
-    position: relative;
-    z-index: 2;
-  }
-
-  .overlay-banner-match {
-  // background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%);
-  // background-size: cover;
-    height: 40vh;
-    width: 100vw;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 3;
-    background: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 50%);
-  }
-}
-
-.match-container {
-  min-height: 100vh;
-  width: 100%;
-  margin: 0px auto;
-  // display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding-top: 270px;
-  padding-left: 5px;
-  padding-right: 5px;
-
-  .match-title {
+  .match-container {
+    min-height: 40vh;
+    width: 100%;
+    margin: 0px auto;
+    // display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 30px;
-    font-family: 'Cabin Sketch', cursive;
-    color: #ffd966;
-    font-weight: 700;
-    font-size: 75px;
-    text-shadow: 0px 1px rgba(0, 0, 0, 0.9);
-  }
+    padding-bottom: 43px;
 
-  .match-content {
-    padding-bottom: 32px;
+    .match-content {
+      padding-bottom: 32px;
 
-    .match-heading {
-      font-size: 20px;
-      line-height: 25px;
-      color: white;
-      font-weight: 300;
-      margin: 0px 0 0;
-      text-align: center;
-      // text-transform: capitalize;
-      text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-    }
-    .match-tribe{
-      font-size: 16px;
-      font-weight: 300;
-      color: #fff1cc;
-      text-align: center;
-      text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-    }
-    .user{
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      // height: 100px;
-      margin: 0 auto;
-      overflow: visible;
-      padding-top: 1px;
-      overflow: auto;
-      padding: 0px 0px;
-    }
-    .user img{
-      background: none repeat scroll 0 0 #FFFFFF;
-      border: 4px solid #FFFFFF;
-    }
+      .match-title {
+        padding-top: 30px;
+        font-family: 'Cabin Sketch', cursive;
+        color: #ffd966;
+        font-weight: 700;
+        font-size: 60px;
+        text-shadow: 0px 1px rgba(0, 0, 0, 0.9);
+      }
 
-    .fafa {
-      padding-top: 15px;
+      .match-heading {
+        font-family: "Lato", "sans-serif";
+        font-size: 16px;
+        line-height: 25px;
+        color: white;
+        font-weight: 300;
+        margin: 0px 0 0;
+        text-align: center;
+        // text-transform: capitalize;
+        text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+      }
+      .match-tribe{
+        font-size: 14px;
+        font-weight: 300;
+        color: #fff1cc;
+        text-align: center;
+        text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+      }
     }
   }
 }
@@ -188,18 +105,281 @@ $trybes-dark-yellow: #ffd966;
 }
 
 
+/* Banner-carousel > Adding new members as they join */
+
+.banner-carousel{
+  background-color: white;
+  background-position: top;
+  // min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  // padding-bottom: 250px;
+
+  .carousel-container {
+    // min-height: 100vh;
+    width: 100%;
+    margin: 0px auto;
+    // display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    .carousel-content {
+      // padding-bottom: 32px;
+
+      .user{
+        display: flex;
+        // align-items: center;
+        justify-content: space-around;
+        // height: 100px;
+        // margin: 0 auto;
+        overflow: visible;
+        // padding-top: 1px;
+        overflow: auto;
+        padding: 0px 0px;
+        z-index: 200;
+      }
+      .user img{
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 4px solid #FFFFFF;
+      }
+
+      .fafa {
+        padding-top: 15px;
+      }
+
+      .fa-comment {
+        color: black;
+      }
+    }
+  }
+}
+
+// Carousel Users Image
+
+$duration: 450ms;
+$tileWidth: 80px;
+$tileHeight: ($tileWidth / (16/9));
+$iconSize: 50px;
+$growFactor: 1.5; // 1.5 times the original size
+
+$moveLeft: -($tileWidth * ($growFactor - 1) / 2);
+$moveRight: $tileWidth * ($growFactor - 1);
+
+.user {
+  // padding: 0 10px;
+  // margin: 0;
+  // background: #0E0F11;
+  // color: #ecf0f1;
+  // font-family: 'Open Sans', sans-serif;
+  // min-height: 100vh;
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // width: 100%;
+
+  // * { box-sizing: border-box }
+
+  // h1, p {
+  //   text-align: center;
+  // }
+
+  // p {
+  //   width: 100%;
+  //   max-width: 500px;
+  //   margin: auto;
+  // }
+
+  a:link,
+  a:hover,
+  a:active,
+  a:visited {
+    transition: color 150ms;
+    color: #95a5a6;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #7f8c8d;
+    text-decoration: underline;
+  }
+
+  .contain{
+    width: 100%;
+  }
+
+  .row {
+    overflow: auto;
+    width: 100%;
+    padding: -60px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  .row__inner {
+    transition: $duration transform;
+    font-size: 0;
+    white-space: nowrap;
+    // margin: ($tileHeight / 2) 0;
+    padding-bottom: 10px; // Account for OS X scroll bar
+  }
+
+  .tile {
+    position: relative;
+    display: inline-block;
+    // width: $tileWidth;
+    // height: $tileHeight;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: $duration all;
+    transform-origin: center left;
+  }
+
+  .tile__img {
+    max-width: $tileWidth;
+    // height: 90px;
+    object-fit: cover;
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: black;
+    }
+
+    &:after {
+      margin-top: (-($iconSize / 2));
+      margin-left: (-($iconSize / 2));
+      width: $iconSize;
+      height: $iconSize;
+      border: 3px solid #ecf0f1;
+      line-height: $iconSize;
+      text-align: center;
+      border-radius: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+
+    &:before {
+      content: '▶';
+      left: 0;
+      width: 100%;
+      font-size: 30px;
+      margin-left: 7px;
+      margin-top: -18px;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .tile:hover & {
+      opacity: 1;
+    }
+  }
+
+  .tile__title {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+  }
+
+
+  // *
+  // * Hover effects
+  // *
+
+  // We assume when you hover .row, you're also hovering a .tile
+  // First, move the whole row towards the left
+  .row__inner:hover {
+    transform: translate3d($moveLeft, 0, 0);
+  }
+
+  .row__inner:hover .tile {
+
+    // Fade out every tile
+    opacity: .3;
+
+    // And then grow the current tile and make it opaque again
+    &:hover {
+      transform: scale($growFactor);
+      opacity: 1;
+    }
+  }
+
+  // And finally move all tiles right of the current tile to the right,
+  // so its flush against the hovered tile
+  .tile:hover ~ .tile {
+    transform: translate3d($moveRight, 0, 0);
+  }
+
+
+  //message direct
+
+  .message-user-link a{
+    color: white;
+    font-size: 10px;
+  }
+  .message-user-link a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  .btn-message {
+    color: white;
+    border: 1px solid #999999;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-weight: lighter;
+    font-size: 10px;
+    opacity: 0.6;
+    transition: background 0.3s ease;
+    background-color: transparent;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .btn-message:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+  }
+
+}
+
+
+// arrow
+
+.arrow {
+  align-items: center;
+  font-size: 50px;
+}
+
+
+
 /* EXPERIENCE DASHBOARD */
 
 //grid layout
-.match-page {
-}
 
 .match-experience-dashboard {
   display: grid;
   grid-template-rows: 50% 50% ;
   grid-template-columns: 300px repeat(3, 1fr);
   // height: 100vh;
-  padding: 30px 0 70px; //top-bottom, left-right
+  // padding: 30px 0 70px; //top-bottom, left-right
   transition: all 2s ease;
 }
 
@@ -305,207 +485,6 @@ $trybes-dark-yellow: #ffd966;
     border: 4px solid #FFFFFF;
     margin-top: 0px;
   }
-}
-
-
-// Carousel Users Image
-
-$duration: 450ms;
-$tileWidth: 80px;
-$tileHeight: ($tileWidth / (16/9));
-$iconSize: 50px;
-$growFactor: 1.5; // 1.5 times the original size
-
-$moveLeft: -($tileWidth * ($growFactor - 1) / 2);
-$moveRight: $tileWidth * ($growFactor - 1);
-
-.user {
-  // padding: 0 10px;
-  // margin: 0;
-  // background: #0E0F11;
-  // color: #ecf0f1;
-  // font-family: 'Open Sans', sans-serif;
-  // min-height: 100vh;
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // width: 100%;
-
-  // * { box-sizing: border-box }
-
-  // h1, p {
-  //   text-align: center;
-  // }
-
-  // p {
-  //   width: 100%;
-  //   max-width: 500px;
-  //   margin: auto;
-  // }
-
-  a:link,
-  a:hover,
-  a:active,
-  a:visited {
-    transition: color 150ms;
-    color: #95a5a6;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #7f8c8d;
-    text-decoration: underline;
-  }
-
-  .contain{
-    width: 100%;
-  }
-
-  .row {
-    overflow: auto;
-    width: 100%;
-    padding: 21px;
-  }
-
-  .row__inner {
-    transition: $duration transform;
-    font-size: 0;
-    white-space: nowrap;
-    // margin: ($tileHeight / 2) 0;
-    padding-bottom: 10px; // Account for OS X scroll bar
-  }
-
-  .tile {
-    position: relative;
-    display: inline-block;
-    // width: $tileWidth;
-    // height: $tileHeight;
-    margin-right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: $duration all;
-    transform-origin: center left;
-  }
-
-  .tile__img {
-    max-width: $tileWidth;
-    // height: 90px;
-    object-fit: cover;
-
-    &:after,
-    &:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      display: black;
-    }
-
-    &:after {
-      margin-top: (-($iconSize / 2));
-      margin-left: (-($iconSize / 2));
-      width: $iconSize;
-      height: $iconSize;
-      border: 3px solid #ecf0f1;
-      line-height: $iconSize;
-      text-align: center;
-      border-radius: 100%;
-      background: rgba(0,0,0,0.5);
-      z-index: 1;
-    }
-
-    &:before {
-      content: '▶';
-      left: 0;
-      width: 100%;
-      font-size: 30px;
-      margin-left: 7px;
-      margin-top: -18px;
-      text-align: center;
-      z-index: 2;
-    }
-
-    .tile:hover & {
-      opacity: 1;
-    }
-  }
-
-  .tile__title {
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
-  }
-
-
-  // *
-  // * Hover effects
-  // *
-
-  // We assume when you hover .row, you're also hovering a .tile
-  // First, move the whole row towards the left
-  .row__inner:hover {
-    transform: translate3d($moveLeft, 0, 0);
-  }
-
-  .row__inner:hover .tile {
-
-    // Fade out every tile
-    opacity: .3;
-
-    // And then grow the current tile and make it opaque again
-    &:hover {
-      transform: scale($growFactor);
-      opacity: 1;
-    }
-  }
-
-  // And finally move all tiles right of the current tile to the right,
-  // so its flush against the hovered tile
-  .tile:hover ~ .tile {
-    transform: translate3d($moveRight, 0, 0);
-  }
-
-  //message direct
-
-  .message-user-link a{
-    color: white;
-    font-size: 10px;
-  }
-  .message-user-link a:hover {
-    color: white;
-    text-decoration: none;
-  }
-
-  .btn-message {
-    color: white;
-    border: 1px solid #999999;
-    padding: 10px 15px;
-    border-radius: 4px;
-    font-weight: 400;
-    font-weight: lighter;
-    font-size: 10px;
-    opacity: 0.6;
-    transition: background 0.3s ease;
-    background-color: transparent;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-
-  .btn-message:hover {
-    opacity: 1;
-    text-decoration: none;
-    color: white;
-    background-color: transparent;
-  }
-
-}
-
-.arrow {
-  color: #ffd966;
-  align-items: center;
-  font-size: 50px;
 }
 
 
@@ -687,4 +666,38 @@ $moveRight: $tileWidth * ($growFactor - 1);
 
 
 
-//
+// History
+
+/* NAVBAR */
+// .navbar-match {
+//   background: transparent;
+//   transition: all 0.3s ease;
+//   height: 40px;
+//   padding: 0px 30px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   position: stick;
+// }
+
+// /* Navbar opaque */
+// .navbar-match-opaque {
+//   background-color: black;
+//   opacity: 0.3;
+// }
+
+// /* Basic navbar item */
+// .navbar-match-item {
+//   cursor: pointer;
+//   padding: 0 20px;
+// }
+
+// /* Navbar link */
+// .navbar-match-link {
+//   color: white;
+//   font-size: 14px;
+// }
+// .navbar-match-link:hover {
+//   color: yellow;
+//   text-decoration: none;
+// }
