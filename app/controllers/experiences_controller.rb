@@ -16,6 +16,8 @@ class ExperiencesController < ApplicationController
   end
 
   def show
+    @experience = Experience.find(params[:id])
+    @bookings = Booking.where(experience_id: @experience.id)
   end
 
   def new

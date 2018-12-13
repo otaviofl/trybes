@@ -14,14 +14,14 @@ Experience.destroy_all
 
 
 users = {
-  otavio: { name:"Otavio", email: "ot@ot.com", password: "123456", picture_avatar: "urla", picture_banner: "urlb", password_confirmation: "123456" },
-  claudio: { name:"Claudio", email:"cl@cl.com", password: "123456", picture_avatar: "urla", picture_banner: "urlb", password_confirmation: "123456" },
-  renato: { name:"Renato", email:"re@re.com", password: "123456", picture_avatar: "urla", picture_banner: "urlb", password_confirmation: "123456" }
+  otavio: { name:"Otavio", email: "ot@ot.com", password: "123456", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544721798/users_trybes/avatar_otavio_leite.jpg", picture_banner: "urlb", password_confirmation: "123456" },
+  claudio: { name:"Claudio", email:"cl@cl.com", password: "123456", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544721798/users_trybes/avatar_claudio_victer.jpg", picture_banner: "urlb", password_confirmation: "123456" },
+  renato: { name:"Renato", email:"re@re.com", password: "123456", remote_picture_avatar_url: "https://res.cloudinary.com/otaviofl/image/upload/v1544721798/users_trybes/avatar_renato_peixoto.jpg", picture_banner: "urlb", password_confirmation: "123456" }
 }
 
 
 users.each do |user, value|
-     User.create!(name: value[:name], email: value[:email], password: value[:password], password_confirmation: value[:password], picture_avatar: value[:picture_avatar], picture_banner: value[:picture_banner])
+     User.create!(name: value[:name], email: value[:email], password: value[:password], password_confirmation: value[:password], remote_picture_avatar_url: value[:remote_picture_avatar_url], picture_banner: value[:picture_banner])
   end
 
 
