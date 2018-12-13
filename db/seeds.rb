@@ -14,9 +14,9 @@ Experience.destroy_all
 
 
 users = {
-  otavio: { name:"Otavio", email: "ot@ot.com", password: "123456", picture_avatar: "urla", picture_banner: "urlb", password_confirmation: "123456" },
-  claudio: { name:"Claudio", email:"cl@cl.com", password: "123456", picture_avatar: "urla", picture_banner: "urlb", password_confirmation: "123456" },
-  renato: { name:"Renato", email:"re@re.com", password: "123456", picture_avatar: "urla", picture_banner: "urlb", password_confirmation: "123456" }
+  otavio: { name:"Otavio", email: "ot@ot.com", password: "123456", picture_avatar: "https://res.cloudinary.com/otaviofl/image/upload/v1544721798/users_trybes/avatar_otavio_leite.jpg", picture_banner: "urlb", password_confirmation: "123456" },
+  claudio: { name:"Claudio", email:"cl@cl.com", password: "123456", picture_avatar: "https://res.cloudinary.com/otaviofl/image/upload/v1544721798/users_trybes/avatar_claudio_victer.jpg", picture_banner: "https://res.cloudinary.com/otaviofl/image/upload/v1544721798/users_trybes/avatar_claudio_victer.jpg", password_confirmation: "123456" },
+  renato: { name:"Renato", email:"re@re.com", password: "123456", picture_avatar: "https://res.cloudinary.com/otaviofl/image/upload/v1544721798/users_trybes/avatar_renato_peixoto.jpg", picture_banner: "urlb", password_confirmation: "123456" }
 }
 
 
