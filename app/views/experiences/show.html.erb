@@ -6,7 +6,7 @@
       <h3 class="match-heading">You are not alone in this experience!</h3>
       <p class="match-tribe">Your experience choice matches with other people.</p>
       <div class="book-bar-links book-blinking">
-        <%= link_to "Book now!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match" %>
+        <%= link_to "Book now!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match", "data-toggle" => "modal", "data-target" => "#booking_Modal" %>
       </div>
     </div>
   </div>
@@ -34,11 +34,10 @@
                       <%= cl_image_tag (booking.user.picture_avatar), class: "tile__img img-circle" %>
                     </div>
                     <div class="message-user-link">
-                      <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Email </i></a>
+                      <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment" data-toggle="modal"data-target= "#direct_message_modal"> Direct </i></a>
                     </div>
                   </div>
               <% end %>
-
 
               <!-- Invite Friend -->
               <div class="tile">
@@ -131,6 +130,88 @@
   </div>
 </div>
 
+<!-- Comments Box -->
+<div class="comments-container">
+  <h1>Trybe Chat <a href="http://creaticode.com"></a></h1>
+
+  <ul id="comments-list" class="comments-list">
+    <li>
+      <div class="comment-main-level">
+        <!-- Avatar -->
+        <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+        <!-- Contenedor del Comentario -->
+        <div class="comment-box">
+          <div class="comment-head">
+            <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
+            <span>hace 20 minutos</span>
+            <i class="fa fa-reply"></i>
+            <i class="fa fa-heart"></i>
+          </div>
+          <div class="comment-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+          </div>
+        </div>
+      </div>
+      <!-- Respuestas de los comentarios -->
+      <ul class="comments-list reply-list">
+        <li>
+          <!-- Avatar -->
+          <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+          <!-- Contenedor del Comentario -->
+          <div class="comment-box">
+            <div class="comment-head">
+              <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
+              <span>hace 10 minutos</span>
+              <i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="comment-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <!-- Avatar -->
+          <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+          <!-- Contenedor del Comentario -->
+          <div class="comment-box">
+            <div class="comment-head">
+              <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
+              <span>hace 10 minutos</span>
+              <i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="comment-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <div class="comment-main-level">
+        <!-- Avatar -->
+        <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+        <!-- Contenedor del Comentario -->
+        <div class="comment-box">
+          <div class="comment-head">
+            <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
+            <span>hace 10 minutos</span>
+            <i class="fa fa-reply"></i>
+            <i class="fa fa-heart"></i>
+          </div>
+          <div class="comment-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
 <!-- <div class='experience-info'>
   <div class="supplier">
       <%= image_tag ('mergulho_avatar_xdivers.png'), class: "img-circle"%>
@@ -144,11 +225,80 @@
   </div>
   <div class="book-bar-links">
     <!-- <a  class="btn btn-primary btn-match" href="#">Book your Experience!!!</a> -->
-    <%= link_to "Book this Experience!!!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match" %>
+    <%= link_to "Book this Experience!!!", new_experience_booking_path(@experience.id), class:"btn btn-primary btn-match", "data-toggle" => "modal", "data-target" => "#booking_Modal" %>
   </div>
 </div>
 
 <%= javascript_pack_tag "skrollr" %>
+
+
+<!-- MODAL DIRECT -->
+
+<!-- Modal -->
+
+<div class="modal fade" id="direct_message_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- MODAL BOOKING -->
+
+<!-- Modal -->
+<div class="modal fade" id="booking_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nice! You will try something new! \o/</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h1>Your booking confirmation:</h1>
+        <%#= @experience = Experience.find(params[:experience_id]) %>
+        <br>
+        <%#=  current_user.name %>
+        <br>
+        <%#=  current_user.id %>
+        <br>
+        <%#= link_to "Please Confirm", experience_bookings_path(experience: @experience, user: @user), class:"btn-primary", method: :post %>
+        <br>
+        <h2>We have sent an e-mail connection you with your host. But feel free to send a direct message to him! </h2>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">e-mail hoster!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 <!-- History -->
@@ -172,3 +322,22 @@
   <path class="a3" d="M0 40 L30 72 L60 40"></path>
 </svg> -->
 
+
+<!-- Input from User Database -->
+<!-- <div class="tile">
+  <div class="tile__media">
+    <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
+  </div>
+  <div class="message-user-link">
+    <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment" data-toggle="modal"data-target= "#direct_message_modal"> Direct </i></a>
+  </div>
+</div>
+<div class="tile">
+  <div class="tile__media">
+    <%= image_tag ('renato_avatar.jpeg'), class: "tile__img img-circle"%>
+  </div>
+  <div class="message-user-link">
+    <a class="btn btn-primary btn-message" href="#"><i class="fas fa-comment"> Direct </i></a>
+  </div>
+</div>
+ -->
