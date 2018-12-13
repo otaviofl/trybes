@@ -143,7 +143,6 @@ $trybes-dark-yellow: #ffd966;
         // margin: 0 auto;
         overflow: visible;
         // padding-top: 1px;
-        overflow: auto;
         padding: 0px 0px;
         z-index: 200;
       }
@@ -222,6 +221,7 @@ $moveRight: $tileWidth * ($growFactor - 1);
     padding: -60px;
     padding-top: 30px;
     padding-bottom: 25px;
+    margin-top: -50px;
   }
 
   .row__inner {
@@ -512,7 +512,11 @@ $moveRight: $tileWidth * ($growFactor - 1);
  =======================*/
 .maps-wrap {
   background-color: white;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
+
+  body {
+    background-color: white;
+  }
 }
 
 .map-container {
@@ -586,16 +590,19 @@ $moveRight: $tileWidth * ($growFactor - 1);
  * Type message
  -----------------------*/
 .comments-container .wrap-type-message {
-  display: inline-block;
   /*  centering  */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: 50%;
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  h1, h2, h3, h4, p {
+    color: #666666;
+  }
+
+input::placeholder {
+  color: red;
+}
 
   input {
     /*  cleaning up  */
+
     outline: none;
     border: none;
     padding: 20px;
@@ -603,8 +610,8 @@ $moveRight: $tileWidth * ($growFactor - 1);
     /*  customize  */
     background: transparent;
     border-bottom: 1px solid #fff;
-    color: #ba4d09;
     z-index: 20;
+    color: #666666;
   }
 
   .bg {
@@ -614,18 +621,18 @@ $moveRight: $tileWidth * ($growFactor - 1);
     height: 100%;
     width: 0;
     /*   customize */
-    background: #fff;
+    background: #666666;
     transition: width 0.6s cubic-bezier(0.52, -0.43, 0.47, 1.29);
     z-index: -2;
   }
 
   input:focus + .bg {
-    background: #fff;
+    background: #666666;
     width: 100%;
   }
 
   input::-webkit-input-placeholder {
-    color: #fff;
+    color: #ffd966;
     transition: color .3s ease;
   }
 

@@ -1,4 +1,5 @@
 class BookingsController < ApplicationController
+  layout false, only: :new
 
   def index
     @bookings = Booking.all

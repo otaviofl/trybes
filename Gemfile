@@ -9,6 +9,7 @@ gem 'puma'
 gem 'rails', '5.2.1.1'
 gem 'redis'
 gem 'jquery-rails'
+gem 'social-share-button'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
