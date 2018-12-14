@@ -652,8 +652,18 @@
 
   .hoster-wrapper {
 
-    .carousel-inner .carousel-caption{
-      margin-bottom: 10px;
+    .carousel-inner .item .carousel-caption{
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin-bottom: 0px;
+
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 12px;
+      }
     }
 
     .carousel-caption {
