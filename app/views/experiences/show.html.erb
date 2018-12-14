@@ -141,18 +141,29 @@
   </div>
 </div>
 
-<!--Google map-->
+<!--Google map
 <div class="maps-wrap">
   <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
     <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
       style="border:0" allowfullscreen></iframe>
   </div>
 </div>
+-->
+
+
+<!--MAPBOX-->
+<div
+  id="map"
+  style="width: 100%;
+  height: 600px;"
+  data-markers="<%= @markers.to_json %>"
+  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+></div>
 
 <!--Google Maps-->
 
 
-<!-- Comments Box -->
+<!-- Comments Box
 <div class="comments-wrap">
   <div class="comments-container">
     <h1>Trybe Chat <a href="http://creaticode.com"></a></h1>
@@ -165,9 +176,9 @@
     <ul id="comments-list" class="comments-list">
       <li>
         <div class="comment-main-level">
-          <!-- Avatar -->
+          <!-- Avatar
           <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
-          <!-- Contenedor del Comentario -->
+          <!-- Contenedor del Comentario
           <div class="comment-box">
             <div class="comment-head">
               <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
@@ -180,12 +191,12 @@
             </div>
           </div>
         </div>
-        <!-- Respuestas de los comentarios -->
+        <!-- Respuestas de los comentarios
         <ul class="comments-list reply-list">
           <li>
-            <!-- Avatar -->
+            <!-- Avatar
             <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
-            <!-- Contenedor del Comentario -->
+            <!-- Contenedor del Comentario
             <div class="comment-box">
               <div class="comment-head">
                 <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
@@ -200,9 +211,9 @@
           </li>
 
           <li>
-            <!-- Avatar -->
+            <!-- Avatar
             <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
-            <!-- Contenedor del Comentario -->
+            <!-- Contenedor del Comentario
             <div class="comment-box">
               <div class="comment-head">
                 <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
@@ -220,9 +231,9 @@
 
       <li>
         <div class="comment-main-level">
-          <!-- Avatar -->
+          <!-- Avatar
           <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
-          <!-- Contenedor del Comentario -->
+          <!-- Contenedor del Comentario
           <div class="comment-box">
             <div class="comment-head">
               <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
@@ -239,7 +250,7 @@
     </ul>
   </div>
 </div>
-
+ -->
 <!-- <div class='experience-info'>
   <div class="supplier">
       <%= image_tag ('mergulho_avatar_xdivers.png'), class: "img-circle"%>
@@ -404,5 +415,4 @@
   </div>
 </div>
  -->
-
 

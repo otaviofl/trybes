@@ -13,11 +13,26 @@ class ExperiencesController < ApplicationController
     else
       @experiences = Experience.all
     end
+
   end
 
   def show
     @experience = Experience.find(params[:id])
-    @bookings = Booking.where(experience_id: @experience.id)
+    @bookings = Booking.where(experience_id: @experience)
+    # @markers = @bookings.map do |book|
+    #   {
+    #     lng: book.experience.longitude,
+    #     lat: book.experience.latitude,
+    #     infoWindow: { content: render_to_string(partial: "/shared/map_window", locals: { experience: @experience })}
+    #   }
+    # end
+    @markers = [
+      {
+        lng: @experience.longitude,
+        lat: @experience.latitude,
+        infoWindow: { content: render_to_string(partial: "/shared/map_window", locals: { experience: @experience })}
+      }]
+
   end
 
   def new
