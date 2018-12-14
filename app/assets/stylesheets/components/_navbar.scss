@@ -48,6 +48,10 @@
 .navbar-trybes-item {
   cursor: pointer;
   padding: 0 20px;
+
+  .dropdown-toggle {
+    color: #ffd966;
+  }
 }
 
 /* Navbar link */
