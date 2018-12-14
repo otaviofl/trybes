@@ -19,7 +19,7 @@ class BookingsController < ApplicationController
                            )
     if @booking.save!
       flash[:notice] = "Booking successfully created"
-      redirect_to root_path
+      redirect_to user_bookings_path(current_user)
     else
       flash[:error] = @booking.errors.full_messages.first
       redirect_to @booking
