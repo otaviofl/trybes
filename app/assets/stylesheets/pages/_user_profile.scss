@@ -179,65 +179,118 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 
 /* Gallery Section */
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -1rem -1rem;
-    padding-bottom: 3rem;
-}
+// .gallery {
+//   display: flex;
+//   flex-wrap: wrap;
+//   width: 100%;
+//   height: 100%
+// }
 
-.gallery-item {
-    position: relative;
-    flex: 1 0 22rem;
-    margin: 1rem;
-    color: #fff;
-    cursor: pointer;
-}
+.gallery .card-profile {
+  height: 50%;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin-bottom: 40px;
 
-.gallery-item:hover .gallery-item-info,
-.gallery-item:focus .gallery-item-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .card-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  .card-description h2 {
+    font-size: 24px;
+  }
+
+  .card-link {
     position: absolute;
     top: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    background: black;
+    opacity: 0;
+  }
+  .card-link:hover {
+    opacity: 0.1;
+  }
 }
 
-.gallery-item-info {
-    display: none;
-}
+ .imagem-profile {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
-.gallery-item-info li {
-    display: inline-block;
-    font-size: 1.7rem;
-    font-weight: 600;
-}
+//   .overlay-gallery {
+//   // background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%);
+//   // background-size: cover;
+//     height: 100%;
+//     width: 100%;
+//     position: absolute;
+//     top: 0px;
+//     left: 0px;
+//     z-index: 3;
+//     background: linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%);
+//   }
 
-.gallery-item-likes {
-    margin-right: 2.2rem;
-}
+//   .imagem {
+//     img {
+//       width: 300px;
+//     }
+//   }
+// }
 
-.gallery-item-type {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2.5rem;
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
-}
 
-.fa-clone,
-.fa-comment {
-    transform: rotateY(180deg);
-}
 
-.gallery-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
+// .gallery-item:hover .gallery-item-info,
+// .gallery-item:focus .gallery-item-info {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: absolute;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(0, 0, 0, 0.3);
+// }
+
+// .gallery-item-info {
+//     display: none;
+// }
+
+// .gallery-item-info li {
+//     display: inline-block;
+// }
+
+// // .gallery-item-likes {
+// //     margin-right: 2.2rem;
+// // }
+
+// .gallery-item-type {
+//     position: absolute;
+//     top: 1rem;
+//     right: 1rem;
+//     font-size: 2.5rem;
+//     text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+// }
+
+// .fa-clone,
+// .fa-comment {
+//     transform: rotateY(180deg);
+// }
+
+
+// .gallery-image {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }
 
 /* Loader */
 

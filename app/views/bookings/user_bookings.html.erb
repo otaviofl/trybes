@@ -49,36 +49,26 @@
             </div>
           <%# end %>
         </div> -->
-        <% @bookings.each do |booking| %>
-<!--   <p> <%#= booking.experience.title %> </p> -->
-<%# end %>
-
-        <div class="gallery-item" tabindex="0">
-          <%= link_to cl_image_tag(booking.experience.supplier.picture_banner), experience_path(booking.experience) %>
-          <!--
-          <img src="https://images.unsplash.com/photo-1498471731312-b6d2b8280c61?w=500&h=500&fit=crop" class="gallery-image" alt="">-->
-          <div class="gallery-item-type">
-            <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
-          </div>
-          <div class="gallery-item-info">
-            <ul>
-              <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 47</li>
-              <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
-            </ul>
-          </div>
+        <div class="row">
+          <% @bookings.each do |booking| %>
+  <!--   <p> <%#= booking.experience.title %> </p> -->
+  <%# end %>
+            <%= link_to experience_path(booking.experience)  do %>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+                <div class="card-profile">
+                  <div class="card-description">
+                    <h2><i class="fas fa-flag" aria-hidden="true"></i> <%= booking.experience.title %></h2>
+                  </div>
+                  <div class="overlay-gallery"></div>
+                  <div class="imagem-profile" style="background-image: url(<%= cl_image_path(booking.experience.supplier.picture_banner) %>)">
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
         </div>
-
-
-
-
-
       </div>
-      <!-- End of gallery -->
-      <% end %>
-
-      <!-- <div class="loader"></div>-->
     </div>
-    <!-- End of container -->
   </main>
 
 </div>
