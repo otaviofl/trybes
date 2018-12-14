@@ -978,6 +978,16 @@ input::placeholder {
 @media (min-width: 768px) and (max-width: 1110px) and (orientation: landscape) {
 
 
+  .match-experience-dashboard .description-dashboard {
+    .description-content {
+      padding-right: 25px;
+      padding-left: 25px;
+      padding-bottom: 20px;
+      padding-top: 50px;
+    }
+
+  }
+
   .book-bar-match {
     padding-left: 200px;
     padding-right: 200px;
@@ -992,6 +1002,17 @@ input::placeholder {
 */
 
 @media (min-width: 600px) and (max-width: 767px) {
+
+
+  .match-experience-dashboard .description-dashboard {
+    .description-content {
+      padding-right: 25px;
+      padding-left: 25px;
+      padding-bottom: 20px;
+      padding-top: 40px;
+    }
+
+  }
 
   .match-container .match-title {
     font-size: 55px;
