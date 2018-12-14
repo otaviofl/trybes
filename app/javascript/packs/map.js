@@ -21,7 +21,6 @@ if (mapElement) { // only build a map if there's a div#map to inject into
       .addTo(map);
 
   })
-  alert(markers.length);
 
   if (markers.length === 0) {
     map.setZoom(14);
