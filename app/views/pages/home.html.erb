@@ -106,16 +106,60 @@
 
 </div>
 
-<div class="supplier-wrapper">
-  <div class="banner-supplier">
-    <div class="banner-content text-center">
-      <div class="box-content">
-        <h1>Promote incredible experiences!</h1>
-        <h2>People are looking for you, and now they know where.</h2>
-        <p>Trybes is the best place to directly speak with your specific audience. Trybes was developed to support small/mid niche service businesses and product brands, to effectively and easily promote their experiences to your customers.</p>
-        <a class="btn" id="btn-supplier" href="#">Become an experience supplier!</a>
+
+<div class="hoster-wrapper">
+  <div id="carousel-example-generic" class="carousel carousel-fade  slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="overlay-promoter"></div>
+        <a class="image-display" href="/" style="background-image: asset-url()" >
+          <%= cl_image_tag ("banner_promoter_1280") %>
+        </a>
+        <div class="carousel-caption">
+          <h3>Promote incredible experiences!</h3>
+          <p>Trybes was developed to support small/mid niche service businesses and product brands, to effectively and easily promote their experiences to your customers.</p>
+          <a href="#" class="btn btn-lg btn-transparent">Host an Experience!</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="overlay-promoter"></div>
+        <a class="image-display" href="/" style="background-image: asset-url()" >
+          <%= cl_image_tag ("banner_promoter_2_1280") %>
+        </a>
+        <div class="carousel-caption">
+          <h3>Promote incredible experiences!</h3>
+          <p>Trybes is the best place to directly speak with your specific audience. </p>
+          <a href="#" class="btn btn-lg btn-transparent">Host an Experience!</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="overlay-promoter"></div>
+        <a class="image-display" href="/" style="background-image: asset-url()" >
+          <%= cl_image_tag ("supplier_banner_1920.jpg") %>
+        </a>
+        <div class="carousel-caption">
+          <h3>Promote incredible experiences!</h3>
+          <p>People are looking for the experience you offer, and now they know where.</p>
+          <a href="#" class="btn btn-lg btn-transparent">Host an Experience!</a>
+        </div>
       </div>
     </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </div>
 
