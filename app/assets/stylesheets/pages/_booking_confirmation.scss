@@ -19,7 +19,7 @@
 
 .wrapper-booking {
   width: 95%;
-  height: 100vh;
+  // height: 100vh;
   margin: 0 auto;
   text-align: center;
   background: transparent;
@@ -82,11 +82,13 @@
     font-weight: bold;
     text-transform: uppercase;
   }
-
+// $trybes-light-yellow: #fff1cc;
+// $trybes-dark-yellow: #ffd966;
+// $trybes-gray: #666666;
   #confirm-btn {
     // border: 1px solid #111;
-    background-color: #111;
-    color: white;
+    background-color: #fff1cc ;
+    color: #666666;
     padding: 1.5em 5em;
     text-transform: uppercase;
     box-shadow: 0 3px 5px #222;
@@ -103,6 +105,8 @@
 
   #confirm-btn:hover {
     cursor: pointer;
+    background-color: #666666 ;
+    color: #ffd966;
   }
 
   footer {
@@ -125,6 +129,8 @@
   }
 
   .banner {
+    padding-top: 30px;
+
     .supplier{
       border-radius: 50%;
       display: block;
@@ -138,6 +144,7 @@
       background: none repeat scroll 0 0 #FFFFFF;
       border: 4px solid #FFFFFF;
       width: 100%;
+      height: 100%;
     }
 
 
@@ -189,6 +196,7 @@
 
   .confirm {
     margin-top: 20px;
+    padding-bottom: 50px;
   }
 
 }
