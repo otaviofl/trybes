@@ -362,7 +362,7 @@
   .carousel-inner .item .overlay-promoter {
   // background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%);
   // background-size: cover;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     position: absolute;
     top: 0px;
@@ -647,10 +647,37 @@
     padding: 30px;
   }
 
-  #fixed-transition-top, #fixed-transition-middle, #fixed-transition-end {
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center;background-size: cover;
-    background-attachment: scroll;
+
+  //NEW BANNER
+
+  .hoster-wrapper {
+
+    .carousel-inner .item .carousel-caption{
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin-bottom: 0px;
+
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .carousel-caption {
+      /*bottom: 20px; This is the defaul*/
+      .btn-transparent {
+        font-size: 12px;
+      }
+    }
+
+    #fixed-transition-top, #fixed-transition-middle, #fixed-transition-end {
+      background-size: cover;
+      background-attachment: scroll;
+      background-position: center;background-size: cover;
+      background-attachment: scroll;
+    }
   }
 }
